@@ -1,6 +1,8 @@
 # gentiana.org
 
-Réintégration depuis le SVN de Tela Botanica (2017)
+Site Web gentiana.org, basé sur le CMS Papyrus. Inclut une copie de Papyrus et des applications clientes
+
+Réintégration depuis le SVN de Tela Botanica / la copie de test d'Orobanche (2017)
 
 ## Installation
 * cloner dans `_dossier_web_/gentiana.org`
@@ -20,5 +22,5 @@ ln -s gentiana.org/sites sites
 ```
 
 ## À savoir
-Nécessite `register_globals` pour fonctionner
+Nécessite `register_globals` ou [une simulation](www.kaffeetalk.de/using-register_globals-in-php-5-5/) pour fonctionner
 
