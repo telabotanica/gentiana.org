@@ -1,0 +1,17 @@
+Liste des packages PEAR :
+==============================
+Package          Version  State
+Auth             1.4.3    stable
+Calendar         0.5.2    beta
+DB               1.7.6    stable
+HTML_Common      1.2.1    stable
+HTML_QuickForm   3.2.5	stable
+HTML_Table       1.5      stable
+HTTP             1.3.5    stable
+Net_FTP          1.3.0    stable
+Net_SMTP         1.2.6    stable
+Net_Socket       1.0.6    stable
+Net_URL          1.0.14   stable
+PEAR             1.4.11   stable
+Text_Wiki        1.0.0    stable
+XML_Feed_Parser  1.0.2    stable

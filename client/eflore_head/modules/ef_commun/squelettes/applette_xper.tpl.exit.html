@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"  "http://www.w3.org/TR/REC-html40/loose.dtd">
+
+<html>
+	<head>
+		<title>Xper&sup2; - Applette</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+		<link rel="made" title="Auteur" href="mailto:jpm@tela-botanica.org"/>		
+		<link rel="start" href="<?=$info['url_eflore'];?>" title="Tela Botanica - eFlore"/>
+		<style type="text/css" media="all">
+		/*<![CDATA[*/
+			body {  
+				margin:0; /* suppression de toutes les marges */
+				padding:0;
+			}
+		/*]]>*/
+		</style>
+	</head>
+	<body>
+		<applet codebase="<?=$info['url_xper_jar'];?>" code="fr_jussieu_snv_lis.XPIdApplet" archive="<?=$info['url_xper_jar_fichier'];?>" width="100%" height="100%">
+			<param name="basesDirectoryURL" value="<?=$info['url_xper_base'];?>"/>
+			<param name="nbBase" value="1"/>
+			<param name="base1" value="<?=$info['base'];?>/<?=$info['base'];?>;<?=$info['base'];?>;xper2"/>
+	
+			<param name="viewxperURL" value="http://lis.snv.jussieu.fr/cgi-bin/viewxper.cgi"/>
+			<param name="paramBase" value="base"/>
+			<param name="paramTaxon" value="taxon"/>
+			<param name="makeyURL" value="http://baron.snv.jussieu.fr/cgi-bin/david/HPS"/>	
+			Votre navigateur ignore la balise html "APPLET", vous ne pouvez donc pas utilisez l'applette Xper².
+			Pour y remédier, vous pouvez télécharger le navigateur libre et performant <a href="http://www.mozilla-europe.org/fr/products/firefox/">Firefox</a>!
+		</applet>
+	</body>
+</html>

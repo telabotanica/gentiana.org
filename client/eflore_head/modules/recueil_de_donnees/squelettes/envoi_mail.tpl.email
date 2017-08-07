@@ -1,0 +1,20 @@
+<txt>
+Observation saisie par <?=$prenom_nom;?>
+<?php foreach ($post as $cle => $valeur) : ?>
+ - <?=$i18n[$cle];?> : <?=$valeur;?>
+<?php endforeach; ?> 
+--
+Message envoyé par le programme eFlore - Recueil de données naturalistes
+Date : <?=date('d/m/Y à H:i:s', time());?>
+</txt>
+<html>
+	<h1>Observation saisie par <?=$prenom_nom;?></h1>
+	<?php foreach ($post as $cle => $valeur) : ?>
+		<strong><?=$i18n[$cle];?> : </strong><?=$valeur;?><br />
+	<?php endforeach; ?>
+<p style="color:#A2A2A2;">
+--<br />
+Message envoyé par le programme eFlore - Recueil de données naturalistes<br />
+Date : <?=date('d/m/Y à H:i:s', time());?>
+</p>
+</html>

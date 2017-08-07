@@ -1,0 +1,7 @@
+<h1>Archives</h1>
+<p>Cliquer sur un des liens pour éditer à nouveau la version de la page sauvegardée à la date indiquée.</p>
+<ul>
+<?php foreach ($archives as $archive) : ?>
+	<li><a href="<?=$archive->url;?>"><?=$archive->gmc_date_modification;?></a></li>
+<?php endforeach; ?>
+</ul>

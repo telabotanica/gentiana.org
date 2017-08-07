@@ -1,0 +1,26 @@
+<form action="<?=$form_url;?>" method="post" id="form_more_recherche">
+	<fieldset>
+		<legend><?=MORE_LG_FORM_TITRE;?></legend>
+		<label for="more_motif"><?=MORE_LG_FORM_MOTIF;?></label>
+		<input id="more_motif" name="more_motif" tabindex="<?=$form_tab;?>" maxlength="<?=MORE_FORM_MOTIF_MAXLENGTH;?>" accesskey="<?=MORE_LG_FORM_ACCESSKEY;?>" type="text" value="<?=$more_motif;?>" onfocus="nettoyerChamp('more_motif', '<?=$more_motif_base;?>');" onblur="nettoyerChamp('more_motif', '<?=$more_motif_base;?>');" />
+		<input id="more_ok" name="more_ok" tabindex="<?=++$form_tab;?>" value="<?=MORE_LG_FORM_VALIDER;?>" type="submit" />
+	</fieldset>
+</form>
+<script type="text/javascript">
+	//<![CDATA[
+
+	
+	// Fonction nettoyant un champ de formulaire d'une chaine donnée...
+	function nettoyerChamp(id, chaine)
+	{
+		var sb = document.getElementById(id);
+		var valeur = sb.value;
+		if (valeur == chaine) {
+			sb.value = '';
+		}
+		if (valeur == '') {
+			sb.value = chaine;
+		}
+	}
+	//]]>
+</script>

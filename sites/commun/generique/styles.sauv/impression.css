@@ -1,0 +1,151 @@
+/*Feuille de style d'impression des mondes
+Auteur : Magali Giaume*/
+@page{
+  size:21.0cm 29.7cm;
+  margin:2.5cm 2cm 2.5cm 2cm;}
+body {
+  font-family: Helvetica,Verdana,Arial, sans-serif;
+  background-color: #fff;
+  color:#000;
+  margin: 0;
+  font-size:11px;
+  text-align:left;}
+h1 {
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  margin : 3px 0;}
+h1 {page-break-before:avoid;}
+h2 {
+  font-size:12px;
+  font-weight:bold;}
+h3 {
+  font-size:11px;}
+hr {
+  width:40%;
+  text-align:center;}
+/* style des liens */    
+a {
+  color:#000;
+  text-decoration:none;}
+a:after {
+  content: "("attr(href)")";}
+/*DIFFERENTS BLOCS DE LA PAGE*/
+#reducteur {
+  text-align:center;
+  margin:0 auto;}
+#logo_tela {
+  display:none;}
+#acces_direct, #accessibilite {
+  display:none;}
+/*bandeau*/
+#bandeau {
+  display:none;}
+#pos_recherche, #form_recherche {
+  display:none;}
+#onglets {
+  display:none;}
+
+/* droite -> contenu */
+#bb_moteur_structure, #bb_moteur_media {
+  display:none;}
+#contenu, #contenu_accueil, #info_dte {
+  position:relative;
+  top:0;
+  left:0;
+  text-align:justify;
+  border:0;
+  padding:0;
+  width:100%;}
+#texte {
+  padding-top:5px;}
+/* droite -> pied_page */
+#pied_texte {
+  display:none;}
+#pied_page {
+  display:none;}
+#chrono {
+  display:none;}
+/*nav_gauche*/
+#nav_gauche {
+  display:none;}
+/*elements specifiques au monde actualité*/
+#form_auteur {
+    display:none;}
+#postarticle {
+    margin-top:20px;
+    font-weight:bold;}
+#pied_page_print {
+    display:block;}
+/* pour les forums */
+#box_forum {
+    text-align:justify;}
+.forum-total ul {
+    display: block;
+    margin: 0px;}
+li.forum-total {
+    list-style: none;
+    margin-left: 2px;}
+.forum-fil {
+    margin-top: 2px;
+    background:#FFFFFF;}
+.forum-fil ul {
+    margin-left:20px;
+    padding-left: 2px;}
+.forum-fil li{
+    display: block;
+    margin-left: 2px;
+    padding-left:2px;
+    border-left: 1px solid #000;
+    background: #FFF;}
+.forum-fil li li {
+    background: #FFF;}
+.forum-fil li li li {
+    background: #FFF;}
+.forum-fil li li li li{
+    background: #FFF;}
+.forum-repondre-message {
+    text-align: right;}
+/* pour les galeries photos */
+#miniatures {
+    display:none;}
+#photo_galerie {
+    text-align:center;}
+/* license en bas des articles*/
+#license {
+    color:#505050;
+    text-align:center;}
+/* classes de présentation du contenu */
+.menu_titre {
+    margin-top: 0;
+    text-align: left;}
+.intituler_rubrique {
+    color:black;
+    font-weight:bold;
+    text-align: left;
+    font-size:13px;}
+.intituler_rubrique a {
+    color:black;
+    text-decoration:none;}
+.date {
+    color:black;
+    text-align: justify;}
+.lien_rub a {
+    color:black;
+    text-decoration:none;}
+.descriptif_contenu {
+    text-align: justify;
+    margin-top:2px;}
+.titre_article {
+    color: #000;
+    text-align:left;}
+.aligne_dte {
+    text-align:right;}
+.spip_surligne {
+    background-color:#FFF;}
+.erreur {
+    text-align:center;
+    color:#F00;
+    text-decoration:none;}
+.not_print, #box_forum {
+    display:none;}

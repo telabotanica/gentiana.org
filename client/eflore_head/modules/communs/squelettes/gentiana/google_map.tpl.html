@@ -1,0 +1,82 @@
+<h1>Recherche des coordonnées d'une station</h1>
+<div class="information" style="text-align:left;">
+	<ol>
+		<li>Cliquez directement sur la carte ou tapez le nom d'une commune dans le formulaire "Rechercher une commune" ci-dessous pour localiser votre station.</li>
+		<li>Le marqueur <img src="http://www.google.com/mapfiles/ms/micons/red-dot.png" alt="icone du marqueur" style="height:22px;"/> 
+		représentant votre station peut être déplacé en cliquant dessus et en réalisant un glisser/déposer à l'aide de votre souris.</li>
+		<li>Une fois les coordonnées de votre station correctement affichées dans l'encadré intitulé "Coordonnées de votre station", 
+		cliquez sur le bouton "Confirmer et poursuivre" situé sous la carte.</li>
+	</ol>
+</div>
+<form id="addr" action="#" method="get" onsubmit="return showAddress(this);" style="float:left;">
+	<fieldset style="margin:5px;">
+		<legend>Rechercher une commune</legend>
+		<ul style="list-style-type:none;margin:0;padding:0;">
+			<li>
+				<label for="lieu">Commune :</label> 
+				<input id="lieu" type="text" size="30" name="lieu" value=""/>
+			</li>
+			<li>
+				<input type="submit" value="Localiser" />
+			</li>
+		</ul>
+	</fieldset>
+</form>
+
+<div style="float:left;margin:5px;border:1px solid grey;padding:2px;">
+	<h3>Coordonnées de votre station</h3>
+	<ul style="list-style-type:none;margin:0;padding:0;">
+		<li>
+			Latitude : <span id="ll_latitude">&nbsp;</span> / <span id="ll_latitude_dms">&nbsp;</span>
+		</li>
+		<li>
+			Longitude : <span id="ll_longitude">&nbsp;</span> / <span id="ll_longitude_dms">&nbsp;</span>
+		</li>
+		<li>
+			UTM : <span id="utm_chaine">&nbsp;</span>
+		</li>
+	</ul>
+</div>
+
+<div id="map" style="width:100%;height:400px;border:2px solid grey;margin:10px 0;clear:both;"></div>
+
+<form id="form_coordonnee" action="<?=$url_retour;?>" method="get">
+	<p style="text-align:center;">
+	<?php if ($query_string) : ?>
+		<?php foreach ($query_string as $cle => $val) : ?>
+		<input id="<?=$cle;?>" type="hidden" name="<?=$cle;?>" value="<?=$val;?>"/>
+		<?php endforeach; ?>
+	<?php endif; ?>
+		<!--
+		<input id="ll_chaine" type="hidden" size="37" name="ll_chaine" />
+		<input id="ll_chaine_dms" type="hidden" size="37" name="ll_chaine_dms" />
+		-->
+		<input id="utm_zone" type="hidden" name="utm_zone" />
+		<input id="utm_lettre" type="hidden" name="utm_lettre" />
+		<input id="utm_est" type="hidden" name="utm_est" />
+		<input id="utm_nord" type="hidden" name="utm_nord" />
+		<input id="form_serialize" type="hidden" name="form_serialize" value="<?=$form_serialize;?>"/>
+	
+		<input id="form_coordonnee_valider" name="form_coordonnee_valider" type="submit" value="Confirmer et poursuivre" />
+		<input id="form_coordonnee_annuler" name="form_coordonnee_annuler" type="submit" value="Annuler" />
+	</p>
+</form>
+
+
+
+
+<p style="clear:both;">Système géodésique utilisé : 
+<abbr title="Universal Transverse Mercator (Transverse universelle de Mercator)">UTM</abbr> 
+<abbr title="World Geodetic System (Système géodésique mondial) - révision de 1984.">WGS-84</abbr> métrique
+</p>
+
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=<?=$gg_cle;?>" type="text/javascript"></script>
+<script type="text/javascript">//<![CDATA[
+	var largeur_carte = 690;
+	var haureur_retrait = 330;
+	var init_lat = 45.12;
+	var init_long = 5.80;
+	var init_zoom = 9;
+//]]></script>
+<script src="<?=EF_URL_JS;?>sig/Convertisseur.js" type="text/javascript"></script>
+<script src="<?=EF_URL_JS;?>google/GoogleMap.js" type="text/javascript"></script>

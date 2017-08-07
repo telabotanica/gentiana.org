@@ -1,0 +1,34 @@
+<h1><?=$zone_parente_nom;?> : carte des <?=$zone_type;?>s avec <?=$taxon_nom_latin;?></h1>
+<p>Cliquez sur une zone de la carte pour afficher la liste des autres taxons observés.</p>
+<ul>
+<?php foreach ($zones_notions_nbre as $notion_cle => $notion_nbre) : ?>
+	<li><?=$legendes[$notion_cle]['intitule'];?> : <strong><?=$notion_nbre;?> <?=$zone_type;?>s sur <?=$zones_nbre;?></li></strong>
+<?php endforeach; ?>
+	<li>Nom latin : <a class="lien_ext" href="http://www.tela-botanica.org/eflore/BDNFF/derniere_version/nn/<?=$taxon_nom_id;?>"><?=$taxon_nom_latin;?></a></li>
+	<li>Nom(s) commun(s) : <?=$taxon_nom_verna;?></li>
+</ul>
+<div id="efc_carte_presence">
+<!--
+	<form id="cartographie" action="<?=$url;?>" method="post">
+	<input type="image" id="carte" src="<?=$url_carte;?>" usemap="#isere_640x644_Map" />
+	<?=$carte_map;?>
+	</form>
+-->
+	<img id="carte" src="<?=$url_carte;?>" usemap="#isere_640x644_Map" />
+	<?=$carte_map;?>
+	<p id="efc_version_date">Version des données : <?=$version_nom;?> v<?=$version_code;?> [daté du : <?=$version_date;?>]</p>
+	<table id="efc_legende">
+		<caption id="efc_legende_titre">Légende</caption>
+<?php foreach ($legendes as $legende) : ?>
+			<tr>
+				<td class="efcl_couleur" style="background-color: rgb(<?= str_replace('-', ',', $legende['rvb']);?>);">&nbsp;</td>
+				<td class="efcl_legende"><?=$legende['intitule'];?></td>
+			</tr>
+<?php endforeach; ?>
+	</table>
+</div>
+<p id="efc_transmettre_info">Vous avez observé cette espèce dans d'autres communes de l'Isère?<br />
+Merci de nous <a href="<?=CHORO_URL_RCD;?>">transmettre vos informations</a></p>
+<p id="efc_avertissement">Avertissement : les informations relatives aux cartes de la flore de l'Isère ne sont qu'un reflet partiel de la base de données INFLORIS
+de Gentiana. Les données que vous avez transmises ou que vous transmettez à Gentiana n'apparaîtront qu'après un certain délai sur les cartes du site. 
+Ce délai est lié au temps de traitement et de validation des données.</p>

@@ -1,0 +1,20 @@
+<?php echo '<?xml version="1.0" encoding="UTF-8"?>'."\n";?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+	<ShortName>eFlore <?=$projet;?> : noms latins</ShortName>
+	<Description>Recherche de noms latins</Description>
+	<Tags>eflore noms latins Tela-Botanica</Tags>
+	<Contact>eflore_remarques@tela-botanica.org</Contact>
+	<Url type="text/html" template="<?=$url_recherche;?>"/>
+	<Url type="application/x-suggestions+json" template="<?=$url_suggestion;?>"/>
+	<LongName>Recherche de noms latins dans eFlore, projet : <?=$projet;?></LongName>
+	<Image height="16" width="16" type="image/png">http://www.tela-botanica.org/sites/commun/generique/images/favicones/tela_botanica.png</Image>
+	<Image height="16" width="16" type="image/vnd.microsoft.icon">http://www.tela-botanica.org/sites/commun/generique/images/favicones/tela_botanica.ico</Image>
+	<Query role="example" searchTerms="cat" />
+	<Developer>Tela Botanica - Équipe de développement d'eFlore</Developer>
+	<Attribution>Moteur de recherche d'eFlore. Copyright 2007, Tela Botanica.</Attribution>
+	<SyndicationRight>open</SyndicationRight>
+	<AdultContent>false</AdultContent>
+	<Language>fr-fr</Language>
+	<OutputEncoding>UTF-8</OutputEncoding>
+	<InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>

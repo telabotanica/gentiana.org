@@ -1,0 +1,138 @@
+<script language="JavaScript" type="text/javascript" src="<?=EF_URL_JS;?>PlierDeplier.js"></script>
+<h1 id="efc_titre"><?=$zg_nom;?> - Liste de <?=$taxons_nbre_lettre;?> taxons sur <?=$taxons_nbre_total;?> observés</h1>
+<h2>Cliquer sur une lettre pour faire apparaitre la liste des taxons correspondante :</h2>
+<p>
+	<strong>
+	<?php foreach ($alphabet as $lettre) : ?>
+		<?php if ($lettre['lettre'] == $lettre_selected) : ?>
+			<span class="frag_alpha_lien_selection"><?=$lettre['lettre'];?></span>&nbsp;
+		<?php else : ?>
+			<a class="frag_alpha_lien" href="<?=$lettre['url']?>"><?=$lettre['lettre'];?></a>&nbsp;
+		<?php endif; ?>
+	<?php endforeach; ?>
+	</strong>
+</p>
+<form id="fragmenteur_quantite" action="<?=$url;?>" method="get">
+<p>
+	<select name="frag_nbre" onchange="javascript:this.form.submit();">
+		<option value="*" <?= ($par_page_selected == '*') ? 'selected="selected"': '';?>>Afficher tous les taxons</option>
+<?php foreach ($par_page as $nbre) : ?>
+		<option value="<?=$nbre;?>" <?=$nbre == $par_page_selected? 'selected="selected"': '';?>>Afficher les taxons par <?=$nbre;?></option>
+<?php endforeach; ?>
+	</select>
+<?php foreach ($form_get_url_chp_hidden as $cle => $val) : ?>
+	<input type="hidden" id="<?=$cle;?>" name="<?=$cle;?>" value="<?=$val;?>" />
+<?php endforeach; ?>
+</p>
+</form>
+<p>Affichage des données <?=$frag_donnee_debut;?> à <?=$frag_donnee_fin;?> sur <?=$frag_donnee_total;?> résultats.</p>
+<?php if ($pager_links['pages']) : ?>
+<p>Pages de résultats :&nbsp;
+	<span class="frag_premier"><?=$pager_links['first'];?>&nbsp;</span>
+	<span class="frag_precedent"><?=$pager_links['back'];?>&nbsp;</span>
+	<span class="frag_pages"><?=$pager_links['pages'];?>&nbsp;</span>
+	<span class="frag_suivant"><?=$pager_links['next'];?>&nbsp;</span>
+	<span class="frag_dernier"><?=$pager_links['last'];?>&nbsp;</span>
+</p>
+<?php endif; ?>
+<h2>Export des résultats :</h2>
+<p><a href="<?=$url_export_xls_tous;?>">Export au format excel de tous les taxons.</a></p>
+<?php if (!empty($taxons)) : ?>
+	<?php if ($lettre_selected == '*') : ?>
+		<h2>Liste de tous les taxons</h2>
+	<?php else : ?>
+		<h2>Liste des taxons commençant par la lettre : <?=$lettre_selected?></h2>
+	<?php endif; ?>
+	<p>Cliquer sur un taxon pour voir sa répartition en Isère</p>
+	<table class="table_cadre" summary="Liste des taxons présents dans la zone géographique : <?=$zg_nom;?>">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>
+					<a class="tri" href="<?=$url_desc_nl;?>" title="Trier par ordre décroissant">&#9650;</a>
+					Nom flore
+					<a class="tri" href="<?=$url_asc_nl;?>" title="Trier par ordre croissant">&#9660;</a>
+				</th>
+				<th>
+					<a class="tri" href="<?=$url_desc_nv;?>" title="Trier par ordre décroissant">&#9650;</a>
+					Nom français
+					<a class="tri" href="<?=$url_asc_nv;?>" title="Trier par ordre croissant">&#9660;</a>
+				</th>
+				<th>
+					<a class="tri" href="<?=$url_desc_pr;?>" title="Trier par ordre décroissant">&#9650;</a>
+					Protection (texte : statut)
+					<a class="tri" href="<?=$url_asc_pr;?>" title="Trier par ordre croissant">&#9660;</a>
+				</th>
+				<th>Lien vers eFlore</th>
+			</tr>
+		</thead>
+		<tbody>
+		<?php foreach ($taxons as $taxon) :?>
+			<tr class="<?= (is_integer($index/2)) ? 'ligne_paire' : 'ligne_impaire' ; ?>">
+				<td><?=$index++;?></td>
+				<td class="nl_retenu"><a href="<?=$taxon['url_carte_presence'];?>"><?=$taxon['nom_latin'];?></a></td>
+				<td><?= isset($taxon['nom_verna']) ? $taxon['nom_verna'] : '?';?></td>
+				<td><?= ($taxon['protection'] != '') ? $taxon['protection'] : '';?></td>
+				<td>
+					<img src="http://www.tela-botanica.org/sites/commun/generique/images/favicones/tela_botanica.png" alt="Tela Botanica : "/>
+					<a class="lien_ext" href="http://www.tela-botanica.org/eflore/BDNFF/derniere_version/nn/<?=$taxon['nom_id'];?>">BDNFFnn<?=$taxon['nom_id'];?></a>
+				</td>
+			</tr>
+		<?php endforeach; ?>
+		</tbody>
+	</table>
+<?php if (!empty($legende_statut)) : ?>
+	<table class="table_cadre"  style="width:600px;" summary="Légende des statuts de protection">
+		<caption>Statuts de protection</caption>
+		<thead>
+			<tr>
+				<th>Abréviation</th>
+				<th>Decription</th>
+			</tr>
+		</thead>
+		<tbody>
+		<?php foreach ($legende_statut as $statut) : ?>
+				<tr>
+					<td><?=$statut['statut_abreviation']; ?></td>
+					<td><?=$statut['statut_intitule']; ?>.<br /><?=$statut['statut_description']; ?></td>
+				</tr> 
+		<?php endforeach; ?>
+		</tbody>
+	</table>
+<?php endif; ?>
+<?php if (!empty($legende_txt)) : ?>
+	<table class="table_cadre" style="width:600px;" summary="Légende des textes de protection">
+		<caption>Textes de protection</caption>
+		<thead>
+			<tr>
+				<th>Abréviation</th>
+				<th>Decription</th>
+			</tr>
+		</thead>
+		<tbody>
+		<?php foreach ($legende_txt as $txt) : ?>
+				<tr>
+					<td><?=$txt['txt_appli_abreviation']; ?></td>
+					<td><?=$txt['txt_appli_intitule']; ?>.<br />
+						<?=$txt['txt_appli_description']; ?>
+						<?php if ($txt['txt_appli_url'] != '') : ?>
+						<br /><a class="lien_ext" href="<?=$txt['txt_appli_url'];?>">Consulter le texte</a>
+						<?php endif; ?>
+						<?php if ($txt['txt_appli_nor'] != '') : ?>
+						<br />NOR : <?=$txt['txt_appli_nor'];?>
+						<?php endif; ?>
+					</td>
+				</tr> 
+		<?php endforeach; ?>
+		</tbody>
+	</table>
+<?php endif; ?>
+	<p><a href="#">Retour en haut de la page... &#8613;</a></p>
+<?php else : ?>
+	<p class="information">Aucun taxons trouvés pour ces critères de recherche.</p>
+<?php endif; ?>
+<p id="efc_transmettre_info">Vous avez observé d'autres espèces sur <?=$zg_nom;?> ?<br />
+Merci de nous <a href="<?=CHORO_URL_RCD;?>">transmettre vos informations</a></p>
+<p id="efc_avertissement"><strong>Avertissement :</strong> la liste des espèces données par commune ne saurait être exhaustive et peut présenter 
+des limites de connaissance. Cette liste d'espèce correspond à l'état de notre connaissance à un moment donné.<br />
+Consulter la carte des efforts de prospection : <a href="<?=CHORO_URL_EFFORT;?>">carte des efforts de prospection par Gentiana</a></p>  

@@ -1,0 +1,48 @@
+<h2 id="efip_titre">Statuts de protections</h2>
+<?php if ($info) :?>
+<p class="information"><?=$info_txt;?></p>
+<?php else :?>
+<script type="text/javascript" language="javascript" src="<?=$url_js;?>domtooltip/domLib.js"></script>
+<script type="text/javascript" language="javascript" src="<?=$url_js;?>domtooltip/domTT.js"></script>
+<div id="ef_info_protection">
+	<table id="efip_liste_info" class="table_cadre" style="width:100%;">
+	<?php foreach ($protections as $donnee) :?>
+		<tr>
+			<th>Loi</th>
+			<td><span title="<?=$donnee['loi_intitule_long'];?><?=$donnee['loi_nor'];?><?=$donnee['loi_abreviation'];?><?=$donnee['loi_description'];?>" class="tooltip"><a class="lien_ext" href="<?=$donnee['loi_url'];?>"><?=$donnee['loi_intitule_long_ss_ajout'];?></a></span></td>
+		</tr>
+		<tr>
+			<th>Statut</th>
+			<td><span title="<?=$donnee['statut_abreviation'];?> <?=$donnee['statut_description'];?>" class="tooltip"><?=$donnee['statut_intitule'];?></span></td>
+		</tr>
+		<tr>
+			<th>Zone géographique</th>
+			<td><?=$donnee['zg_intitule'];?> (<?=$donnee['zg_abreviation'];?>)</td>
+		</tr>
+		<tr>
+			<th>Nom scientifique officiel</th>
+			<td><?=$donnee['nom_scientifique'];?></td>
+		</tr>
+		<tr>
+			<th>Nom vernaculaire officiel</th>
+			<td><?=$donnee['nom_vernaculaire'];?></td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+</div>
+<script type="text/javascript">
+	//<![CDATA[
+	// DomToolTip
+	var domTT_styleClass = 'niceTitle';
+	function nicetitleDecorator(el) {
+		var result = el.title;
+		result = result.replace(new RegExp('\n', 'g'), '<br />');
+		if (el.href) {
+			result += '<p>' + el.href + '</p>';
+		}
+		return result;
+	}
+	domTT_replaceTitles(nicetitleDecorator);
+	//]]>
+</script>
+<?php endif; ?>

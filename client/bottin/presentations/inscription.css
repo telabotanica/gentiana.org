@@ -1,0 +1,148 @@
+/*
+
+ +----------------------------------------------------------------------------+
+ | inscription.css                                                            |
+ +----------------------------------------------------------------------------+
+ | Copyright (c) 2004 Tela Botanica                                           |
+ +----------------------------------------------------------------------------+
+ | Feuille de style specifique a l'application inscription de Tela Botanica   |
+ +----------------------------------------------------------------------------+
+ | Auteur : Tamara LE BOURG <tamara@tela-botanica.org>                        |
+ +----------------------------------------------------------------------------+
+
+*/
+
+.symbole_obligatoire {color:red;}
+
+#table_inscription {
+    border: 1px solid #E8AE3B;
+    border-collapse: collapse;
+    width:100%;
+}
+/*FORMULAIRE INSCRIPTION*/
+
+#formulaire_inscription fieldset {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;}
+
+#formulaire_inscription ul {
+    padding:0px;
+}
+
+.liste_inscription {
+	background: transparent;
+	padding:3px 0px;
+}
+.liste_inscription > input, select {
+    position:absolute;
+    left:200px;
+}
+
+.liste_inscription > input+input {
+    position:absolute;
+    left:350px;
+}
+.groupe_formulaire_1 input {
+    position:absolute;
+    left:200px;
+}
+.groupe_formulaire_2 label {
+    position:absolute;
+    left:400px;
+}
+.groupe_formulaire_2 input {
+    position:absolute;
+    left:450px;
+}
+
+/*
+#contenu form fieldset ul li {
+    text-align: left;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+/*
+#contenu form label {
+    float: left;
+    width: 20%;
+    text-align: left;
+}
+*/
+
+th {
+    border: 1px 0px 1px 0px solid #E8AE3B;
+    background-color: #FFCD9B;
+    color: #775522;
+    padding: 2px;
+}
+
+ul.liste_inscription {
+    margin: 0px;
+}
+
+li.liste_inscription {
+    list-style-type: none;
+    margin: 4px;
+}
+
+.groupe_formulaire {
+    width:50%;
+}
+
+.ligne_impaire {
+    background-color: #FFFFFF;
+    font-size: 85%;
+    border: none;
+    padding: 2px;
+
+}
+
+.ligne2_impaire {
+    background-color: #FFFFFF;
+    font-size: 85%;
+    border: none;
+    padding: 2px;
+}
+
+.ligne_paire {
+    background-color: #FFEBD7;
+    font-size: 85%;
+    border: none;
+    padding: 2px;
+
+}
+
+.ligne2_paire {
+    background-color: #FFEBD7;
+    font-size: 85%;
+    border: none;
+    padding: 2px;
+}
+
+.titre1_inscription {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;	
+	margin: 3px 0;		
+    font-size: 130%;
+    margin-top: 1em;
+}
+
+.titre2_inscription {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;	
+	margin: 3px 0;		
+    font-size: 110%;
+    margin-top: 1em;
+}
+
+.inscription_erreur {
+    width:60%;
+    padding:0.2em;
+    margin:0.2em;
+    color: #FF0000;
+    font-size: 110%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: blink;
+    border: 0.2em solid #FF0000;
+}

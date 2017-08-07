@@ -1,0 +1,514 @@
+/*
+Feuille de style supportée par les navigateurs modernes (version 5 et +)
+Auteur:	Jean-Pascal MILCENT 
+*/
+
+/* Icones */
+a.lien_ext:after {
+content: " "url("http://www.gentiana.org/sites/commun/generique/images/graphisme/icone_fleche.png");}
+a.pdf:before {
+content: url("http://www.gentiana.org/sites/commun/generique/images/graphisme/icon_pdf.png")" ";}
+/*CSS3 : ajout d'un espace entre href et ^ pour konqueror*/
+a.mail:after, a[href ^="mailto:"]:after	{
+content: " "url("http://www.gentiana.org/sites/commun/generique/images/graphisme/icone_mail.png");}
+.table_bordure th[title]:after {
+content: " "url("http://www.gentiana.org/sites/commun/generique/images/graphisme/icone_aide.png");}
+
+/* Présentation des liens */
+a {color:black;}
+
+/* Présentation des listes de définitions */
+dl {
+	width:100%;}
+dt {
+	float:left;
+	font-weight:bold;
+	text-align:top left;
+	margin-right:0.3em;}
+dd {
+	width:auto;
+	margin-left:0;
+	margin:0.5em 0;}
+
+/* Présentation des images */
+img a {
+	display:block;}
+
+/* Divers */
+.clear {
+	clear:both;}
+.texte_inactif {
+	font-size:10px;
+	color:gray;}
+.attention, .information {
+	display:block;
+	text-align:center;
+	min-height: 50px;
+	max-width: 800px;
+	padding:5px 5px 5px 50px;}
+.attention {
+	background: #ffffcc url("http://www.gentiana.org/sites/commun/generique/images/graphisme/icone_attention.png") no-repeat 2% 50%;
+	border: 1px solid red;}
+.information {
+	background: #e7ebfd url("http://www.gentiana.org/sites/commun/generique/images/graphisme/icone_information.png") no-repeat 2% 50%;
+	border:1px solid #5D81BA;}
+blockquote {
+	font-style:italic;
+	text-align:center;}
+legend {
+	text-align:center;}
+
+/*DIFFERENTS BLOCS DE LA PAGE*/
+
+#zone_generale {
+	width: 1120px;
+	margin: auto;
+	text-align:left;}
+
+/* Zone logo */
+#zone_logo {
+	float: left;
+	background:none !important;
+	z-index:1;
+}
+#zone_logo img {
+	border:0 !important;}
+
+/* Accessibilité */
+#zone_accessibilite {
+	position: absolute;
+	top: 2px;
+	right: 140px;
+	z-index: 1;
+}
+#zone_accessibilite a{
+	font-size:10px;
+	color:gray;}
+
+
+/* Bandeau */
+#zone_bandeau {
+	position: relative;
+	height: 158px;
+	margin: 0;
+}
+#titre_site {
+	position:absolute;
+	top:107px;
+	left:198px;
+	margin:0;
+	text-align:right;
+  color:white;
+	background:none !important;}
+#bandeau_contenu {
+	position:absolute;
+	top:136px;
+	left:198px;
+	height:22px;
+	width:750px;
+	text-align:left;
+	margin:0;
+	padding-top:5px;
+	text-transform:uppercase;
+}
+#bandeau_contenu a, #bandeau_contenu a:hover {
+	font-weight:bolder;
+	margin-left:15px;
+	color:white;
+	text-decoration:none;}
+#bandeau_contenu a:hover {
+	text-decoration:underline;}
+
+/* Moteur de recherche */
+#zone_moteur_recherche {
+	position:absolute;
+	top:136px;
+	left:670px;
+	height:22px;
+	width:270px;
+	margin:0;
+}
+#form_more_recherche {
+	float:right;
+	padding:0;
+	margin:0;}
+#form_more_recherche legend {
+	display:none;}
+#form_more_recherche fieldset {
+	border:0;
+	margin:0;
+	padding:0;}
+#form_more_recherche label {
+	display:none;}
+#form_more_recherche input#more_motif{
+	height:17px;
+	margin:0;
+	padding:0;}
+#form_more_recherche input#more_ok {
+	border:none;
+	background:none;
+	text-transform:uppercase;
+	font-weight:bold;
+	height:17px;
+	margin:0;
+	padding:0;}
+#form_more_recherche input#more_ok:hover {
+	border-bottom:1px solid;}
+/* Texte trouvé par le moteur de recherche */
+.surlignage {
+	background-color:yellow;}
+/* Formatage des résultats du moteur de recherche */
+#more_resultat, #more_resultat li {
+	clear:left;
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style-type:none;}
+.more_iid, .more_dui {
+	display:none;}
+.more_ivd {
+	width:600px;}
+.more_duv a {
+	color:#008000;}
+.more_dsv, .more_dsi {
+	color:#C1C1C1;}
+.more_detail, .more_detail li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	list-style-type:none;}
+
+/* Zone contenu */
+#zone_contenu {
+	position: relative;
+	float: right;
+	padding: 0;
+	padding-top: 20px;
+	width: 900px;
+}
+
+/* Zone contenu -> VEI*/
+#zone_vei {
+	text-align:left;
+	margin:10px 0 16px 0;
+	height:33px;}
+#vei {
+	display:block;
+	padding:16px 0 0 16px;
+	font-weight:bold;}
+#vei_titre {
+	text-transform:uppercase;}
+
+/* Zone contenu navigation : les onglets */
+#zone_contenu_navigation {
+	position:relative;
+	float:left;
+	text-align:left;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+#zone_contenu_navigation ul {
+	margin:0;
+	padding:0;
+	list-style:none;}
+#zone_contenu_navigation li {
+	background:url("http://www.gentiana.org/sites/commun/generique/images/graphisme/onglet_droite.png") no-repeat right top;
+	float:left;
+	margin:0;
+	padding:0;}
+#zone_contenu_navigation a {
+	float:left; /* ligne ajoutee pour compatibilite IE5-Mac */
+	display:block;
+	background:url("http://www.gentiana.org/sites/commun/generique/images/graphisme/onglet_gauche.png") no-repeat left top;
+	white-space:nowrap;/*2 lignes ajoutees pour compatibilite IE : extension de la zone cliquable a l'ensemble de l'onglet*/
+	margin:0;
+	padding:5px 15px 4px;
+	line-height:12px;
+	text-decoration:none;}
+/* On retablit le float a sa valeur correct mais le hack de l'antislash commente cache cette regle a IE5-Mac \*/
+#header a {float:none;}
+/* End IE5-Mac hack */
+#zone_contenu_navigation > ul a {
+	width:auto;} /*propriete ajoutee pour contredire la ligne speciale IE (ci dessus) pour les autres navigateurs*/
+#zone_contenu_navigation li:hover {
+	background-position:100% -150px;}
+#zone_contenu_navigation li:hover a {
+	background-position:0% -150px;}
+#zone_contenu_navigation .menu_inactif a, #zone_contenu_navigation .onglet_inactif a  {
+	line-height:12px;
+	border-bottom:1px solid;}
+#zone_contenu_navigation .menu_actif, #zone_contenu_navigation .onglet_actif {
+	position:relative;
+	background-position:100% -150px;
+	z-index:3;
+	font-weight:bold;}
+#zone_contenu_navigation .menu_actif a, #zone_contenu_navigation .onglet_actif a {
+	position:relative;
+	background-position:0% -150px;
+	line-height:13px;
+	z-index:4;}
+
+/* Zone contenu page */
+#zone_contenu_page {
+	position:relative;
+	top:-1px;
+	clear:both;
+	padding:10px 2px 0 2px;
+	margin:0;
+	text-align:justify;
+	height:100%;/* Nécessaire pour IE 6 : sinon un espace apparait entrele contenu et les onglets*/
+	min-height:300px;
+	border-top:none !important;}
+#zone_contenu_page_corps{
+	clear:both;
+	line-height:1.2em;
+	text-align:justify;
+	padding:0 5px 7px 5px;}
+
+/* Zone liste site */
+#zone_liste_site {
+	position: absolute;
+	top: 15px;
+	right: 170px;
+}
+#liste_site li {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-align:left;}
+#liste_site a{
+	display:block;
+	height:25px;
+	_width:100px;/* Hack IE PC : bogue modèle de boite*/
+	width:75px;
+	padding:0px 0 0 32px;
+	margin:8px 0;
+	color:#333399;
+	text-decoration:none;
+	line-height:13px;
+	font-weight:bold;}
+#liste_site a:hover{
+	text-decoration:underline;}
+#site_asso_gentiana a{
+  background:url("http://www.gentiana.org/sites/commun/generique/images/graphisme/site_asso_gentiana.png") center left no-repeat;}
+#site_flore_isere a{
+  background:url("http://www.gentiana.org/sites/commun/generique/images/graphisme/site_flore_isere.png") center left no-repeat;}
+#site_gestion_raisonnable a{
+  background:url("http://www.gentiana.org/sites/commun/generique/images/graphisme/site_gestion_raisonnable.png") center left no-repeat;}
+#site_animation_botanique a{
+  background:url("http://www.gentiana.org/sites/commun/generique/images/graphisme/site_animation_botanique.png") center left no-repeat;}
+
+/* Zone menu */
+#zone_menu {
+	width:198px;
+	min-height:292px;
+	margin: 0;
+	font-size:13px;
+	text-align:left;}
+#zone_menu hr {
+	width:40%;
+	text-align:center;}
+
+/* Zone menu -> menu classique */
+#zone_menu_classique .menu_classique_n1 {
+	margin:5px;
+	margin-top: 0;
+	padding:0;
+	padding-top: 3px;
+	list-style-type:none;
+}
+#zone_menu_classique .menu_classique_n2 {
+	padding:0;
+	margin:0;
+	list-style-type:none;}
+#zone_menu_classique a {
+	display:block;
+	text-decoration:none;
+	margin:0;
+	height:100%;
+	font-weight:bold;
+	background-color:transparent;}
+#zone_menu_classique .menu_classique_n1 a {
+	padding:3px 0 3px 10px;
+	margin:2px 0;}
+#zone_menu_classique .menu_classique_n2 a {
+	padding:3px 0 3px 15px;
+	margin:2px 0;}
+#zone_menu_classique .menu_classique_n1>li.menu_actif>a {/* lien menu niveau 1 actif */
+	-moz-border-radius-topright:10px;
+	-moz-border-radius-topleft:10px;
+	-webkit-border-top-right-radius:10px;
+	-webkit-border-top-left-radius:10px;
+	-khtml-border-radius-topright:10px;
+	-khtml-border-radius-topleft:10px;}
+
+/* Zone menu -> menu déroulant */
+#zone_menu_classique .menu_deroulant_n1 {
+	margin:5px;
+	margin-top: 0;
+	padding:0;
+	padding-top: 3px;
+	list-style-type:none;
+}
+#zone_menu_classique .menu_deroulant_n2 {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+#zone_menu_classique .menu_deroulant_n1 a {
+	padding:3px 0 3px 10px;
+	margin:2px 0;
+}
+#zone_menu_classique .menu_deroulant_n2 a {
+	padding:3px 0 3px 15px;
+	margin:2px 0;
+}
+#zone_menu_classique .menu_deroulant_n1 > li.menu_actif > a { /* lien menu niveau 1 actif */
+	-moz-border-radius-topright:10px;
+	-moz-border-radius-topleft:10px;
+	-webkit-border-top-right-radius:10px;
+	-webkit-border-top-left-radius:10px;
+	-khtml-border-radius-topright:10px;
+	-khtml-border-radius-topleft:10px;
+}
+
+/* Zone menu -> form connexion et deconnexion */
+#zone_identification {
+	margin:3em 0 0 0;
+	padding:5px 0 0 0;
+	min-height:180px;}
+#zone_identification .erreur {
+	display:block;
+	text-align:center;
+	color:red;
+	padding:10px;}
+#form_connexion, #identification {
+	padding:10px 2px 2px 5px;
+	margin:0;}
+#form_connexion fieldset, #identification fieldset{
+	border:none;}
+#form_connexion legend, #identification legend {
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:bold;}
+#form_connexion label, #identification label {
+	display:none;}
+label#persistant_label {
+	display:block;
+	margin:5px 0 5px 10px;
+	color:black;
+	font-weight:bold;}
+#username, #password {
+	width:150px;
+	margin:5px;
+	margin-right:30px;
+	clear:both;}
+#persistant {
+	display:block;
+	float:left;
+	margin:5px;}
+#form_connexion input#connexion {
+	border:none;
+	background:none;
+	text-transform:uppercase;
+	font-weight:bold;
+	margin:0;
+	padding:0;}
+#form_connexion input#connexion:hover {
+	border-bottom:1px solid;}
+#identification_info, #identification, #formconnexion, #iden_action {
+	display:block;
+	width:auto;
+	text-align:center;
+	font-size:11px;
+	margin: 0;
+	padding-bottom:2px;}
+#inscription_info {
+	margin:5px 0 5px 5px;}
+#lien_inscription, #iden_action a, #lien_inscription:hover, #iden_action a:hover{
+	text-transform:uppercase;
+	font-weight:bold;
+	text-decoration:none;}
+#lien_inscription:hover, #iden_action a:hover{
+	text-decoration:underline;}
+#inscription_aide {
+	margin-left:1em;}
+/* Information sur la personne identifiée */
+#identification_message, #menu_contextuel h2, #hba_info h1, #hba_info p {
+	display:block;
+	font-size:14px;
+	text-align:center;
+	font-weight:bold;
+	text-transform:none;
+	margin:10px 0 5px 0;}
+#identification_message {
+	text-transform:uppercase;}
+#identification_prenom, #identification_nom{
+	font-size:13px;
+	font-weight:bold;
+	color:black;}
+#identification_nom {
+	text-transform:uppercase;}
+#iden_action {
+	height:125px;}
+
+/* Zone menu -> menu contextuel */
+#menu_contextuel {
+	border:1px solid;}
+
+/* Zone pied */
+#zone_pied {
+	font-size:11px;
+	clear:both;
+	text-align:center;
+	min-width:750px;
+	max-width:900px;
+	margin: auto;
+}
+#zone_pied p{
+	position:center;}
+#zone_pied a, #zone_pied a:hover {
+	margin:0 10px;
+	text-decoration:none;}
+#zone_pied a:hover {
+	text-decoration:underline;}
+#pied_menu_commun .menu_commun_n1 {
+	padding:0;}
+#pied_menu_commun li {
+	display:inline;}
+#pied_menu_commun li+li {
+	display:inline;
+	padding-left:10px;}
+
+
+/* Applette Catégorie et Mots Clés */
+.page_separateur_date_heure, .page_creation_jour, .page_creation_heure, .page_creation_minute, .page_creation_seconde, .page_separateur_heure, .page_separateur_minute, .page_modification_heure, .page_modification_minute{
+	display:none;}
+.page_titre {
+	font-weight:bold;}
+
+/* Texte champ d'une fiche */
+.champ_cle {
+	font-weight:bold;}
+.champ_valeur {
+	font-weight:normal;}p_cle {
+	font-weight:bold;}
+.champ_valeur {
+	font-weight:normal;}
+.symbole_obligatoire{
+	color:red;
+	font-weight:bold;}
+
+/*menu_commun*/
+.question {
+	font-weight:bold;}
+
+/* Formatage des noms latins */
+.nl_supra_generique, .nl_infra_generique, .nl_g, .nl_sp, .nl_infra_sp {
+  font-style:italic;}
+strong.nl_retenu{
+	font-weight:normal;}
+.nl_retenu .nl_supra_generique, .nl_retenu .nl_infra_generique, .nl_retenu .nl_g, .nl_retenu .nl_sp, .nl_retenu .nl_infra_sp {
+  font-weight:bold;}

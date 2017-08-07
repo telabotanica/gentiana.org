@@ -1,0 +1,332 @@
+<?php
+/*vim: set expandtab tabstop=4 shiftwidth=4: */ 
+// +------------------------------------------------------------------------------------------------------+
+// | PHP version 4.3                                                                                      |
+// +------------------------------------------------------------------------------------------------------+
+// | Copyright (C) 2004 Tela Botanica (accueil@tela-botanica.org)                                         |
+// +------------------------------------------------------------------------------------------------------+
+// | This file is part of eFlore-consultation.                                                            |
+// |                                                                                                      |
+// | Foobar is free software; you can redistribute it and/or modify                                       |
+// | it under the terms of the GNU General Public License as published by                                 |
+// | the Free Software Foundation; either version 2 of the License, or                                    |
+// | (at your option) any later version.                                                                  |
+// |                                                                                                      |
+// | Foobar is distributed in the hope that it will be useful,                                            |
+// | but WITHOUT ANY WARRANTY; without even the implied warranty of                                       |
+// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                                        |
+// | GNU General Public License for more details.                                                         |
+// |                                                                                                      |
+// | You should have received a copy of the GNU General Public License                                    |
+// | along with Foobar; if not, write to the Free Software                                                |
+// | Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA                            |
+// +------------------------------------------------------------------------------------------------------+
+// CVS : $Id: ef_config.inc.php.defaut,v 1.25 2007-07-06 16:27:06 jp_milcent Exp $
+/**
+* Fichier de configuration des paramêtres sépcifique à un déploiement d'eFlore.
+*
+* Fichier contenant des constantes et des variables globales permettant de configurer eFlore-consultation.
+*
+*@package eflore
+*@subpackage configuration
+//Auteur original :
+*@author        Jean-Pascal MILCENT <jpm@tela-botanica.org>
+//Autres auteurs :
+*@author        Aucun
+*@copyright     Tela-Botanica 2000-2005
+*@version       $Revision: 1.25 $
+// +------------------------------------------------------------------------------------------------------+
+*/
+
+// +------------------------------------------------------------------------------------------------------+
+// LA LIVRASION :
+define('EF_LIVRAISON', 'HEAD');
+
+// +------------------------------------------------------------------------------------------------------+
+// LA DISTRIBUTION :
+/** Constante stockant le nom de la distribution. Utile lorsqu'on déploie eFlore pour un site particulier et 
+ * que l'on veut pouvoir employer des squelettes particuliers pour chaque module.*/
+define('EF_DISTRIBUTION', 'gentiana');
+
+// +------------------------------------------------------------------------------------------------------+
+// Définition des valeurs par défaut de l'interface d'eFlore
+$GLOBALS['_EFLORE_']['titre'] = 'eFlore';// Le titre générique de l'application
+$GLOBALS['_EFLORE_']['titre_fichier'] = $GLOBALS['_EFLORE_']['titre'];// Le titre générique pour les fichiers générés par l'application
+$GLOBALS['_EFLORE_']['projets_affichables'] = 1000;// Affiche tous les projets : null; BDNBE : 1006 ; BDNFF : 1000 (en mettre plusieurs séparés par des virgules)
+$GLOBALS['_EFLORE_']['projet_defaut'] = 1000;// Identifiant du projet de la BDNFF (défaut)
+$GLOBALS['_EFLORE_']['projet_version_unique'] = 25;// Identifiant de la version du projet de la BDNFF (défaut) // BDNFF : 25 ; BDNBE : 26 ; Toute version : null
+$GLOBALS['_EFLORE_']['projet_version_defaut'] = 25;// Identifiant du projet de la BDNFF (défaut)
+
+// +------------------------------------------------------------------------------------------------------+
+// Gestion de Papyrus
+if (defined('PAP_VERSION')) {
+	// Les variables suivantes sont configurées dans Papyrus via les "Arguments de l'application" dans l'interface de 
+	// modification d'un menu.
+	if (isset($GLOBALS['_GEN_commun']['info_application']->titre)) {
+		$GLOBALS['_EFLORE_']['titre'] = $GLOBALS['_PAPYRUS_']['page']['titre'];
+	}
+	if (isset($GLOBALS['_GEN_commun']['info_application']->projets)) {
+ 		$GLOBALS['_EFLORE_']['projets_affichables'] = $GLOBALS['_GEN_commun']['info_application']->projets;
+	}
+	if (isset($GLOBALS['_GEN_commun']['info_application']->projet_defaut)) {
+ 		$GLOBALS['_EFLORE_']['projet_defaut'] = $GLOBALS['_GEN_commun']['info_application']->projet_defaut;
+	}
+	if (isset($GLOBALS['_GEN_commun']['info_application']->projet_version_unique)) {
+ 		$GLOBALS['_EFLORE_']['projet_version_unique'] = $GLOBALS['_GEN_commun']['info_application']->projet_version_unique;
+	}
+	if (isset($GLOBALS['_GEN_commun']['info_application']->projet_version_defaut)) {
+ 		$GLOBALS['_EFLORE_']['projet_version_defaut'] = $GLOBALS['_GEN_commun']['info_application']->projet_version_defaut;
+	}
+}
+
+// Pour un fonctionnement des wiki eflore hors papyrus
+// Indiquer ici un chemin vers une installation de papyrus 
+else {
+	define('GEN_CHEMIN_CLIENT', 'client/');
+	define('PAP_CHEMIN_API_PEAR', '/opt/lampp/lib/php/');
+	// Indiquer ici un chemin vers une installation de papyrus
+	define('PAP_CHEMIN_RACINE', '/home/jpm/web/papyrus_bp/');
+	define('GEN_CHEMIN_WIKINI', PAP_CHEMIN_RACINE.'/wikini/');
+}
+
+// +------------------------------------------------------------------------------------------------------+
+// Définition de la langue
+/** Constante stockant la langue principale utilisée pour l'application.*/
+define('EF_LANGUE_PRINCIPALE', 'fr');
+/** Constante stockant si on utilise ou pas l'utf-8 pour la connexion à la bdd. La bdd doit être en utf8.*/
+define('EF_LANGUE_UTF8', true);
+/** Paramêtres indiquant que l'on est en français pourpermettre la mise en majuscule des caractères accentués. */
+setlocale(LC_CTYPE, 'fr_FR');
+/** Paramêtres indiquant l'encodage à utiliser pour la sortie. */
+$GLOBALS['_EFLORE_']['encodage'] = 'ISO-8859-15'; 
+
+// +------------------------------------------------------------------------------------------------------+
+// Gestion des dates
+/** Définition du fuseau horaire à utiliser pour eFlore. */
+date_default_timezone_set('Europe/Paris');
+
+// +------------------------------------------------------------------------------------------------------+
+// Débogage
+/** Constante stockant si oui ou non on veut afficher le débogage.*/
+define('EF_DEBOGAGE', false);
+/** Constante stockant si oui ou non on veut afficher le débogage des fichiers PEAR.*/
+define('EF_DEBOGAGE_PEAR', false);
+/** Constante stockant la chaine permettant de repérer en se basant sur le chemin, les fichiers provenant de la bibliothèque PEAR.*/
+define('EF_DEBOGAGE_PEAR_CHAINE', '/lib/php/');
+/** Constante stockant une expression régulière permettant de repérer en se basant sur le message, les fichiers provenant de la bibliothèque PEAR.*/
+define('EF_DEBOGAGE_PEAR_REGEXP_MESSAGE', '/^Non-static method (?:DB::connect|PEAR::isError)/');
+/** Constante stockant si oui ou non on veut afficher le contexte de débogage.*/
+define('EF_DEBOGAGE_CONTEXTE', false);
+/** Constante stockant une valeur correspondant au niveau d'erreur à employer pour le code PHP.*/
+define('EF_DEBOGAGE_NIVEAU', 2048);// Voir le manuel de PHP pour les différents niveaux disponibles.
+/** Constante stockant si oui ou nom on veut afficher le tableau de chronométrage de l'application.*/
+define('EF_DEBOGAGE_CHRONO', false);
+
+// +------------------------------------------------------------------------------------------------------+
+// Paramétrage de la base de données.
+/** Constante stockant le protocole de la base de données.*/
+define('EF_BDD_PROTOCOLE', 'mysql');
+/** Constante stockant le nom du serveur de bases de données.*/
+define('EF_BDD_SERVEUR', 'localhost');
+/** Constante stockant le nom de l'utilisateur de la base de données.*/
+define('EF_BDD_UTILISATEUR', '');
+/** Constante stockant le mot de passse de l'utilisateur de la base de données.*/
+define('EF_BDD_MOT_DE_PASSE', '');
+/** Constante stockant le nom de la base de données principale.*/
+define('EF_BDD_NOM_PRINCIPALE', '');
+/** Constante stockant le nom de la base de données contenant l'historique.*/
+define('EF_BDD_NOM_HISTORIQUE', '');
+
+// +------------------------------------------------------------------------------------------------------+
+// Définition des chemins où stocker les fichiers
+/** Constante stockant le chemin vers le dossier où sont stockés les images png créées par la bibliothèque cartographique.*/
+define('EF_CHEMIN_CARTE_STOCKAGE', EF_CHEMIN_APPLI.'../../sites/eflore/generique/images/cartes/');
+/** Constante stockant le chemin vers le dossier où sont stockés les illustrations récupérées depuis les sites partenaires.*/
+define('EF_CHEMIN_IMG_STOCKAGE', EF_CHEMIN_APPLI.'../../sites/eflore/generique/images/illustrations/');
+/** Constante stockant si oui ou non, nous stockons les images en local.*/
+define('EF_BOOL_STOCKAGE_IMG', false);
+/** Constante stockant le chemin vers le dossier où sont stockés les pages mise en cache.*/
+define('EF_CHEMIN_STOCKAGE_CACHE', '/tmp/CACHE_EFLORE/');
+/** Constante stockant si oui ou non, nous appliquons un mécanisme de cache.*/
+define('EF_BOOL_STOCKAGE_CACHE', false);
+
+// +------------------------------------------------------------------------------------------------------+
+// Les Programmes Extérieurs
+/** Constante stockant le chemin vers l'application externe Image Magick - Convert.*/ 
+define('EF_PROG_CONVERT', '/usr/bin/convert');
+
+// +------------------------------------------------------------------------------------------------------+
+// Les URLs
+/** Constante stockant l'URL de base de l'application recherche de plante sous forme de chaine txt.*/
+define('EF_URL', 'http://www.tela-botanica.org/eflore/');
+/** Constante stockant l'URL de base où chercher les illustrations des projets hébergés par Tela Botanica.*/
+define('EF_URL_IMG', 'http://www.tela-botanica.org/sites/eflore/generique/images/projets/%s');
+/** Constante stockant l'URL où sont accessible les cartes. Le %s correspond au nom du fichier.*/
+define('EF_URL_CARTO', 'http://www.tela-botanica.org/sites/eflore/generique/cartes/%s');
+/** Constante stockant l'URL du fichier css "complexe" (= pour les navigateurs récents) de Tela Botanica.*/
+define('EF_URL_CSS_TB_COMPLEXE', 'http://www.tela-botanica.org/sites/commun/fr/styles/commun_complexe.css');
+/** Constante stockant l'URL du fichier css "simple" (= pour les vieux navigateurs) de Tela Botanica.*/
+define('EF_URL_CSS_TB_SIMPLE', 'http://www.tela-botanica.org/sites/commun/fr/styles/commun_simple.css');
+/** Constante stockant l'URL du fichier css "impression" de Tela Botanica.*/
+define('EF_URL_CSS_TB_IMPRESSION', 'http://www.tela-botanica.org/sites/commun/fr/styles/impression.css');
+/** Constante stockant l'URL du fichier css d'eFlore.*/
+define('EF_URL_CSS_EFLORE', 'http://www.tela-botanica.org/sites/eflore/fr/styles/eflore.css');
+/** Constante stockant le chemin (l'url) vers le dossier js (javascript)*/
+define('EF_URL_JS','http://www.tela-botanica.org/client/eflore_1.3/bibliotheque/js/');
+/** Constante stockant l'URL vers le dossier contenant les bases Xper.*/
+define('EF_URL_XPER_BASE', 'http://www.tela-botanica.org/sites/eflore/fr/xper/');
+/** Constante stockant l'URL vers les fichiers .jar de l'applette Xper.*/
+define('EF_URL_XPER_JAR', 'http://lis.snv.jussieu.fr/apps/xper2/identification/');
+/** Constante stockant les noms séparés par des virgules des fichiers .jar de l'applette Xper.*/
+define('EF_URL_XPER_JAR_FICHIER', 'Applet.jar,xercesImpl.jar');
+/** Constante stockant l'URL d'accès à l'applette d'Xper.*/
+define('EF_URL_XPER_APPLETTE', EF_URL.'xper'.DIRECTORY_SEPARATOR.'%s');
+
+// +------------------------------------------------------------------------------------------------------+
+// La gestion du wikini
+/** Nom du wikini utilisé pour eFlore.*/
+define('EF_WIKI_NOM', 'flora');
+/** Chemin vers le dossier "bibliotheque" de l'intégrateur wikini utilisé pour eFlore.*/
+define('EF_WIKI_CHEMIN_BIBLIO', PAP_CHEMIN_RACINE.'/client/integrateur_wikini/bibliotheque/');
+
+// +------------------------------------------------------------------------------------------------------+
+// La gestion du Carnet en ligne
+/** URL vers le dossier contenant les fonds de cartes utilisés par Cel.*/
+define('EF_URL_CARTO_CEL_SRC', 'http://www.tela-botanica.org/client/eflore_'.EF_LIVRAISON.'/bibliotheque/cartographie/cartes/');
+/** URL vers le dossier contenant les cartes créées par Cel.*/
+define('EF_URL_CARTO_CEL_DST', 'http://www.tela-botanica.org/sites/eflore/generique/images/cartes/');
+/** URL vers la page principale de Cel.*/
+define('EF_URL_CEL','http://www.tela-botanica.org/cel/www/org.tela_botanica.Cel/Cel.html');
+/** Nom de la Base de Données contenant les tables de Cel.*/
+define('EF_BDD_NOM_CEL','cel');
+
+// +------------------------------------------------------------------------------------------------------+
+// La gestion de l'affichage de l'application
+/** Constante permettant de savoir si on veut tenir compte ou pas du "x" des hybrides dans le trie alphabétique pour la
+ * recherche.*/
+define('EF_TRI_HYBRIDE', false);// true pour ne pas tenir compte du "x" sinon false
+/** Constante permettant de connaitre les choix du nombre de documents à afficher pour le fragmenteur.*/
+define('EF_FRAGMENTEUR_PAR_PAGE', '10,20,50,100,200');// séparer les nombre par des virgules
+/** Constante permettant de connaitre le choix du nombre de documents à afficher pour le fragmenteur par défaut.*/
+define('EF_FRAGMENTEUR_PAR_PAGE_DEFAUT', '20');// Doit contenir une valeur présente dans EF_FRAGMENTEUR_PAR_PAGE
+
+/* +--Fin du code ----------------------------------------------------------------------------------------+
+*
+* $Log: ef_config.inc.php.defaut,v $
+* Revision 1.25  2007-07-06 16:27:06  jp_milcent
+* Ajout de la constante EF_DISTRIBUTION pour paramétrer les déploiements d'eFlore sur différents sites web.
+*
+* Revision 1.24  2007-07-02 10:31:05  jp_milcent
+* Ajout de constante pour le fragmenteur.
+* Ajout du fuseau horaire par défaut.
+*
+* Revision 1.23  2007-06-11 12:53:39  jp_milcent
+* Ajout de commentaires pour les constantes du Cel.
+*
+* Revision 1.22  2007-06-11 12:45:56  jp_milcent
+* Fusion correction provenant de la livraison Moquin-Tandon : 11 juin 2007
+*
+* Revision 1.21  2007-06-01 13:23:05  jp_milcent
+* Fusion avec livraison Moquin-Tandon : 01 juin 2007
+*
+* Revision 1.20  2007-06-01 09:50:42  jp_milcent
+* Correction adresse url xper.
+*
+* Revision 1.19  2007-01-19 17:32:55  jp_milcent
+* Fusion avec la livraison Moquin-Tandon : corrections bogue chemin des font pour FPDF.
+*
+* Revision 1.18.2.3  2007-06-01 09:51:26  jp_milcent
+* Correction adresse url xper.
+* Ajout d'une constante pour les fichiers jar d'xper
+*
+* Revision 1.18.2.2  2007-05-13 14:20:30  ddelon
+* Action carnet en ligne : maquette
+*
+* Revision 1.18.2.1  2007/01/19 17:31:01  jp_milcent
+* Transfert dans ef_config_chemin de FPDF_FONTPATH.
+*
+* Revision 1.18  2007/01/15 15:31:15  jp_milcent
+* Ajout de l'expression régulière pour que le gestionnaire d'erreur évite de prendre en compte les erreurs Pear des méthodes "non static"...
+*
+* Revision 1.17  2007/01/05 14:26:36  jp_milcent
+* Ajout de paramêtre pour le fonctionnement hors de Papyrus.
+*
+* Revision 1.16  2006/10/25 09:07:22  jp_milcent
+* Correction d'un commentaire.
+*
+* Revision 1.15  2006/10/25 08:15:22  jp_milcent
+* Fusion avec la livraison Decaisne.
+*
+* Revision 1.14.2.4  2006/10/19 15:04:52  jp_milcent
+* Ajout de la constante gérant les images provenant des projets gérés par Tela.
+*
+* Revision 1.14.2.3  2006/10/06 15:07:40  jp_milcent
+* Ajout d'une quote manquante.
+*
+* Revision 1.14.2.2  2006/09/18 13:08:34  jp_milcent
+* Ajout d'une constante stockant le chemin vers les fichiers .jar de l'applette xper.
+*
+* Revision 1.14.2.1  2006/07/26 17:44:44  jp_milcent
+* Ajout d'une variable configurable depuis Papyrus.
+*
+* Revision 1.14  2006/07/20 15:10:40  jp_milcent
+* Amélioration de la gestion du wikini : gestion de la creation du nom de la page dans l'action.
+* Modification et amélioration des redirections du htaccess.
+* Mise en constante du nom du wikini et du chemin vers le dossier bibliotheque de l'intégrateur wikini.
+*
+* Revision 1.13  2006/07/20 09:46:02  jp_milcent
+* Ajout d'une constante permettant de tenir compte ou pas du "x" des hybrides dans le trie des noms.
+*
+* Revision 1.12  2006/07/12 14:41:46  jp_milcent
+* Ajout de constante pour les images.
+*
+* Revision 1.11  2006/07/11 16:19:19  jp_milcent
+* Intégration de l'appllette Xper.
+*
+* Revision 1.10  2006/06/20 15:28:38  jp_milcent
+* Correction fusion ratée.
+*
+* Revision 1.9  2006/06/20 15:26:52  jp_milcent
+* Ajout d'une url absolue pour la bibliothèque JS.
+*
+* Revision 1.8  2006/06/20 13:18:10  ddelon
+* Bug chemin
+*
+* Revision 1.7  2006/06/20 12:04:58  jp_milcent
+* Ajout de constantes de config.
+*
+* Revision 1.6  2006/05/15 19:51:07  ddelon
+* parametrage cache
+*
+* Revision 1.5  2006/05/11 10:28:27  jp_milcent
+* Début modification de l'interface d'eFlore pour la livraison Decaisne.
+*
+* Revision 1.4  2006/04/26 16:57:04  ddelon
+* Fusion bdnbe + saisie assistee
+*
+* Revision 1.3  2006/04/10 17:22:40  jp_milcent
+* Fusion avec la livraison bdnbe_v1.
+*
+* Revision 1.1.2.3  2006/03/09 13:31:46  jp_milcent
+* Amélioration de la gestion du titre.
+*
+* Revision 1.1.2.2  2006/03/08 17:19:07  jp_milcent
+* Amélioration de la gestion de la configuration du moteur de recherche.
+* Gestion du projet par défaut et de la version par défaut dans le fichier de config et les arguments de Papyrus.
+*
+* Revision 1.2  2006/03/07 11:07:08  jp_milcent
+* Fusion avec les corrections de la branche livraison_bdnbe_v1.
+*
+* Revision 1.1.2.1  2006/03/06 16:31:06  jp_milcent
+* Ajout des paramêtres permettant de configurer l'affichage de certains projets depuis Papyrus.
+*
+* Revision 1.1  2005/12/22 10:58:42  ddelon
+* Renommage fichier gabarit
+*
+* Revision 1.3  2005/12/21 16:01:30  jp_milcent
+* Ajout des logs cvs au bas du fichier.
+*
+*
+* +-- Fin du code ----------------------------------------------------------------------------------------+
+*/
+?>

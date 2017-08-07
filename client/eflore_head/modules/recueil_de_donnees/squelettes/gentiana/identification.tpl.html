@@ -1,0 +1,48 @@
+<h1>Recueil de données</h1>
+<div id="id_message">
+	<p>Avant de saisir vos observations, il est indispensable de s'inscrire.<br />
+	L'inscription est libre et gratuite.</p>
+	<p>Elle vous permet de :</p>
+	<ul>
+		<li>saisir des fiches pour nous informer ;</li>
+		<li>saisir vos observations botaniques ;</li>
+		<li>consulter l'annuaire des personnes inscrites et pouvoir ainsi échanger des informations ;</li>
+		<li>accéder à  certaines informations diffusées sur le site ;</li>
+		<li>recevoir une lettre électronique d'informations.</li>
+	</ul>
+	<p>Par la suite, il vous sera possible de modifier voir annuler votre inscription.<br />
+		Seuls vos prénom, nom, ville, commune et pays apparaîtrons dans l'annuaire, les autres informations restent confidentielles 
+		et servent à GENTIANA à vous contacter afin de valider les données botaniques ou les informations que vous donnez.</p>
+	<p>Si vous avez perdu votre mot de passe, veuillez cliquez sur le lien suivant : <a href="http://www.gentiana.org/page:inscrire?action=mdp_oubli">perte de mot de passe</a></p>
+	<p>Déjà  inscrit, identifiez-vous ci-dessous ou dans le cadre "Identification" présent sur votre gauche, pour accéder à la saisie d'observation :</p>
+</div>
+<div id="page_identification">
+	<form id="page_form_connexion" class="page_form_identification" action="<?=$url;?>" method="post">
+		<fieldset>
+		<legend>Identifiez vous</legend>
+		<table summary="Contient le formulaire d'identification.">
+			<tr>
+				<td><label for="username">Courriel : </label></td>
+				<td><input type="text"  id="page_username" name="username" maxlength="80" tabindex="1" value="courriel" /></td>
+			</tr>
+			<tr>
+				<td><label for="password">Mot de passe : </label></td>
+				<td><input type="password" id="page_password" name="password" maxlength="80" tabindex="2" value="mot de passe" /></td>
+			</tr>
+			<!-- 
+			<input type="checkbox" id="persistant" name="persistant" tabindex="3" value="o" />
+			<label id="persistant_label" for="persistant">Mémoriser mon compte</label>
+			-->
+			<tr>
+				<td rowspan="2"><input type="submit" id="page_connexion" name="connexion" tabindex="4" value="ok" /></td>
+			</tr>
+			<!-- 
+			<p id="inscription_info">
+				<a id="lien_inscription" href="/page:inscription">S'inscrire... </a>
+				<a id="inscription_aide" href="/page:faq#QTBI">Aide... </a>
+			</p>
+			-->
+		</table>
+		</fieldset>
+	</form>
+</div>

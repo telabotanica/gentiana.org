@@ -1,0 +1,12 @@
+<!-- INCLURE - DEBUT -->
+<?php if ($erreurs) : ?>
+	<?php foreach ($erreurs as $erreur) : ?>
+		<p class="pap_erreur"><?=$erreur;?></p>
+	<?php endforeach; ?>
+<?php elseif ($informations) : ?>
+	<?php foreach ($informations as $information) : ?>
+		<p class="pap_info"><?=$information;?></p>
+	<?php endforeach; ?>
+<?php endif; ?>
+<?=$sortie;?>
+<!-- INCLURE - FIN -->

@@ -1,0 +1,101 @@
+/*
+
+ +----------------------------------------------------------------------------+
+ | cartographie.css                                                           |
+ +----------------------------------------------------------------------------+
+ | Copyright (c) 2004 Tela Botanica                                           |
+ +----------------------------------------------------------------------------+
+ | Feuille de style specifique a l'application cartographie de Tela Botanica  |
+ +----------------------------------------------------------------------------+
+ | Auteur : Tamara LE BOURG <tamara@tela-botanica.org>                        |
+ +----------------------------------------------------------------------------+
+
+*/
+
+#carto {
+    text-align:left;
+}
+
+#table_carto {
+    border: 1px solid #E8AE3B;
+    border-collapse: collapse;
+    width:100%;
+}
+
+.avertissement_carto {
+    font-size:10px;
+    font-family:Verdana, Sans-serif;
+    margin: 10px 77px 0 0;
+    text-align:justify;
+}
+
+a.chemin_carto {
+    text-decoration:none;
+    font-weight:bold;
+}
+
+th {
+    border: 1px 0px 1px 0px solid #E8AE3B;
+    background-color: #FFCD9B;
+    color: #775522;
+    padding: 2px;
+}
+
+ul.liste_carto {
+    margin: 0px;
+}
+
+li.liste_carto {
+    list-style-type: none;
+    margin: 0px;
+}
+
+.ligne_impaire {
+    background-color: #FFFFFF;
+    font-size: 85%;
+    border: none;
+    padding: 2px;
+
+}
+
+.ligne2_impaire {
+    background-color: #FFFFFF;
+    font-size: 85%;
+    border: none;
+    padding: 2px;
+}
+
+.ligne_paire {
+    background-color: #FFEBD7;
+    font-size: 85%;
+    border: none;
+    padding: 2px;
+
+}
+
+.ligne2_paire {
+    background-color: #FFEBD7;
+    font-size: 85%;
+    border: none;
+    padding: 2px;
+}
+
+.titre1_carto {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;	
+	margin: 3px 0;		
+    font-size: 130%;
+    margin-top: 1em;
+}
+
+.titre2_carto {
+	font-family:  Arial, Verdana, Helvetica, sans-serif;	
+	margin: 3px 0;		
+    font-size: 110%;
+    margin-top: 1em;
+}
+
+.carto_erreur {
+    color: #CC6633;
+    font-weight: bold;
+    text-decoration: blink;
+}

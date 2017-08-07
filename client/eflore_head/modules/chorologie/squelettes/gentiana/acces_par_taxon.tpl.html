@@ -1,0 +1,82 @@
+<script language="JavaScript" type="text/javascript" src="<?=EF_URL_JS;?>PlierDeplier.js"></script>
+<h1 id="efc_titre">Liste de <?=$taxons_nbre_lettre;?> taxons sur <?=$taxons_nbre_total;?></h1>
+<!-- NAVIGATION : début  -->
+<h2>Cliquer sur une lettre pour faire apparaitre la liste des taxons correspondante :</h2>
+<p>
+	<strong>
+	<?php foreach ($alphabet as $lettre) : ?>
+		<?php if ($lettre['lettre'] == $lettre_selected) : ?>
+			<span class="frag_alpha_lien_selection"><?=$lettre['lettre'];?></span>&nbsp;
+		<?php else : ?>
+			<a class="frag_alpha_lien" href="<?=$lettre['url']?>"><?=$lettre['lettre'];?></a>&nbsp;
+		<?php endif; ?>
+	<?php endforeach; ?>
+	</strong>
+</p>
+<form id="fragmenteur_quantite" action="<?=$url;?>" method="get">
+<p>
+	<select name="frag_nbre" onchange="javascript:this.form.submit();">
+		<option value="*" <?= ($par_page_selected == '*') ? 'selected="selected"': '';?>>Afficher tous les taxons</option>
+<?php foreach ($par_page as $nbre) : ?>
+		<option value="<?=$nbre;?>" <?=$nbre == $par_page_selected? 'selected="selected"': '';?>>Afficher les taxons par <?=$nbre;?></option>
+<?php endforeach; ?>
+	</select>
+<?php foreach ($form_get_url_chp_hidden as $cle => $val) : ?>
+	<input type="hidden" id="<?=$cle;?>" name="<?=$cle;?>" value="<?=$val;?>" />
+<?php endforeach; ?>
+</p>
+</form>
+<p>Affichage des données <?=$frag_donnee_debut;?> à <?=$frag_donnee_fin;?> sur <?=$frag_donnee_total;?> résultats.</p>
+<?php if ($pager_links['pages']) : ?>
+<p>Pages de résultats :&nbsp;
+	<span class="frag_premier"><?=$pager_links['first'];?>&nbsp;</span>
+	<span class="frag_precedent"><?=$pager_links['back'];?>&nbsp;</span>
+	<span class="frag_pages"><?=$pager_links['pages'];?>&nbsp;</span>
+	<span class="frag_suivant"><?=$pager_links['next'];?>&nbsp;</span>
+	<span class="frag_dernier"><?=$pager_links['last'];?>&nbsp;</span>
+</p>
+<?php endif; ?>
+<!-- NAVIGATION : fin  -->
+<!-- DONNÉES : début  -->
+<?php if (count($taxons) > 0) : ?>
+	<?php if ($lettre_selected == '*') : ?>
+		<h2>Liste de tous les taxons</h2>
+	<?php else : ?>
+		<h2>Liste des taxons commençant par la lettre : <?=$lettre_selected?></h2>
+	<?php endif; ?>
+	<table class="table_cadre" summary="Liste des taxons">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>
+					<a class="tri" href="<?=$url_desc_nl;?>" title="Trier par ordre décroissant">&#9650;</a>
+					Nom latin
+					<a class="tri" href="<?=$url_asc_nl;?>" title="Trier par ordre croissant">&#9660;</a>
+				</th>
+				<th>
+					<a class="tri" href="<?=$url_desc_nv;?>" title="Trier par ordre décroissant">&#9650;</a>
+					Nom vernaculaire
+					<a class="tri" href="<?=$url_asc_nv;?>" title="Trier par ordre croissant">&#9660;</a>
+				</th>
+				<th>Lien vers eFlore</th>
+			</tr>
+		</thead>
+		<tbody>
+		<?php foreach ($taxons as $taxon) :?>
+			<tr class="<?= (is_integer($index/2)) ? 'ligne_paire' : 'ligne_impaire' ; ?>">
+				<td><?=$index++;?></td>
+				<td class="nl_retenu"><a href="<?=$taxon['url_carte_presence'];?>"><?=$taxon['nom_latin'];?></a></td>
+				<td><?= isset($taxon['nom_verna']) ? $taxon['nom_verna'] : '?';?></td>
+				<td>
+					<img src="http://www.tela-botanica.org/sites/commun/generique/images/favicones/tela_botanica.png" alt="Tela Botanica : "/>
+					<a class="lien_ext" href="http://www.tela-botanica.org/eflore/BDNFF/derniere_version/nn/<?=$taxon['nom_id'];?>">BDNFFnn<?=$taxon['nom_id'];?></a>
+				</td>
+			</tr>
+		<?php endforeach; ?>
+		</tbody>
+	</table>
+	<p><a href="#">Retour en haut de la page... &#8613;</a></p>
+<?php else : ?>
+	<p class="information">Aucun taxons trouvés pour ces critères de recherche.</p>
+<?php endif; ?>
+<!-- DONNÉES : fin  -->

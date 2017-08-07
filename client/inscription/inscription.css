@@ -1,0 +1,57 @@
+/* Feuille de style inscription*/
+
+/* Pied de page */
+#ins_pied_page {
+	color:#A9A9A9;
+	font-size:10px;
+	padding-top:10px;
+	text-align:center;}
+
+/* Presentation de la fiche des inscrits */
+dt {
+  float:left;
+  width:10em;
+  text-align:right;
+  font-weight:bold;
+  padding-right : 10px;}
+.inscription_titre2 {
+  clear:both;
+  color:#996F18;;}
+
+/* Presentation du formulaire d'inscription */
+#formulaire_inscription fieldset {
+  border: 0;
+  margin: 0;
+  margin-top:10px;
+  padding: 0;}
+#formulaire_inscription legend {
+  line-height:1.3em;
+  margin:8px 0 4px 0;
+  font-size:15px;
+  color: #996F18;
+  font-weight:bold;}
+#formulaire_inscription ul {
+  list-style:none;
+  margin:0;
+  padding:0;}
+#formulaire_inscription li {
+  font-weight:bold;
+  margin:5px 0px;
+  clear:both;}
+.symbole_obligatoire {
+  color:#F00;
+  font-size:14pt;}
+.liste_inscription .inscription_label {
+  float:left;
+  width:10em;
+  text-align:right;
+  padding-right:10px;}
+.liste_inscription select {
+  margin-top:5px;}
+.groupe_formulaire .inscription_label1 {
+  float:left;
+  width:10em;
+  text-align:right;
+  padding-right:10px;}
+.inscription_label2 {
+  margin-left:10px;}

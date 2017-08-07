@@ -1,0 +1,195 @@
+<?php
+// +------------------------------------------------------------------------------------------------------+
+// | PHP version 5.2                                                                                      |
+// +------------------------------------------------------------------------------------------------------+
+// | Copyright (C) 2007 Tela Botanica (accueil@tela-botanica.org)                                          |
+// +------------------------------------------------------------------------------------------------------+
+// | This file is part of eFlore.                                                                         |
+// |                                                                                                      |
+// | eFlore is free software; you can redistribute it and/or modify                                       |
+// | it under the terms of the GNU General Public License as published by                                 |
+// | the Free Software Foundation; either version 2 of the License, or                                    |
+// | (at your option) any later version.                                                                  |
+// |                                                                                                      |
+// | eFlore is distributed in the hope that it will be useful,                                            |
+// | but WITHOUT ANY WARRANTY; without even the implied warranty of                                       |
+// | MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the                                        |
+// | GNU General Public License for more details.                                                         |
+// |                                                                                                      |
+// | You should have received a copy of the GNU General Public License                                    |
+// | along with Foobar; if not, write to the Free Software                                                |
+// | Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA                            |
+// +------------------------------------------------------------------------------------------------------+
+// CVS : $Id: NaturalisteValeurSqlDao.class.php,v 1.1 2007-02-11 19:47:52 jp_milcent Exp $
+/**
+* Classe DAO SQL : NaturalisteValeur
+*
+* Description
+*
+*@package eFlore
+*@subpackage dao_sql
+//Auteur original :
+*@author        Jean-Pascal MILCENT <jpm@tela-botanica.org>
+//Autres auteurs :
+*@author        aucun
+*@copyright     Tela-Botanica 2000-2007
+*@version       $Revision: 1.1 $ $Date: 2007-02-11 19:47:52 $
+// +------------------------------------------------------------------------------------------------------+
+*/
+
+// +------------------------------------------------------------------------------------------------------+
+// |                                            ENTETE du PROGRAMME                                       |
+// +------------------------------------------------------------------------------------------------------+
+
+// +------------------------------------------------------------------------------------------------------+
+// |                                            CORPS du PROGRAMME                                        |
+// +------------------------------------------------------------------------------------------------------+
+class NaturalisteValeurSqlDao extends aDaoSql implements iDaoEnav {
+
+	/** Constante définissant le nom de l'objet.*/
+	const CLASSE_NOM = 'NaturalisteValeurSqlDao';
+	
+	/*** Attributes : ***/
+	private $intitule;
+	private $abreviation;
+	private $description;
+	
+	protected $table_nom = 'eflore_naturaliste_valeur';
+	protected $table_prefixe = 'enav_';
+	protected $table_cle = array('valeur');
+	protected $table_champs = array(
+		'enav_id_valeur'	=> array('type' => 'id', 'format' => 'int'),
+		'enav_ce_categorie'	=> array('type' => 'ce', 'format' => 'int'),
+		'enav_intitule'	=> array('type' => 'no', 'format' => 'str'),
+		'enav_abreviation'	=> array('type' => 'no', 'format' => 'str'),
+		'enav_description'	=> array('type' => 'no', 'format' => 'str'),
+		'enav_date_derniere_modif'	=> array('type' => 'no', 'format' => 'str'),
+		'enav_ce_modifier_par'	=> array('type' => 'ce', 'format' => 'int'),
+		'enav_ce_etat'	=> array('type' => 'ce', 'format' => 'int')
+		);
+	
+	/*** Constructeur : ***/
+	public function __construct($connexion = null, $options = array())
+	{
+		// Le nom de la classe pour aDaoSql
+		$this->setClasseFilleNom(self::CLASSE_NOM);
+		return parent::__construct($connexion, $options);
+	}
+	
+	/*** Accesseurs : ***/
+
+	// Intitule
+	public function getIntitule()
+	{
+		return $this->intitule;
+	}
+	public function setIntitule( $i )
+	{
+		$this->intitule = $i;
+		$this->setMetaAttributsUtilises('intitule');
+	}
+	// Abreviation
+	public function getAbreviation()
+	{
+		return $this->abreviation;
+	}
+	public function setAbreviation( $a )
+	{
+		$this->abreviation = $a;
+		$this->setMetaAttributsUtilises('abreviation');
+	}
+	// Description
+	public function getDescription()
+	{
+		return $this->description;
+	}
+	public function setDescription( $d )
+	{
+		$this->description = $d;
+		$this->setMetaAttributsUtilises('description');
+	}
+	
+	/*** Méthodes : ***/
+	
+	/**
+	* Retourne un objet NaturalisteValeur.
+	* 
+	* @param integer l'identifiant de la commande de consultation à exécuter.
+	* @param array le tableau de paramêtres à passer à l'exécutant de la commande.
+	* @return NaturalisteValeur un objet NaturalisteValeur.
+	*/
+	public function consulter($cmd, $parametres = array() )
+	{
+		switch($cmd) {
+			case iDaoEnav::CONSULTER :
+				$sql = 	'SELECT * '.
+						'FROM '.$this->getStockagePrincipal().'.eflore_naturaliste_valeur';
+				$this->setResultatType(aDaoSql::RESULTAT_OBJET_MULTIPLE);
+				break;
+			case iDaoEnav::CONSULTER_ID :
+				$sql = 	'SELECT * '.
+						'FROM '.$this->getStockagePrincipal().'.eflore_naturaliste_valeur '.
+						'WHERE enav_id_valeur = ? ';
+				$this->setResultatType(aDaoSql::RESULTAT_OBJET_UNIQUE);
+				break;
+			case iDaoEnav::CONSULTER_ID_MAX :
+				$sql = 	'SELECT MAX(enav_id_valeur) '.
+						'FROM '.$this->getStockagePrincipal().'.eflore_naturaliste_valeur ';
+				$this->setResultatType(aDaoSql::RESULTAT_UNIQUE);
+				break;
+			default :
+				$message = 'Commande '.$cmd.' inconnue!';
+				$e = GestionnaireErreur::retournerErreurSql(__FILE__, __LINE__, $message);
+    			trigger_error($e, E_USER_ERROR);
+		}
+		$this->setRequete($sql);
+		return parent::consulter($parametres);
+	}
+	
+	/**
+	* Ajoute une ligne :  Naturaliste Valeur.
+	* 
+	* @param NaturalisteValeur l'objet contenant les valeurs à ajouter.
+	* @param string nom de la base de donnée où réaliser l'insertion.
+	* @return mixed l'identifiant de la ligne ajoutée ou false.
+	*/
+	public function ajouter(NaturalisteValeur $obj, $bdd = null)
+	{
+		return parent::ajouter($obj, $bdd, iDaoEnav::CONSULTER_ID_MAX);
+	}
+
+	
+	/**
+	* Supprime une ligne :  Naturaliste Valeur.
+	* 
+	* @param NaturalisteValeur l'objet contenant les identifiants de la ligne à supprimer.
+	* @return boolean true si la ligne est bien supprimé, sinon false.
+	*/
+	public function supprimer(NaturalisteValeur $obj)
+	{
+		return parent::supprimer($obj, iDaoEnav::CONSULTER_ID);
+	}
+	
+	/**
+	* Modifie une ligne :  Naturaliste Valeur.
+	* 
+	* @param NaturalisteValeur l'objet contenant les valeurs à modifier.
+	* @return boolean true si la ligne est bien modifié, sinon false.
+	*/
+	public function modifier(NaturalisteValeur $obj)
+	{
+		return parent::modifier($obj, iDaoEnav::CONSULTER_ID);
+	}
+
+}
+
+/* +--Fin du code ----------------------------------------------------------------------------------------+
+*
+* $Log: NaturalisteValeurSqlDao.class.php,v $
+* Revision 1.1  2007-02-11 19:47:52  jp_milcent
+* Début gestion de l'api de la version 1.2 d'eFlore.
+*
+*
+* +-- Fin du code ----------------------------------------------------------------------------------------+
+*/
+?>

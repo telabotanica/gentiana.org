@@ -1,0 +1,41 @@
+<!-- BEGIN FORM_TAXON -->
+<form id="eflore_form_taxonomie" name="eflore_form_taxonomie" action="{URL}" method="post">
+	<fieldset>
+	<legend>{form_legende}</legend>
+	<table>
+		<tr>
+			<td>
+				<!-- BEGIN REFERENCIEL_UNIQUE -->
+				<input id="eflore_referenciel" name="eflore_referenciel" type="hidden" value="{EFLORE_REF_UNIQUE_ID}"/>
+				<!-- END REFERENCIEL_UNIQUE -->
+				<!-- BEGIN REFERENCIEL_MULTIPLE -->
+				<label for="eflore_referenciel_intitule">{form_referentiel}</label>
+				<select id="eflore_referenciel" name="eflore_referenciel">
+					<!-- BEGIN REFERENCIEL -->
+		  			<option value="{EFLORE_REF_MULTIPLE_ID}" title="{EFLORE_REF_MULTIPLE_INTITULE}" {EFLORE_REF_MULTIPLE_SELECTED}>{EFLORE_REF_MULTIPLE_ABREVIATION} (version {EFLORE_REF_MULTIPLE_VERSION})</option>
+		  			<!-- END REFERENCIEL --> 
+				</select>
+				<!-- END REFERENCIEL_MULTIPLE -->
+			</td>
+			<td id="eflore_rang_li">
+				<label for="eflore_rang">{form_rang}</label>
+				<select id="eflore_rang" name="eflore_rang">
+					<!-- BEGIN RANG -->
+					<option value="{RANG_ID}"{EFLORE_RANG_SELECTED}>{RANG_NOM}</option>
+					<!-- END RANG -->
+				</select>
+			</td>
+			<td>
+				<input id="eflore_taxonomie_submit" type="submit" value="OK" />
+			</td>
+		</tr>
+	</table>
+	</fieldset>
+	<!-- BEGIN ALPHABET -->
+	<h1>{form_titre_alphabet}</h1>
+	<!-- BEGIN LETTRE -->
+	<input id="eflore_lettre" name="eflore_lettre" type="submit" value="{EFLORE_FORM_LETTRE}" title="{EFLORE_FORM_LETTRE_NBRE} taxons" {EFLORE_FORM_LETTRE_DISABLED}/>
+	<!-- END LETTRE -->
+	<!-- END ALPHABET -->
+</form>
+<!-- END FORM_TAXON -->

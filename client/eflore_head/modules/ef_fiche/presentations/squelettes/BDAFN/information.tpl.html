@@ -1,0 +1,161 @@
+<script type="text/javascript" language="javascript" src="{EF_URL_JS}domtooltip/domLib.js"></script>
+<script type="text/javascript" language="javascript" src="{EF_URL_JS}domtooltip/domTT.js"></script>
+
+<h1>{titre_general}<span id="ef_referentiel">{TITRE_GENERAL_REFERENTIEL}</span></h1>
+{FORMULAIRE_RECHERCHE_NOM}
+<h1 id="ef_info_titre">{TITRE}<span id="ef_famille">{NOM_RETENU_FAMILLE}</span></h1>
+<!-- BEGIN INFO_PROTECTION -->
+<div id="ef_info_protection">
+	<h2 id="efip_titre">Statuts de protections</h2>
+	<table id="efip_liste_info" class="table_cadre">
+		<thead>
+			<tr>
+				<th>Loi</th>
+				<th>Statut</th>
+				<th>Zone géographique</th>
+				<th>Nom scientifique officiel</th>
+				<th>Nom vernaculaire officiel</th>
+				<th>Notes</th>
+			</tr>
+		</thead>
+		<tbody>
+		<!-- BEGIN EFIP_DONNEES -->
+			<tr>
+				<td><span title="{EFIP_LOI_INTITULE_LONG}{EFIP_LOI_NOR}{EFIP_LOI_ABREVIATION}{EFIP_LOI_DESCRIPTION}" class="tooltip"><a class="lien_ext" href="{EFIP_LOI_URL}">{EFIP_LOI_INTITULE}</a></span></td>
+				<td><span title="{EFIP_STATUT_ABREVIATION}{EFIP_STATUT_DESCRIPTION}" class="tooltip">{EFIP_STATUT_INTITULE}</span></td>
+				<td>{EFIP_ZG_INTITULE} ({EFIP_ZG_ABREVIATION})</td>
+				<td>{EFIP_NOM_SCIENCE}</td>
+				<td>{EFIP_NOM_VERNA}</td>
+				<td>{EFIP_NOTES}</td>
+			</tr>
+		<!-- END EFIP_DONNEES -->
+		</tbody>
+	</table>
+</div>
+<!-- END INFO_PROTECTION -->
+
+<!-- BEGIN INFO_TXT_TAXON -->
+<div id="ef_info_txt_taxon">
+	<h2 id="efitt_titre">{EFIT_TITRE}</h2>
+	<dl id="efitt_liste_info" class="ajout_2point">
+		<!-- BEGIN EFIT_DONNEES -->
+		<dt><span title="{EFIT_CHP_TITLE}" class="{EFIT_CHP_CLASS}">{EFIT_CHP}</span></dt>
+		<dd><!-- BEGIN EFIT_DONNEES_VAL --><span title="{EFIT_VAL_TITLE}" class="{EFIT_VAL_CLASS}">{EFIT_VAL}</span>{EFIT_VAL_SEPARATEUR}<!-- END EFIT_DONNEES_VAL --></dd>
+		<!-- END EFIT_DONNEES -->
+	</dl>
+</div>
+<!-- END INFO_TXT_TAXON -->
+
+<!-- BEGIN INFO_TXT_NOM -->	
+<div id="ef_info_txt_nom">
+	<h2 id="efitn_titre">{titre_nom}{EFIN_TITRE}</h2>
+	<dl id="efitn_liste_info_nom" class="ajout_2point">
+		<!-- BEGIN EFIN_DONNEES -->
+		<dt><span title="{EFIN_CHP_TITLE}" class="{EFIN_CHP_CLASS}">{EFIN_CHP}</span></dt>
+		<dd><span title="{EFIN_VAL_TITLE}" class="{EFIN_VAL_CLASS}">{EFIN_VAL}</span></dd>
+		<!-- END EFIN_DONNEES -->
+	</dl>
+</div>
+<!-- END INFO_TXT_NOM -->
+
+<!-- BEGIN INFO_LEGENDE -->
+<div id="ef_info_legende" >
+	<h2 id="efitl_titre">{titre_legende}</h2>
+	<dl id="efitl_liste_info_legende" class="ajout_2point">
+		<!-- BEGIN EFIL_DONNEES -->
+		<dt>{EFIL_CHP}</dt>
+		<!-- BEGIN EFIL_DONNEES_VAL --><dd>{EFIL_VAL}</dd><!-- END EFIL_DONNEES_VAL -->
+		<!-- BEGIN EFIL_DONNEES_VAL_LISTE -->
+		<dd>
+			{EFIL_VAL_DEF}
+			<dl class="efitl_liste_legende_def">
+		<!-- BEGIN EFIL_DONNEES_VAL2 -->
+			<dt>{EFIL_VAL_CHP}</dt>
+			<dd>{EFIL_VAL}</dd>
+		<!-- END EFIL_DONNEES_VAL2 -->
+			</dl>
+		</dd>
+		<!-- END EFIL_DONNEES_VAL_LISTE -->
+		<!-- END EFIL_DONNEES -->
+	</dl>
+</div>
+<!-- END INFO_LEGENDE -->
+
+<script type="text/javascript">
+	//<![CDATA[
+	// DomToolTip
+	var domTT_styleClass = 'niceTitle';
+	function nicetitleDecorator(el) {
+		var result = el.title;
+		result = result.replace(new RegExp('\n', 'g'), '<br />');
+		if (el.href) {
+			result += '<p>' + el.href + '</p>';
+		}
+		return result;
+	}
+	domTT_replaceTitles(nicetitleDecorator);
+
+	// Cacher la légende : fonctions et code provenant de Média Wiki
+	if (window.showTocToggle) { 
+		var tocShowText = "afficher";
+		var tocHideText = "masquer";
+		showTocToggle('efitl_titre', 'ef_info_legende');
+	} 
+	
+	function changeText(el, newText) {
+		// Safari work around
+		if (el.innerText) {
+			el.innerText = newText;
+		} else if (el.firstChild && el.firstChild.nodeValue) {
+			el.firstChild.nodeValue = newText;
+		}
+	}
+
+	function toggleToc(id) {
+		var toc = document.getElementById(id).getElementsByTagName('dl')[0];
+		var toggleLink = document.getElementById('togglelink');
+	
+		if (toc && toggleLink && toc.style.display == 'none') {
+			changeText(toggleLink, tocHideText);
+			toc.style.display = 'block';
+			document.cookie = "hidetoc=0";
+		} else {
+			changeText(toggleLink, tocShowText);
+			toc.style.display = 'none';
+			document.cookie = "hidetoc=1";
+		}
+	}
+	
+	function showTocToggle(id_titre, id_liste) {
+		if (document.createTextNode) {
+			// Uses DOM calls to avoid document.write + XHTML issues
+	
+			var linkHolder = document.getElementById(id_titre);
+			if (!linkHolder) {
+				return;
+			}
+	
+			var outerSpan = document.createElement('span');
+			outerSpan.className = 'toctoggle';
+	
+			var toggleLink = document.createElement('a');
+			toggleLink.id = 'togglelink';
+			toggleLink.className = 'internal';
+			toggleLink.href = 'javascript:toggleToc(\''+id_liste+'\')';
+			toggleLink.appendChild(document.createTextNode(tocHideText));
+	
+			outerSpan.appendChild(document.createTextNode('['));
+			outerSpan.appendChild(toggleLink);
+			outerSpan.appendChild(document.createTextNode(']'));
+	
+			linkHolder.appendChild(document.createTextNode(' '));
+			linkHolder.appendChild(outerSpan);
+	
+			var cookiePos = document.cookie.indexOf("hidetoc=");
+			if (cookiePos > -1 && document.cookie.charAt(cookiePos + 8) == 1) {
+				toggleToc();
+			}
+		}
+	}
+	//]]>
+</script>

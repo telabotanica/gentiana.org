@@ -1,0 +1,17 @@
+/*
+ * Écrase les CSS (commun + les 3 sites : gentiana, flore, gestion) pour aligner
+ * la page à gauche, au lieu de la centrer
+ *
+ * Créé le	: 5 août 2014, 15:24:26
+ * Auteur	: Tela Botanica (Mathias)
+ * Licence	: CeCILL, GPLv3
+ */
+
+/*#zone_generale {
+	margin: 0;
+}*/
+/*#zone_pied {
+	width: 990px;
+	max-width: none;
+	margin: 0;
+}*/

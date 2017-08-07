@@ -1,0 +1,121 @@
+/*
+	Feuille de style du monde Gentiana
+	Auteur : Jean-Pascal MILCENT
+*/
+h1{
+  color:#990066;}
+h2, h3, h4, h5, h6, hr{
+  color:#E547C6;}
+a img {
+  border:1px dotted #990066;}
+a {
+	color:#990066;}
+a:hover {
+	color:#FFCCFF;}
+
+/*DIFFERENTS BLOCS DE LA PAGE*/
+
+/* Logo */
+#zone_logo {
+	top:0;
+	left:30px;}
+
+/* Bandeau */
+#zone_bandeau {
+	background: transparent url("http://www.gentiana.org/sites/animation/generique/images/graphisme/bandeau.jpg") no-repeat top left;}
+#bandeau_contenu {
+	background: transparent url("http://www.gentiana.org/sites/animation/generique/images/graphisme/fond_menu_commun_bandeau.png") repeat-x top left;}
+#bandeau_contenu a {
+	color:white;}
+
+/* Zone moteur recherche */
+#form_more_recherche input#more_ok {
+	color:#FFCCFF;}
+#form_more_recherche input#more_ok:hover {
+	color:white;
+	border-color:white;}
+#form_more_recherche input#more_motif{
+	color:#990066;
+	font-weight:bold;}
+
+/* Zone contenu -> VEI */
+#zone_vei {
+	background: transparent url("http://www.gentiana.org/sites/animation/generique/images/graphisme/picto_vei.png") no-repeat top left;}
+#vei {
+	color:#990066;}
+
+/* Zone contenu -> Navigation */
+#zone_contenu_navigation {
+  border-color:#990066;}
+#zone_contenu_navigation li {
+	background:url("http://www.gentiana.org/sites/animation/generique/images/graphisme/onglet_droite.png") no-repeat right top;}
+#zone_contenu_navigation a {
+	background:url("http://www.gentiana.org/sites/animation/generique/images/graphisme/onglet_gauche.png") no-repeat left top;}
+#zone_contenu_navigation li:hover {
+  color:#990066;}
+#zone_contenu_navigation li a:hover {
+  color:#990066;}
+#zone_contenu_navigation .menu_inactif {
+  border-bottom:#990066;}
+#zone_contenu_navigation .menu_actif a {
+  color:#990066;}
+
+/* Zone contenu -> Page */
+#zone_contenu_page {
+	border:1px solid #990066;}
+
+/* Zone liste sites */
+#zone_liste_site a {
+	color:white;}
+#site_animation_botanique a{
+	color:#FFCCFF;
+	background:url("http://www.gentiana.org/sites/animation/generique/images/graphisme/site_animation_botanique.png") center left no-repeat;}
+
+/* Zone menu */
+#zone_menu {
+  background:transparent url("http://www.gentiana.org/sites/animation/generique/images/graphisme/fond_menu_classique.png") repeat-x;}
+#zone_menu a{
+  color:#990066;}
+#zone_menu a:hover, #form_connexion #connexion:hover {
+	color:#FFCC00;
+	border-color:#FFCC00;}
+
+/* Zone menu -> menus classique */
+#zone_menu_classique a:hover {/* Menu tout niveau : survol */
+  background-color:#FFCC00;
+  color:black;}
+#zone_menu_classique .menu_classique_n1>li.menu_actif>a {/* Menu niveau 1 actif */
+  background:#FFCC00 url("http://www.gentiana.org/sites/animation/generique/images/graphisme/puce_triangle.png") no-repeat center left;}
+#zone_menu_classique .menu_classique_n2 .menu_actif {/* Menu niveau 2 actif */
+  background-color:#FFCC00;}
+#zone_menu_classique .menu_classique_n2 .menu_inactif {/* Menu niveau 2 inactif */
+  background-color:#FAE4B1;}
+
+/* Zone menu -> Identification */
+#zone_identification {
+	background: transparent url("http://www.gentiana.org/sites/animation/generique/images/graphisme/identification_cadre.png") no-repeat top left;}
+#form_connexion, #iden_action {
+	background: transparent url("http://www.gentiana.org/sites/animation/generique/images/graphisme/identification_fleur.png") no-repeat bottom right;}
+#identification_message, #zone_identification legend, #zone_identification a, #zone_identification label, #form_connexion #connexion {	
+	color:#990066;}
+
+/* Zone pied */
+#pied_menu_commun {
+	background: transparent url("http://www.gentiana.org/sites/animation/generique/images/graphisme/fond_menu_commun_pied.png") repeat-x top left;}
+
+/* Tableau*/
+.table_cadre {
+  border:1px solid #990066;
+  margin:0 0 15px 0;}
+.table_cadre th { 
+	color:#FFCCFF;
+  border:1px solid #990066;
+	background: transparent url("http://www.gentiana.org/sites/animation/generique/images/graphisme/fond_menu_commun_bandeau.png") repeat-x top left;}
+.table_cadre th a {
+	color:#FFCCFF;}
+.table_cadre td {
+  border:1px solid #990066;}
+.table_cadre {
+  background-color:white;}
+.ligne_paire {
+  background-color:#E6E5DC;}

@@ -1,0 +1,24 @@
+<h1>{titre_general}<span id="ef_referentiel">{TITRE_GENERAL_REFERENTIEL}</span></h1>
+{FORMULAIRE_RECHERCHE_NOM}
+<h1 id="ef_permalien_titre">{TITRE}<span id="ef_famille">{NOM_RETENU_FAMILLE}</span></h1>
+<p>Pour plus d'information sur les permaliens, vous pouvez consultez <a class="lien_ext" href="http://fr.wikipedia.org/wiki/Permalien">l'article sur Wikipedia</a> d'où provient la définition suivante :</p>
+<cite>Un <strong>permalien</strong> est un type d'URL conçu pour référer un élément d'information et pour rester inchangé de façon permanente, ou du moins, pour une certaine période de temps. La permanence dans les hyperliens s'avère utile lorsque ces liens sont liés, ou cités, d'une source externe.</cite>
+<div id="ef_permalien_info">
+	<h3>Les permaliens pour le nom sélectionné</h3>
+	<!-- BEGIN PERMALIEN_NN -->
+	<ul>
+		<li>Pour la dernière version du projet <abbr title="{PROJET_INTITULE}">{PROJET_ABREVIATION}</abbr> : <a href="{URL_PERMALIEN_NN_PRV_DEFAUT}">{URL_PERMALIEN_NN_PRV_DEFAUT}</a></li>
+		<li>Pour la version {PROJET_VERSION_CODE} du projet <abbr title="{PROJET_INTITULE}">{PROJET_ABREVIATION}</abbr> : <a href="{URL_PERMALIEN_NN_PRV}">{URL_PERMALIEN_NN_PRV}</a></li>
+	</ul>
+	<!-- END PERMALIEN_NN -->
+	<!-- BEGIN PERMALIEN_NN_INFO --><p>{PERMALIEN_NN_INFO}</p><!-- END PERMALIEN_NN_INFO -->
+	
+	<h3>Les permaliens pour le taxon</h3>
+	<!-- BEGIN PERMALIEN_NT -->
+	<ul>
+		<li>Pour la dernière version du projet <abbr title="{PROJET_INTITULE}">{PROJET_ABREVIATION}</abbr> : <a href="{URL_PERMALIEN_NT_PRV_DEFAUT}">{URL_PERMALIEN_NT_PRV_DEFAUT}</a></li>
+		<li>Pour la version {PROJET_VERSION_CODE} du projet <abbr title="{PROJET_INTITULE}">{PROJET_ABREVIATION}</abbr> : <a href="{URL_PERMALIEN_NT_PRV}">{URL_PERMALIEN_NT_PRV}</a></li>
+	</ul>
+	<!-- END PERMALIEN_NT -->
+	<!-- BEGIN PERMALIEN_NT_INFO --><p>{PERMALIEN_NT_INFO}</p><!-- END PERMALIEN_NT_INFO -->
+</div>

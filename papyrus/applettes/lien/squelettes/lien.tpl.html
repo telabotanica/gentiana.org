@@ -1,0 +1,9 @@
+<?php if ($erreurs) : ?>
+	<!-- LIEN - DEBUT -->
+	<?php foreach ($erreurs as $erreur) : ?>
+		<p class="pap_erreur"><?=$erreur;?></p>
+	<?php endforeach; ?>
+	<!-- LIEN - FIN -->
+<?php else : ?>
+	<a href="<?=$url;?>"><?=$titre;?></a>
+<?php endif; ?>

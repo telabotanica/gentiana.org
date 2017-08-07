@@ -1,0 +1,25 @@
+<!-- GALLERIE - DEBUT -->
+<?php if ($erreur) : ?>
+
+<p class="pap_erreur"><?=$erreur;?></p>
+
+<?php else : ?>
+<!-- Source : provient de "Simple Image Gallery" (in content items) Plugin for Joomla 1.0.x - Version 1.0. -->
+<link href="<?=$css['chemin'];?>sig.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	.sig_thumb {width:<?=$css['largeur'];?>px;} /* add to the width the total image padding and borders you set in the css file */
+</style>
+<script type="text/javascript" src="<?=$script['chemin'];?>mootools.js"></script>
+<script type="text/javascript" src="<?=$script['chemin'];?>slimbox.js"></script>
+<div class="sig">
+<?php foreach ($images as $image) : ?>
+	<div class="sig_thumb">
+		<a href="<?=$image['url_img'];?>" rel="lightbox" title="<?=$image['fichier_nom'];?>">
+			<img src="<?=$image['url_img_mini'];?>" alt="<?=$image['fichier_nom'];?>"/>
+		</a>
+	</div>
+<?php endforeach; ?>
+	<div class="sig_clr">&nbsp;</div>
+</div>
+<?php endif; ?>
+<!-- GALLERIE - FIN -->

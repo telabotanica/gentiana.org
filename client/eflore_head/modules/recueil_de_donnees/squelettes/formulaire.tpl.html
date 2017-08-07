@@ -1,0 +1,137 @@
+<h1>Recueil de données</h1>
+<div>
+<?php if ($messages) :?>
+	<?php foreach ($messages as $message) : ?>
+	<p class="information"><?=$message;?></p>
+	<?php endforeach; ?>
+<?php endif; ?>
+
+<?php if ($attentions) :?>
+	<p class="attention">Un problème est survenu lors de l'envoi de votre observation! <br />
+		Veuillez copier le texte ci-dessous et utiliser votre logiciel de messagerie pour l'envoyer à l'adresse 
+		<a href="mailto:<?=RDD_MAIL_ERREUR_A;?>?subject=<?=RDD_MAIL_ERREUR_SUJET;?>"><?=RDD_MAIL_ERREUR_A;?></a>.
+	</p>
+	<pre class="rcd_message_erreur" style="border:1px solid black;background-color:#B2C1E0;max-width:855px;">
+		Observation saisie par
+		<?php foreach ($post as $cle => $valeur) : ?>
+		 - <?=$i18n[$cle];?> : <?=$valeur."\n";?>
+		<?php endforeach; ?>
+		--
+		Message envoyé manuellement suite à l'erreur :
+		<?=$attention."\n";?>
+		Date : <?=date('d/m/Y à H:i:s', time());?>
+	</pre>
+<?php endif; ?>
+
+<?php if ($verifications) :?>
+	<div class="attention" style="text-align:left;">
+	<p>Plusieurs incompatibilités ont été détectées lors de la validation du formulaire, veuillez corriger les problèmes listés ci-dessous :</p>
+	<ul>
+	<?php foreach ($verifications as $message) : ?>
+	<li><?=$message;?></li>
+	<?php endforeach; ?>
+	</ul>
+	</div>
+<?php endif; ?>
+
+
+<p>Les champs précédés du symbole <span class="symbole_obligatoire">*</span> doivent être obligatoirement remplis.</p>
+<form id="rcd_form" name="rcd_form" action="<?=$url;?>" method="post" onsubmit="return validate(this, var_1);">
+	<fieldset>
+		<legend>Observations</legend>
+		<table id="rcd_table_form_obs">
+			<tr>
+				<td><span class="symbole_obligatoire">*</span> <label for="rcd_nom_latin" class="champ_obligatoire">Nom latin du taxon</label></td>
+				<td><input id="rcd_nom_latin" name="rcd_nom_latin" type="text" value="<?=(isset($_POST['rcd_nom_latin'])) ? $_POST['rcd_nom_latin'] : '' ;?>"/></td>
+			</tr>
+			<tr>
+				<td><span class="symbole_obligatoire">*</span> <label for="rcd_date" class="champ_obligatoire">Date de l'observation (format : jj/mm/aa)</label></td>
+				<td><input id="rcd_date" name="rcd_date" type="text" value="<?=(isset($_POST['rcd_date'])) ? $_POST['rcd_date'] : '' ;?>"/></td>
+			</tr>
+			<tr>
+				<td><span class="symbole_obligatoire">*</span> <label for="rcd_commune" class="champ_obligatoire">Commune</label></td>
+				<td>
+					<select id="rcd_commune" name="rcd_commune">
+						<option id="rcd_commune_*" value="">Sélectionnez une commune</option>
+					<?php foreach ($communes as $code => $commune) : ?>
+						<option id="rcd_commune_<?=$code;?>" value="<?=$commune;?> [<?=$code;?>]" <?=(isset($_POST['rcd_commune']) AND $_POST['rcd_commune'] == ($commune.' ['.$code.']')) ? 'selected="selected"' : '' ;?>><?=$commune;?> [<?=$code;?>]</option>
+					<?php endforeach; ?>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><span class="symbole_obligatoire">*</span> <label for="rcd_lieudit">Lieu-dit</label></td>
+				<td><input id="rcd_lieudit" name="rcd_lieudit" type="text" value="<?=(isset($_POST['rcd_lieudit'])) ? $_POST['rcd_lieudit'] : '' ;?>"/></td>
+			</tr>
+			<tr>
+				<td><span class="symbole_obligatoire">*</span> <label for="rcd_commentaire">Localisation précise, commentaires</label></td>
+				<td><textarea id="rcd_commentaire" name="rcd_commentaire" cols="50" rows="5"><?=(isset($_POST['rcd_commentaire'])) ? $_POST['rcd_commentaire'] : '' ;?></textarea></td>
+			</tr>
+		</table>
+	</fieldset>
+	<fieldset>
+		<legend>Coordonnées UTM WGS84 métrique</legend>
+		<table id="rcd_table_form_coord">
+			<?php if (RDD_GM_CLE) : ?>
+			<tr>
+				<td>
+					<input id="rcd_submit_googlemap" name="rcd_submit_googlemap" type="submit" value="Chercher vos coordonnées avec Google Map" />
+				</td>
+			</tr>
+			<?php endif; ?>
+			<tr>
+				<td><label for="rcd_fuseau" class="champ_obligatoire">Fuseau</label></td>
+				<td>
+					<select id="rcd_fuseau" name="rcd_fuseau">
+						<option id="rcd_fuseau_null" value="" <?=(isset($_POST['rcd_fuseau']) AND $_POST['rcd_fuseau'] == '') ? 'selected="selected"' : '' ;?>></option>
+						<option id="rcd_fuseau_31" value="31" <?=(isset($_POST['rcd_fuseau']) AND $_POST['rcd_fuseau'] == '31') ? 'selected="selected"' : '' ;?>>31</option>
+						<option id="rcd_fuseau_32" value="32" <?=(isset($_POST['rcd_fuseau']) AND $_POST['rcd_fuseau'] == '32') ? 'selected="selected"' : '' ;?>>32</option>
+					</select>
+					T
+				</td>
+			</tr>
+			<tr>
+				<td><label for="rcd_coord_x" class="champ_obligatoire">Coordonnée X (Longitude à 7 chiffres)</label></td>
+				<td><input id="rcd_coord_x" name="rcd_coord_x"  type="text" maxlength="7" value="<?=(isset($_POST['rcd_coord_x'])) ? $_POST['rcd_coord_x'] : '' ;?>"/></td>
+			</tr>
+			<tr>
+				<td><label for="rcd_coord_y" class="champ_obligatoire">Coordonnée Y (Latitude à 7 chiffres)</label></td>
+				<td><input id="rcd_coord_y" name="rcd_coord_y" type="text" maxlength="7" value="<?=(isset($_POST['rcd_coord_y'])) ? $_POST['rcd_coord_y'] : '' ;?>"/></td>
+			</tr>
+		</table>
+	</fieldset>
+	<p>
+	<input id="rcd_prenom_nom" name="rcd_prenom_nom" type="hidden" value="<?=$rcd_prenom_nom;?>" />
+	<input id="rcd_courriel" name="rcd_courriel" type="hidden" value="<?=$rcd_courriel;?>" />
+	<input id="rcd_submit_verifier" name="rcd_submit_verifier" type="submit" value="Envoyer votre observation" />
+	<input type="reset" onclick="vider(this.form); return false;" value="Tout effacer" />
+	</p>
+</form>
+</div>
+<script type="text/javascript">
+<!--/*--><![CDATA[//><!--
+	// Vérification côté client du formulaire.
+	var msg_1 = 'Erreur:';
+	var var_1 = new Array();
+	var_1[0] = new Array('rcd_nom_latin','e', "Vous n'avez pas mentionné de nom latin.", '');
+	var_1[1] = new Array('rcd_date','e', "Vous n'avez pas indiqué la date de l'observation.", '');
+	var_1[2] = new Array('rcd_date','r','La date doit être de la forme : jj/mm/aa', /^\d{2}\/\d{2}\/\d{2}$/);
+	var_1[3] = new Array('rcd_commune','e', "Vous n'avez pas sélectionné une commune.", '');
+	var_1[4] = new Array('rcd_lieudit','e', "Vous n'avez pas indiqué de lieu-dit.", '');
+	var_1[5] = new Array('rcd_commentaire','e', "Vous n'avez pas indiqué la localisation précise.", '');
+	var_1[6] = new Array('rcd_coord_x','r', 'La longitude doit être un nombre à 7 chiffres', /^\d{7}$/);
+	var_1[7] = new Array('rcd_coord_y','r', 'La latitude doit être un nombre à 7 chiffres', /^\d{7}$/);
+	
+	/* Fonction vidant les champs du formulaire car Reset remet à zéro en prenant les valeurs contenu dans value et ne vide
+	donc pas les champs quand le formulaire a été envoyé car ils sont remplis avec les données de $_POST.*/
+	function vider(frm)
+	{
+		var tab_chp_a_vider = new Array('rcd_nom_latin', 'rcd_date', 'rcd_commune', 'rcd_lieudit', 'rcd_commentaire',
+										'rcd_fuseau', 'rcd_coord_x', 'rcd_coord_y');
+		for(var i = 0; i < tab_chp_a_vider.length; ++i) {
+			frm.elements[tab_chp_a_vider[i]].value = "";
+		}
+	}	
+//--><!]]>
+</script>
+<script type="text/JavaScript" src="<?=EF_URL_JS.'ValiderFormulaire.js';?>"></script>

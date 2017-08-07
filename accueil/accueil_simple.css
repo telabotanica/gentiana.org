@@ -1,0 +1,18 @@
+/*********************************
+Feuille de style de la page d'accueil 
+***********************************/
+
+/* Elements de base */
+body { 
+	font-family:trebuchet, arial, verdana, sans-serif;
+	font-size:16px;  
+	text-align:center;
+	background:#fff;
+	margin:0;}
+a:link, a:visited {
+  font-weight:bold;
+  text-decoration:none;}
+a:hover, a:active {
+  text-decoration:none;}
+img {
+	border:0;}

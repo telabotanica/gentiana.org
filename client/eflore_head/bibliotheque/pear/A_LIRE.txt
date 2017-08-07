@@ -1,0 +1,6 @@
+Paquetages PEAR :
+DB							-> 1.7.12
+Net_URL						-> 1.0.15
+PEAR						-> 1.6.2
+Services_JSON				-> PROPOSAL : v 1.31 2006/06/28 05:54:17
+Spreadsheet_Excel_Writer	-> 0.9.0 (? à vérifier)

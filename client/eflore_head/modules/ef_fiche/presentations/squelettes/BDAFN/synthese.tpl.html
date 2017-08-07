@@ -1,0 +1,82 @@
+<div id="eflore">
+<script type="text/javascript" language="JavaScript" src="{EF_URL_JS}PlierDeplier.js"></script>
+<h1>{titre_general}<span id="ef_referentiel">{REFERENTIEL}</span></h1>
+{FORMULAIRE_RECHERCHE_NOM}
+<h1 id="ef_synthese_titre">{TITRE}<!-- BEGIN FAMILLE --><span id="ef_famille">{NOM_RETENU_FAMILLE}</span><!-- END FAMILLE --></h1>
+<div id="ef_synthese_colonne">
+		<!-- BEGIN PHOTOFLORA -->
+		<h2>{titre_illustration}</h2>
+		<div id="ef_photoflora" style="text-align:center;margin:5px;">
+			<a href="{PHOTOFLORA_IMG_NORMALE_URL}" onclick="javascript: window.open(this.href, 'Photo_{PHOTOFLORA_IMG_ID}', 'height=416, width=640, top=100, left=100, toolbar=no, menubar=no, location=no, resizable=yes, scrollbars=no, status=no'); return false;"><img src="{PHOTOFLORA_IMG_MINIATURE_URL}" alt="Photographie n°{PHOTOFLORA_IMG_ID} du taxon {PHOTOFLORA_NOM_RETENU_NF}" title="Photographie n°{PHOTOFLORA_IMG_ID} du taxon {PHOTOFLORA_NOM_RETENU_NF}"/></a>
+		</div>
+		<!-- END PHOTOFLORA -->
+		<h2>{titre_classification}</h2>
+		<div id="ef_classif">
+			<table class="table_cadre" summary="Classification du taxon.">
+				<thead>
+					<tr><th colspan="2">{titre_classification}</th></tr>
+				</thead>
+				<tbody>
+					<!-- BEGIN CLASSIF_LIGNE_BODY -->
+					<tr>
+						<td>{CLASSIF_RANG} : </td><td><a href="{CLASSIF_URL}"><span class="nom_latin">{CLASSIF_NOM}</span></a></td>
+					</tr>
+					<!-- END CLASSIF_LIGNE_BODY -->
+				</tbody>
+			</table>
+		</div>
+		<h2>{titre_chorologie}</h2>
+		<div id="ef_choro">
+			<!-- BEGIN CARTO_INFO -->
+				<p class="information">{CARTO_INFO}</p>
+			<!-- END CARTO_INFO -->
+			<!-- BEGIN CARTO -->
+				<div id="ef_choro_carte_mini">
+				<a href="{CARTE_URL}"><img src="{CARTE}" alt="Carte de France"/></a>
+				<h4 id="efc_legende_titre">Légende</h4>
+				<ul id="efc_legende">
+				<!-- BEGIN LEGENDE_LIGNE -->
+					<li><div class="efcl_couleur" style="background-color:{LEGENDE_COULEUR};"></div>{LEGENDE_INTITULE}</li>
+				<!-- END LEGENDE_LIGNE -->
+				</ul>
+				</div>
+			<!-- END CARTO -->
+		</div>
+</div>
+<div id="ef_synthese_contenu">
+	<script type="text/javascript">afficherAide();</script>
+	<h2 id="ef_titre_nomenclature">{titre_nomenclature}</h2>
+	<dl id="ef_nomenclature" class="ajout_2point">
+		<dt>Nom sélectionné</dt>
+		<dd><strong id="efins_nom"><a href="{URL_PERMALIEN_NN}">{NOM_SELECTION}</a></strong></dd>
+		<dt>Nom retenu (valide)</dt>
+		<dd><strong id="efinr_nom"><a href="{URL_PERMALIEN_NT}">{NOM_RETENU}</a></strong></dd>
+	</dl>
+	<!-- BEGIN CORRESPONDANCE -->
+	<h2 id="ef_titre_correspondance">{titre_correspondance}</h2>
+	<dl id="ef_correspondance" class="ajout_2point">
+	<!-- BEGIN CORRES_LIGNE --><dt>{CORRES_REFERENTIEL}</dt><dd><a href="#">{CORRES_NOM}</a></dd><!-- END CORRES_LIGNE -->
+	</dl>
+	<!-- END CORRESPONDANCE -->
+	<h2 id="ef_titre_permalien">Liens permanents</h2>
+	<dl id="ef_permalien" class="ajout_2point">
+		<dt>Nom sélectionné</dt>
+		<dd><!-- BEGIN PERMALIEN_NN -->&nbsp;<a href="{URL_PERMALIEN_NN}">{URL_PERMALIEN_NN}</a><!-- END PERMALIEN_NN --><!-- BEGIN PERMALIEN_NN_INFO -->{PERMALIEN_NN_INFO}<!-- END PERMALIEN_NN_INFO --></dd>
+		<dt>Taxon</dt>
+		<dd><!-- BEGIN PERMALIEN_NT -->&nbsp;<a href="{URL_PERMALIEN_NT}">{URL_PERMALIEN_NT}</a><!-- END PERMALIEN_NT --><!-- BEGIN PERMALIEN_NT_INFO -->{PERMALIEN_NT_INFO}<!-- END PERMALIEN_NT_INFO --></dd>
+	</dl>
+	<!-- BEGIN XPER -->
+	<h2 id="ef_titre_xper">{titre_xper} <a href="http://www.tela-botanica.org/projets/37/wikini">{titre_xper_lien}</a></h2>	
+	<ul id="ef_xper" class="ajout_2point">
+	<!-- BEGIN XPER_LIGNE --><li><a href="{XPER_BASE_URL}" onclick="javascript: window.open(this.href, 'Xper_{XPER_BASE_NOM}', 'top=100, left=100'); return false;">{xper_base_intitule}{XPER_BASE_RANG} {XPER_BASE_TITRE}</a></li><!-- END XPER_LIGNE -->
+	</ul>
+	<!-- END XPER -->
+	<h2 id="ef_titre_code">{titre_code}</h2>
+	<div id="ef_code">
+		<p>Code nomenclatural (nn): <span class="ef_nn">{NOM_SELECTION_NN}</span></p>
+		<p>Code taxonomique (nt): <span class="ef_nt">{NOM_SELECTION_NT}</span></p>
+	</div>
+	<h2 id="ef_titre_telechargement">Fiche téléchargeable</h2>	
+	<p id="ef_telechargement"><a class="pdf" href="{URL_EXPORT_PDF}">Télécharger la fiche PDF du taxon.</a></p>
+</div>
+</div>

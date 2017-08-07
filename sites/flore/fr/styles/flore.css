@@ -1,0 +1,194 @@
+/*
+	Feuille de style du monde Flore de l'Is�re
+	Auteur : Jean-Pascal MILCENT
+*/
+h1{
+  color:#003399;}
+h2, h3, h4, h5, h6, hr{
+  color:#6699FF;}
+a img {
+  border:1px dotted #6699FF;}
+a {
+	color:#003399;}
+a:hover {
+	color:#6699FF;}
+
+/*DIFFERENTS BLOCS DE LA PAGE*/
+
+/* Logo */
+#zone_logo {
+	margin-top: 17px;
+	margin-left: 15px;
+}
+
+/* Bandeau */
+#zone_bandeau {
+	background: transparent url("http://www.gentiana.org/sites/flore/generique/images/graphisme/bandeau.jpg") no-repeat top left;}
+#bandeau_contenu {
+	background: transparent url("http://www.gentiana.org/sites/flore/generique/images/graphisme/fond_menu_commun_bandeau.png") repeat-x top left;}
+
+/* Zone moteur recherche */
+#form_more_recherche input#more_ok {
+	color:white;}
+#form_more_recherche input#more_ok:hover {
+	color:#6699FF;
+	border-color:#6699FF;}
+#form_more_recherche input#more_motif{
+	color:#6699FF;
+	font-weight:bold;}
+
+/* Zone contenu -> VEI */
+#zone_vei {
+	background: transparent url("http://www.gentiana.org/sites/flore/generique/images/graphisme/picto_vei.png") no-repeat top left;}
+#vei {
+	color:#003399;}
+
+/* Zone contenu -> Navigation */
+#zone_contenu_navigation {
+  border-color:#003399;
+}
+#zone_contenu_navigation li {
+	border-radius: 10px 10px 0 0;
+	border: solid #909090 1px;
+	border-bottom: solid #b0b0b0 1px;
+	margin-right: 2px;
+}
+#zone_contenu_navigation li.menu_actif {
+	border-bottom: none;
+}
+#zone_contenu_navigation li.menu_inactif {
+	background-color: #d0d0d0;
+}
+#zone_contenu_navigation li.menu_inactif a {
+	color: #404040;
+}
+#zone_contenu_navigation li:hover {
+  color:#003399;
+}
+#zone_contenu_navigation li a:hover {
+  color:#003399;
+}
+#zone_contenu_navigation .menu_actif a {
+  color:#003399;
+}
+
+/* Zone contenu -> Page */
+#zone_contenu_page {
+}
+
+/* Zone liste sites */
+#zone_liste_site a {
+	color:white;}
+#site_flore_isere a{
+	color:#99CCFF;
+  background:url("http://www.gentiana.org/sites/flore/generique/images/graphisme/site_flore_isere.png") center left no-repeat;}
+
+/* Zone menu */
+#zone_menu {
+  /*background:transparent url("http://www.gentiana.org/sites/flore/generique/images/graphisme/fond_menu_classique.png") repeat-x;*/
+  border-right: solid 1px #dedede;
+}
+#zone_menu a{
+  color:#003399;}
+#zone_menu a:hover, #form_connexion #connexion:hover {
+	color:#6699FF;
+	border-color:#6699FF;}
+
+/* Zone menu -> menus classique */
+#zone_menu_classique a:hover {/* Menu tout niveau : survol */
+  background-color: #D3D8EB;
+  color:black;}
+#zone_menu_classique .menu_classique_n1>li.menu_actif>a {/* Menu niveau 1 actif */
+  /*background:#FFF23F url("http://www.gentiana.org/sites/flore/generique/images/graphisme/puce_triangle.png") no-repeat center left;*/
+  background-color: #D3D8EB;
+}
+#zone_menu_classique .menu_classique_n2 .menu_actif {/* Menu niveau 2 actif */
+  background-color: #D3D8EB;}
+#zone_menu_classique .menu_classique_n2 .menu_inactif {/* Menu niveau 2 inactif */
+  background-color: #EBEEFB;
+}
+
+/* Zone menu -> menus déroulants */
+#zone_menu_classique a:hover { /* Menu tout niveau : survol */
+	background-color: #D3D8EB;
+	color:black;
+}
+#zone_menu_classique .menu_deroulant_n1 > li.menu_actif > a { /* Menu niveau 1 actif */
+	/*background:#FFF23F url("http://www.gentiana.org/sites/gentiana/generique/images/graphisme/puce_triangle.png") no-repeat center left;*/
+	background-color: #D3D8EB;
+}
+#zone_menu_classique .menu_deroulant_n2 .menu_actif { /* Menu niveau 2 actif */
+	background-color: #D3D8EB;
+}
+#zone_menu_classique .menu_deroulant_n1 > li.menu_actif > .menu_deroulant_n2 .menu_inactif { /* Menu niveau 2 inactif */
+	background-color: #EBEEFB;
+}
+#zone_menu_classique .menu_deroulant_n1 > li > a {
+	border: solid #003399 1px;
+	border-radius: 8px;
+}
+
+/* Zone menu -> Identification */
+#zone_identification {
+	background: transparent url("http://www.gentiana.org/sites/flore/generique/images/graphisme/identification_cadre.png") no-repeat top left;}
+#form_connexion, #iden_action {
+	background: transparent url("http://www.gentiana.org/sites/flore/generique/images/graphisme/identification_fleur.png") no-repeat bottom right;}
+#identification_message, #zone_identification legend, #zone_identification a, #zone_identification label, #form_connexion #connexion {	
+	color:#003399;}
+
+/* Zone pied */
+#pied_menu_commun {
+	background: transparent url("http://www.gentiana.org/sites/flore/generique/images/graphisme/fond_menu_commun_pied.png") repeat-x top left;}
+#pied_menu_commun a{
+	color:black;}
+
+/* Tableau*/
+.table_cadre {
+  border:1px solid #6699FF;
+  margin:0 0 15px 0;}
+.table_cadre th { 
+	color:white;
+  border:1px solid #6699FF;
+	background: #6E97D0 url("http://www.gentiana.org/sites/flore/generique/images/graphisme/fond_menu_commun_bandeau.png") repeat-x top left;}
+.table_cadre th a {
+	color:white;}
+.table_cadre td {
+  border:1px solid #6699FF;}
+.table_cadre {
+  background-color:white;}
+.ligne_paire {
+  background-color:#E3ECF4;}
+
+/* Sp�cial appli eFlore */
+#eflore_pied_page {
+  clear:both;
+  padding-top:20px;
+	margin:0 auto;
+  text-align:center;
+  color:#A9A9A9;}
+#efc_transmettre_info {
+	background-color:#CADAEE;
+	border:1px solid blue;
+	font-weight:bold;
+	text-align:center;
+	height:3em;
+	margin:5px 20%;}
+#efc_carte_presence, #efc_carte_proportion {
+	position:relative;  
+	width:800px;
+	height:700px;}
+#efc_legende{
+	position:absolute;  
+	top:0;
+	right:0;
+	border:none;
+	border-collapse:separate;
+	width:200px;
+	padding:2px;
+	margin:5px;}
+.efcl_couleur {
+  border:1px solid black;
+  width:10px;
+  height:10px;}
+#efc_avertissement {
+	clear:both;}

@@ -1,0 +1,26 @@
+<h1><?=$zone_parente_nom;?> : carte des <?=$zone_type;?>s avec <?=$taxon_nom_latin;?></h1>
+<p>Cliquez sur une zone colorée de la carte pour afficher la liste des taxons.</p>
+<ul>
+<?php foreach ($zones_notions_nbre as $notion_cle => $notion_nbre) : ?>
+	<li><?=$legendes[$notion_cle]['intitule'];?> : <strong><?=$notion_nbre;?> zones géographiques sur <?=$zones_nbre;?></li></strong>
+<?php endforeach; ?>
+	<li>Nom latin : <a class="lien_ext" href="http://www.tela-botanica.org/eflore/BDNFF/derniere_version/nn/<?=$taxon_nom_id;?>"><?=$taxon_nom_latin;?></a></li>
+	<li>Nom(s) commun(s) : <?=$taxon_nom_verna;?></li>
+</ul>
+<!--
+	<form id="cartographie" action="<?=$url;?>" method="post">
+	<input type="image" id="carte" src="<?=$url_carte;?>" usemap="#isere_640x644_Map" />
+	<?=$carte_map;?>
+	</form>
+-->
+<img id="carte" src="<?=$url_carte;?>" usemap="#isere_640x644_Map" />
+<?=$carte_map;?>
+<p id="efc_version_date">Version des données : <?=$version_nom;?> v<?=$version_code;?> [daté du : <?=$version_date;?>]</p>
+<div id="efc_legende_zone">
+	<h4 id="efc_legende_titre">Légende</h4>
+	<ul id="efc_legende">
+<?php foreach ($legendes as $legende) : ?>
+		<li><div class="efcl_couleur" style="background-color: rgb(<?= str_replace('-', ',', $legende['rvb']);?>);"></div><?=$legende['intitule'];?></li>
+<?php endforeach; ?>
+	</ul>
+</div>

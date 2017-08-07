@@ -1,0 +1,29 @@
+<h1>{titre_general}<span id="ef_referentiel">{TITRE_GENERAL_REFERENTIEL}</span></h1>
+{FORMULAIRE_RECHERCHE_NOM}
+<h1 id="ef_chorologie_titre">{TITRE}<span id="ef_famille">{NOM_RETENU_FAMILLE}</span></h1>
+<div id="ef_choro_carte" style="width:575px;float:left;padding:0 5px;">
+<!-- BEGIN CARTO_INFO -->
+<p class="information">{CARTO_INFO}</p>
+<!-- END CARTO_INFO -->
+<!-- BEGIN CARTO -->
+<img src="{CARTE}" alt="Carte" style="display:block;background-color:#C0DAF9;border:2px outset grey;"/>
+<div id="efc_legende_zone">
+	<h4 id="efc_legende_titre">Légende</h4>
+	<ul id="efc_legende">
+		<!-- BEGIN LEGENDE_LIGNE -->
+		<li><div class="efcl_couleur" style="background-color:{LEGENDE_COULEUR};"></div>{LEGENDE_INTITULE}</li>
+		<!-- END LEGENDE_LIGNE -->
+	</ul>
+</div>
+<!-- END CARTO -->
+</div>
+<!-- BEGIN CARTO_AVERTISSEMENT -->
+<div id="ef_choro_info" style="width:430px;float:left;padding:0 5px;">
+	<h2>Information sur la chorologie</h2>
+	<p>Ce projet vise à produire dans des délais raisonnables une cartographie départementale des plantes de France métropolitaine à partir du dépouillement de la littérature, et sur la base d'un critère simple, celui de la présence / absence dans le département. Ces données pourront ensuite être améliorées au cours du temps en fonction de vos remarques et de vos investigations de terrain.</p>
+	<p>Ce projet est coordonné par <a href="mailto:philippe.julve@wanadoo.fr">Philippe JULVE</a>, avec l'aide de <a href="mailto:b.bock@wanadoo.fr">Benoît BOCK</a>,
+qui ont la lourde tâche de gérer et d'homogénéiser toutes les listes envoyées par les correspondants régionaux avant de les communiquer à Tela Botanica qui les intègre dans sa base de données. La mise à jour de la base de données est effectuée périodiquement. Il peut donc y avoir un décalage entre les données présentes dans les fichiers produits par le projet et celles figurant dans l'interface web en ligne.</p>
+	<h2>Participation au projet</h2>
+	<p>Vous pouvez communiquer vos remarques sur les listes départementales (ajout, suppression, commentaires) en envoyant un message aux coordonateurs ou en vous inscrivant à la liste de discussion. Pour ce faire, envoyer un mail sans contenu à <a href="mailto:tb-chorologie-subscribe@yahoogroupes.fr">tb-chorologie-subscribe@yahoogroupes.fr</a>.</p>
+</div>
+<!-- END CARTO_AVERTISSEMENT -->

@@ -1,0 +1,41 @@
+<h1>Rédaction</h1>
+<?php if (isset($reedition_info)) :?>
+<p class="zone_info">Vous venez de rééditer la version archivée du <?=$reedition_info;?>.</p>
+<?php endif; ?>
+<form action="<?=$form_url;?>" method="post" name="form_modifier_contenu" id="form_modifier_contenu">
+	<ul>
+		<li>
+			<?=$fck_editor;?>
+		</li>
+		<li>
+			<label for="gmc_ce_type_modification">Type de modification : </label>
+			<select id="gmc_ce_type_modification" tabindex="1000" name="gmc_ce_type_modification">
+				<option value="1">Mineure</option>
+				<option value="2">Majeure</option>
+			</select>
+		</li>
+		<li>
+			<label for="gmc_resume_modification">Resumé modification : </label>
+			<input id="gmc_resume_modification" tabindex="1001" size="45" maxlength="255" name="gmc_resume_modification" type="text" />
+		</li>
+		<li>
+			<ul class="liste_bouton">
+				<li>
+					<input id="afficheur_enregistrer_quitter" name="afficheur_enregistrer_quitter" value="Enregistrer et quitter" type="submit" />
+				</li>
+				<li>
+					<input id="afficheur_enregistrer_rester" name="afficheur_enregistrer_rester" value="Enregistrer et rester en édition" type="submit" />
+				</li>
+				<li>
+					<input id="afficheur_historique" name="afficheur_historique" value="Réediter une version archivée" type="submit" />
+				</li>
+				<li>
+					<input id="afficheur_annuler" name="afficheur_annuler" value="Annuler" type="submit" />
+				</li>
+			</ul>
+			<input name="gmc_ce_type_contenu" type="hidden" value="<?=$gmc_ce_type_contenu;?>" />
+			<input name="gmc_ce_menu" type="hidden" value="<?=$gmc_ce_menu;?>" />
+			<input name="gmc_ce_type_contenu_table" type="hidden" value="1" />
+		</li>
+	</ul>
+</form>

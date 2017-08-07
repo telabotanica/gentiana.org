@@ -1,0 +1,79 @@
+* {margin: 0; padding: 0; }
+body {text-align:center; background:#FFF;font: 12px Arial, sans-serif; color: #000;text-align: justify;line-height: 17px;}
+img {border:0;}
+#container {margin: 3px auto;width: 800px;text-align: left;}
+#page_table {border-spacing: 0;border-collapse: separate; margin: 0; padding: 0 ; border: 0; border-width:0; } 
+#bandeau_haut {vertical-align: top;border-spacing: 0;margin: 0; padding: 0; border: 0; background: url(images/Bandeau-wiki.png) no-repeat top left; width:631px; height:165px;}
+#logo_ekotribu, #logo_ekotribu img {vertical-align: top; border-spacing: 0; margin: 0; padding: 0; border: 0;}
+.menu_column {vertical-align: top; border: 0; background: #F2B814; width: 159px; border: 0;padding:10px 5px 5px 5px;}
+.menu_column h1,h2,h3,h4,h5 {text-align: center; font: 12px Arial,sans-serif; color: #4F3493;border-bottom:1px solid #FFF;}
+.menu_column h1 {font-size:20px;}
+.menu_column h2 {font-size:18px;}
+.menu_column h3 {font-size:16px;}
+.menu_column h4 {font-size:14px;}
+.menu_column h5 {font-size:12px;}
+.menu_column h5 {font-size:10px;}
+.menu_column a:link, a:visited { font-weight: normal; text-decoration: underline; color: #FFF;}
+.menu_column a:hover, a:active { text-decoration:none ; color: #4F3493;}
+.menu_column li {display : list-item; list-style-type: disc; padding:0;color: #FFF;}
+.menu_column li:hover {color: #4F3493;}
+div.centrage {text-align: center;}
+.body_column {vertical-align: top; border: 0; padding:5px;}
+.page_name {display:none; }
+.wiki_name {padding-top:5px;text-align:center;color: #4F3493; font-size:22px;}
+.header {display:none;}
+.page { background-color: #FFF; padding: 5px; border: 0; }
+.page h1 {padding:2px; text-align: center; font-size: 22px; color: #4F3493;}
+.page h2 {padding:2px; text-align: left; font-size: 18px; color: #05AEF8; background: #FFFFFF;}
+.page h3 {padding:2px; font-weight: bold; font-size:17px; color: #4F3493;}
+.page h4 {padding:2px; text-align: center; font-weight: bold; font-size: 14px; color: #05AEF8;}
+.page h5 {padding:2px; text-align: center; font-weight: bold; font-size: 12px; color: #4F3493;}
+.page a:link { font-weight: normal; text-decoration: underline; color: #FB9B02;}
+.page a:visited { font-weight: normal; text-decoration: underline; color: #FB9B02;}
+.page a:hover, a:active { text-decoration:none ; color: #05AEF8;}
+ul { margin: 0; padding: 0 0 0 15px;}
+li { display : list-item; list-style-type: circle; padding:0;}
+ol { margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; }
+form { margin: 0px; padding: 0px; }
+tt { color: Navy; }
+hr {border: 0px; color: #F2B814; /* Internet Explorer */ background-color: #F2B814; height: 2px; }
+
+.error { color: #CC3333; font-weight: bold; }
+.indent { margin-left: 40px; }
+.additions { color: #008800; }
+.deletions { color: #880000; }
+.add { font-weight: bold; color: #c00; text-decoration: underline; }
+.del { font-style: italic; color: #c00; text-decoration: line-through; }
+
+.prev_alert { background-color: red; color: white; font-size: 1.7em; font-weight: bold; margin-bottom: 5px; }
+.edit { width: 100%; height: 400px; }
+.footer { font-size:12px; padding: 5px; border: 2px solid #F2B814; }
+.footer a {color: #4F3493;text-decoration:underline; }
+.footer a:hover {color: #F2B814;text-decoration:none; }
+.code { background: #FFFFFF; border: solid #888888 2px; font-family: 'Courier New', Courier; color: black; font-size: 10pt; width: 100%; height: 400px; overflow: scroll; padding: 3px; }
+.revisioninfo { color: #AAAAAA; padding-bottom: 20px; }
+
+.commentsheader {display:none;}
+.comment { background-color: #EEEEEE; padding: 10px; border-left: 1px inset; border-right: 1px inset; border-top: 1px solid #CCCCCC; border-bottom: 1px solid #EEEEEE; }
+.commentinfo { color: #AAAAAA; }
+.commentform { background-color: #EEEEEE; padding: 10px; border-left: 1px inset; border-right: 1px inset; border-top: 1px solid #CCCCCC }
+
+.copyright { font-size: 11px; color: #000; text-align: right; }
+.copyright a { color: #000; }
+.searchbox { background: #FFF; border: 1px solid #000; width:100px; }
+.debug { font-size: 11px; color: #888888; }
+
+.hr_clear { clear: both; visibility: hidden; }
+.include_right { float: right; width: 17%; } /* bloc flotant à droite */
+.include_left { float: left; width: 17%; } /* bloc flotant à gauche */
+.include_solid_border { border: solid; padding: 2px; } /* encadré noir */
+.include_gray_background { background-color: #DDDDDD; } /* fond gris */
+.include_small_fonts { font-size: 0.8em; } /* petites polices */
+.include_big_fonts { font-size: 1.2em; } /* grandes polces */
+.include_height10em { height: 10em; overflow: scroll; } /* boite de 10em de hauteur, avec ascenseur */
+.include_height15em { height: 15em; overflow: scroll; }
+.include_height30em { height: 30em; overflow: scroll; }
+.include_height60em { height: 60em; overflow: scroll; }
+
+.trail_table { line-height: 30px;}
+.trail_button { color: #993333; }

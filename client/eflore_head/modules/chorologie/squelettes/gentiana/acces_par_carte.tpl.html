@@ -1,0 +1,23 @@
+<h1>Carte des communes de l'Isère</h1>
+<h2>Cliquez sur une commune de la carte pour afficher la liste des taxons observés.</h2>
+<p>La couleur est proportionnelle au nombre de taxons observés.</p>
+<div id="efc_carte_proportion">
+<!--
+<form id="cartographie" action="<?=$url;?>" method="post">
+	<input type="image" id="carte" src="<?=$url_carte;?>" usemap="#isere_640x644_Map" />
+	<?=$carte_map;?>
+</form>
+-->
+<img id="carte" src="<?=$url_carte;?>" alt="Carte de l'Isère représentant la proportion de taxons par commune.'" usemap="#isere_640x644_Map" />
+<?=$carte_map;?>
+
+<table id="efc_legende">
+	<caption id="efc_legende_titre">Légende</caption>
+<?php foreach ($legendes as $legende) : ?>
+		<tr>
+			<td class="efcl_couleur" style="background-color: rgb(<?=$legende['rvb'];?>);">&nbsp;</td>
+			<td class="efcl_legende"><?=$legende['freq_min'];?> à <?=$legende['freq_max'];?> taxons</td>
+		</tr>
+<?php endforeach; ?>
+</table>
+</div>

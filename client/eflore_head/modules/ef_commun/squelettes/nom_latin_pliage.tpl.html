@@ -1,0 +1,11 @@
+<script type="text/javascript">afficherImage('<?=$code;?>');</script>
+<span id="el<?=$code;?>Parent" class="parent">
+<?php foreach($nom_structure as $nom ): ?>
+	<span class="<?=$nom['class'];?>"><?=$nom['contenu'];?></span>
+<?php endforeach; ?>
+</span>
+<span id="el<?=$code;?>Child" class="child">
+<?php foreach($nom_complement as $nom ): ?>
+	<span class="<?=$nom['class'];?>"><?=$nom['contenu'];?></span>
+<?php endforeach; ?>
+</span>

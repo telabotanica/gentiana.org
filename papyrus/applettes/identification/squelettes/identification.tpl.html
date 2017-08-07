@@ -1,0 +1,49 @@
+<?php if ($loggue) : ?>
+	<p id="identification_info<?=$id_xhtml;?>">
+		<span id="identification_message<?=$id_xhtml;?>"><?=IDEN_LG_MESSAGE;?></span>
+		<?php if ($url_page_inscription) : ?>
+			<a href="<?=$url_page_inscription;?>" id="voir_inscription<?=$id_xhtml;?>" title="Voir mon inscription">
+				<?=$chp_personne_prenom; ?>&nbsp;<?=$chp_personne_nom; ?>&nbsp;<?=$chp_structure; ?>
+			</a>
+		<?php else : ?>
+			<?=$chp_personne_prenom; ?>&nbsp;<?=$chp_personne_nom; ?>&nbsp;<?=$chp_structure; ?>
+		<?php endif; ?>
+    </p>
+    <p id="iden_action<?=$id_xhtml;?>">
+        <?php if ($url_page_modif_inscription) : ?>
+            <a id="lien_inscription_modif<?=$id_xhtml;?>" href="<?=$url_page_modif_inscription; ?>">
+            	<?=IDEN_LG_INSCRIPTION_URL_MODIF;?>
+            </a>
+        <?php endif; ?>
+        <a id="deconnexion<?=$id_xhtml;?>" href="<?=$url_deconnect;?>"><?=IDEN_LG_DECONNEXION;?></a>
+    </p>
+<?php else : ?>
+	<form id="form_connexion<?=$id_xhtml;?>" class="form_identification" action="<?=$url;?>" method="post">
+	<?php if ($url_erreur) : ?>
+		<span class="erreur"><?=IDEN_ECHEC_AUTH;?><a id="lien_inscription<?=$id_xhtml;?>" href="<?=$url_erreur;?>"><?=IDEN_ICI;?></a></span>
+	<?php endif ;?>
+	  <fieldset>
+	  <legend><?=IDEN_LG_FORM_LEGEND;?></legend>
+	  <label for="username"><?=IDEN_LG_FORM_LABEL_COURRIEL;?></label>
+	  <input type="text"  id="username<?=$id_xhtml;?>" name="username" maxlength="80" tabindex="1" value="<?=IDEN_LG_FORM_VALUE_COURRIEL;?>" />
+	  <label for="password"><?=IDEN_LG_FORM_LABEL_MDP;?></label>
+	  <input type="password" id="password<?=$id_xhtml;?>" name="password" maxlength="80" tabindex="2" value="<?=IDEN_LG_FORM_VALUE_MDP;?>" />
+	
+	  <input type="submit" id="connexion<?=$id_xhtml;?>" name="connexion" tabindex="4" value="<?=IDEN_LG_FORM_VALUE_SUBMIT;?>" />
+	  <?php if (IDEN_AUTH_SESSION_DUREE != 0) : ?>
+	  <input type="checkbox" id="persistant<?=$id_xhtml;?>" name="persistant" tabindex="3" value="o" />
+	  <label id="persistant_label<?=$id_xhtml;?>" for="persistant">Mémoriser mon compte</label>
+	  <?php endif ;?>
+	  <?php if ($url_page_inscription || $url_inscription_aide) : ?>
+	  <p id="inscription_info<?=$id_xhtml;?>">
+	    <?php if ($url_page_inscription) : ?>
+	    <a id="lien_inscription<?=$id_xhtml;?>" href="<?=$url_page_inscription;?>"><?=IDEN_LG_INSCRIPTION_URL;?></a>
+	    <?php endif ;?>
+	    <?php if ($url_inscription_aide) : ?>
+		<a id="inscription_aide<?=$id_xhtml;?>" href="<?=$url_inscription_aide;?>"><?=IDEN_LG_INSCRIPTION_AIDE;?></a>
+	    <?php endif; ?>
+	  </p>
+	  <?php endif; ?>    
+	  </fieldset>
+	</form>
+<?php endif; ?>

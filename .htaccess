@@ -1,0 +1,36 @@
+
+# Raccourci pour les menus et sites de Papyrus
+RewriteEngine on
+# si le fichier ou le dossier existe dans le systï¿½me de fichier on l'utilise directement
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Raccourci pour l'inscription
+RewriteRule ^_ins_([0-9a-z]*)$ /papyrus.php?menu=77&action=ajouter&id=$1 [L]
+
+# Pour le flux RSS des actu du Bazar
+RewriteRule ^page:actu_rss$ /papyrus.php?menu=20&vue=2&action=18 [QSA,L]
+
+# Services de gentiana, chorologie notamment
+RewriteRule ^service:gentiana:(.+)$ gentiana-services/services/$1 [QSA,L]
+
+# ATTENTION : remplace localhost par votre nom de domaine !
+# Réecriture d'url pour les applications de Papyrus n'utilisant pas correctement Pap_URL
+# ATTENTION : ne marche pas pour les formulaires en mode POST !
+RewriteRule ^([^\/]+)&(.*)$ http://www.gentiana.org/$1?$2 [QSA,L,R=301]
+# Réecriture d'url pour les vieux permaliens
+RewriteCond %{REQUEST_FILENAME}/ !-d
+RewriteRule ^([^\/\?:.]+)$ http://www.gentiana.org/page:$1 [QSA,L,R=301]
+# Redirection d'url pour le sélecteur de site
+# Le point d'interrogation sans rien aprés, vide la QUERY_STRING sinon elle est concacténée à l'url et cela plante..._n
+# Le "/" initial dans la RewriteCond est obligatoire!
+RewriteCond %{REQUEST_URI}?%{QUERY_STRING}	 ^/papyrus\.php\?site=([^&]+)$
+RewriteRule ^papyrus.php$ http://www.gentiana.org/site:%1? [L,R=301]
+
+# Réecriture d'url pour les sites de Papyrus : à modifier si les valeurs par défaut ont été changées
+RewriteRule ^site:.+$ /papyrus.php [QSA,L]
+# Réecriture d'url pour les menus de Papyrus : à modifier si les valeurs par défaut ont été changées
+RewriteRule ^page:.+$ /papyrus.php [QSA,L]
+
+# Gestion des erreurs 404
+ErrorDocument 404 /erreur_http.php?erreur=404

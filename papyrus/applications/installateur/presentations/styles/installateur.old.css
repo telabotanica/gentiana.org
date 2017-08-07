@@ -1,0 +1,38 @@
+* {padding: 0;margin: 0;}
+body {font-family: Tahoma, Arial, Helvetica, sans-serif;text-align: center;color: #566047;line-height: 19px;
+	background: #FBFBE5 url(../images/grass.png) right bottom fixed no-repeat;}
+a, a:link, a:visited {color: #566047;text-decoration: underline;background: transparent;}
+a:hover {color: #6878C6;background: transparent;text-decoration: none;}
+a:active, a:focus {color: #566047;background-color: #FBFBE5;}   
+p {line-height: 19px;}
+acronym {font-weight: bold;text-decoration: none;border-bottom: none;}
+#container {margin: auto;text-align: left;width: 760px;border-left:solid 2px #BCBCAB;border-right:solid 2px #BCBCAB;}
+#zone_bandeau {color: #566047;background: #E9EBD3;width: 760px;height: 70px;margin:5px auto;
+border-top:solid 3px #838E6C;border-bottom:solid 3px #838E6C;}
+#logo {float : left;margin: 3px 0 0 10px;}
+#site_nom {width:300px;text-align: center;margin:20px auto;background: transparent;color: #566047;}
+#zone_contenu {margin: 6px;font-size:70%;}
+#zone_pied {clear:both;text-align:center;background: #E9EBD3;color: #566047;width: 760px;height: 40px;margin:5px auto;
+border-top:solid 3px #838E6C;border-bottom:solid 3px #838E6C;font-size:70%;padding-top:5px;}
+h1, h2, h3 {margin-bottom: 10px;height: 22px;border-bottom: 1px solid #7D8965;}
+h1 {font-size: 1.5em;}
+h2 {font-size: 1.3em;}
+h3 {font-size: 1.2em;}
+li {text-align:left;margin-left:20px;}
+table {border-collapse: collapse;border-spacing: 0;}
+th, td {text-align:left;padding:2px;border: solid 1px }
+tt {font-size:12px;}
+img {border:0;}
+fieldset {border:solid 1px #7D8965;padding:3px;margin:2px;}
+legend {font-weight:bold;}
+input:hover {background:#7D8965;color: #FBFBE5;}
+input, select, textarea {font-family: Tahoma, Arial, Helvetica, sans-serif;font-size:11px;color: #566047;background:#FDFDF3;border:solid 1px #7D8965;}
+/* Mise en ligne des formulaires */
+form li {margin:0;padding:0;display: block;}
+form ul {margin:0;padding:0;list-style-type: none;}
+form label {clear:both;float: left;width:250px;font-weight:bold;}
+.liste_bouton li {display:inline;}
+.erreur {color:red;}
+.etape_info {margin:10px auto;padding 5px;text-align:center;width:90%;border: 1px solid green;color:green;}
+.ok {text-align:center;border: 1px solid green;color:green;}
+.failed {text-align:center;border: 1px solid red;color:red;}

@@ -1,0 +1,140 @@
+<script type="text/javascript" language="javascript" src="{EF_URL_JS}domtooltip/domLib.js"></script>
+<script type="text/javascript" language="javascript" src="{EF_URL_JS}domtooltip/domTT.js"></script>
+
+<h1>{titre_general}<span id="ef_referentiel">{TITRE_GENERAL_REFERENTIEL}</span></h1>
+{FORMULAIRE_RECHERCHE_NOM}
+<h1 id="ef_info_titre">{TITRE}<span id="ef_famille">{NOM_RETENU_FAMILLE}</span></h1>
+{{ProtectionInfo nvp="{NVP}" nt="{NT}"}}
+<!-- BEGIN INFO_TXT_TAXON -->
+<div id="ef_info_txt_taxon">
+	<h2 id="efitt_titre">{titre_taxon}{EFIT_TITRE}</h2>
+	<p id="ef_info_message" >Les informations suivantes sont issues de la base de données d'origine.<br />
+	Elles sont présentées ici sous une forme brute afin de les rendre disponibles rapidement en attendant leur éventuel retraitement 
+	informatique. <br />
+	Cela explique l'aspect austère de cette restitution.</p>
+	<dl id="efitt_liste_info" class="ajout_2point">
+		<!-- BEGIN EFIT_DONNEES -->
+		<dt><span title="{EFIT_CHP_TITLE}" class="{EFIT_CHP_CLASS}">{EFIT_CHP}</span></dt>
+		<dd><!-- BEGIN EFIT_DONNEES_VAL --><span title="{EFIT_VAL_TITLE}" class="{EFIT_VAL_CLASS}">{EFIT_VAL}</span>{EFIT_VAL_SEPARATEUR}<!-- END EFIT_DONNEES_VAL --></dd>
+		<!-- END EFIT_DONNEES -->
+	</dl>
+</div>
+<!-- END INFO_TXT_TAXON -->
+
+<!-- BEGIN INFO_TXT_NOM -->	
+<div id="ef_info_txt_nom">
+	<h2 id="efitn_titre">{titre_nom}{EFIN_TITRE}</h2>
+	<p id="ef_info_message" >Les informations suivantes sont issues de la base de données d'origine.<br />
+	Elles sont présentées ici sous une forme brute afin de les rendre disponibles rapidement en attendant leur éventuel retraitement 
+	informatique. <br />
+	Celà explique l'aspect austère de cette restitution.</p>		
+	<dl id="efitn_liste_info_nom" class="ajout_2point">
+		<!-- BEGIN EFIN_DONNEES -->
+		<dt><span title="{EFIN_CHP_TITLE}" class="{EFIN_CHP_CLASS}">{EFIN_CHP}</span></dt>
+		<dd><span title="{EFIN_VAL_TITLE}" class="{EFIN_VAL_CLASS}">{EFIN_VAL}</span></dd>
+		<!-- END EFIN_DONNEES -->
+	</dl>
+</div>
+<!-- END INFO_TXT_NOM -->
+
+<!-- BEGIN INFO_LEGENDE -->
+<div id="ef_info_legende" >
+	<h2 id="efitl_titre">{titre_legende}</h2>
+	<dl id="efitl_liste_info_legende" class="ajout_2point">
+		<!-- BEGIN EFIL_DONNEES -->
+		<dt>{EFIL_CHP}</dt>
+		<!-- BEGIN EFIL_DONNEES_VAL --><dd>{EFIL_VAL}</dd><!-- END EFIL_DONNEES_VAL -->
+		<!-- BEGIN EFIL_DONNEES_VAL_LISTE -->
+		<dd>
+			{EFIL_VAL_DEF}
+			<dl class="efitl_liste_legende_def">
+		<!-- BEGIN EFIL_DONNEES_VAL2 -->
+			<dt>{EFIL_VAL_CHP}</dt>
+			<dd>{EFIL_VAL}</dd>
+		<!-- END EFIL_DONNEES_VAL2 -->
+			</dl>
+		</dd>
+		<!-- END EFIL_DONNEES_VAL_LISTE -->
+		<!-- END EFIL_DONNEES -->
+	</dl>
+</div>
+<!-- END INFO_LEGENDE -->
+
+<script type="text/javascript">
+	//<![CDATA[
+	// DomToolTip
+	var domTT_styleClass = 'niceTitle';
+	function nicetitleDecorator(el) {
+		var result = el.title;
+		result = result.replace(new RegExp('\n', 'g'), '<br />');
+		if (el.href) {
+			result += '<p>' + el.href + '</p>';
+		}
+		return result;
+	}
+	domTT_replaceTitles(nicetitleDecorator);
+
+	// Cacher la légende : fonctions et code provenant de Média Wiki
+	if (window.showTocToggle) { 
+		var tocShowText = "afficher";
+		var tocHideText = "masquer";
+		showTocToggle('efitl_titre', 'ef_info_legende');
+	} 
+	
+	function changeText(el, newText) {
+		// Safari work around
+		if (el.innerText) {
+			el.innerText = newText;
+		} else if (el.firstChild && el.firstChild.nodeValue) {
+			el.firstChild.nodeValue = newText;
+		}
+	}
+
+	function toggleToc(id) {
+		var toc = document.getElementById(id).getElementsByTagName('dl')[0];
+		var toggleLink = document.getElementById('togglelink');
+	
+		if (toc && toggleLink && toc.style.display == 'none') {
+			changeText(toggleLink, tocHideText);
+			toc.style.display = 'block';
+			document.cookie = "hidetoc=0";
+		} else {
+			changeText(toggleLink, tocShowText);
+			toc.style.display = 'none';
+			document.cookie = "hidetoc=1";
+		}
+	}
+	
+	function showTocToggle(id_titre, id_liste) {
+		if (document.createTextNode) {
+			// Uses DOM calls to avoid document.write + XHTML issues
+	
+			var linkHolder = document.getElementById(id_titre);
+			if (!linkHolder) {
+				return;
+			}
+	
+			var outerSpan = document.createElement('span');
+			outerSpan.className = 'toctoggle';
+	
+			var toggleLink = document.createElement('a');
+			toggleLink.id = 'togglelink';
+			toggleLink.className = 'internal';
+			toggleLink.href = 'javascript:toggleToc(\''+id_liste+'\')';
+			toggleLink.appendChild(document.createTextNode(tocHideText));
+	
+			outerSpan.appendChild(document.createTextNode('['));
+			outerSpan.appendChild(toggleLink);
+			outerSpan.appendChild(document.createTextNode(']'));
+	
+			linkHolder.appendChild(document.createTextNode(' '));
+			linkHolder.appendChild(outerSpan);
+	
+			var cookiePos = document.cookie.indexOf("hidetoc=");
+			if (cookiePos > -1 && document.cookie.charAt(cookiePos + 8) == 1) {
+				toggleToc();
+			}
+		}
+	}
+	//]]>
+</script>

@@ -1,0 +1,20 @@
+<!-- SYNDICATION - DEBUT -->
+<?php if ($erreurs) : ?>
+	<?php foreach ($erreurs as $erreur) : ?>
+		<p class="pap_erreur"><?=$erreur;?></p>
+	<?php endforeach; ?>
+<?php elseif ($informations) : ?>
+	<?php foreach ($informations as $information) : ?>
+		<p class="pap_info"><?=$information;?></p>
+	<?php endforeach; ?>
+<?php else : ?>
+	<ul class="rss_liste">
+	<?php foreach ($pages as $page) : ?>
+		<li class="rss_page">
+			<h1 class="rss_titre_site"><a href="<?=$page['site']['url'];?>"><?=$page['site']['titre'];?></a> - <span class="rss_date"><?=$page['date'];?></span></h1>
+			<h2 class="rss_titre_article"><a href="<?=$page['url'];?>" <?=($page['ext'])? 'onclick="window.open(this.href); return false;" title="S\'ouvre dans une nouvelle fenêtre"':'';?> ><?=$page['titre'];?></a></h2>
+		</li>
+	<?php endforeach; ?>
+	</ul>
+<?php endif; ?>
+<!-- SYNDICATION - FIN -->

@@ -1,0 +1,116 @@
+<script type="text/javascript" language="JavaScript" src="{EF_URL_JS}PlierDeplier.js"></script>
+<h1>{titre_general}<span id="ef_referentiel">{REFERENTIEL}</span></h1>
+{FORMULAIRE_RECHERCHE_NOM}
+<h1 id="ef_synonymie_titre">{TITRE}<span id="ef_famille">{NOM_RETENU_FAMILLE}</span></h1>
+<script type="text/javascript">afficherAide();</script>
+<h2 id="ef_titre_nomenclature">Nomenclature</h2>
+<div id="ef_nomenclature">
+	<h2 id="efins_titre"><span id="efins_titre_contenu"></span></h2>
+	<dl class="ajout_2point">
+		<dt>{nom_selec}</dt>
+		<dd><span id="efins_nom">{NOM_SELECTION}<!-- BEGIN BASIONYMIE_BOOL -->{NOM_SELECTION_BASIONYME}<!-- END BASIONYMIE_BOOL --></span>
+			<dl class="ajout_2point">
+				<!-- BEGIN BASIONYMIE_RELATION -->
+				<dt>{basio_nom_selec}</dt><dd>&nbsp;{NOM_SELECTION_A_PR_BASIONYME}</dd>
+				<!-- END BASIONYMIE_RELATION -->
+			</dl>
+		</dd>
+		<dt>{nom_retenu}</dt>
+		<dd><strong id="efinr_nom" class="nl_retenu"><a href="{NOM_RETENU_URL}">{NOM_RETENU}</a></strong></dd>
+</div>
+<h2 id="ef_titre_synonymie_nom_retenu">Synonymie du nom retenu</h2>
+<div id="ef_synonymie_nom_retenu">
+	<!-- BEGIN INFO -->
+	<p class="information">{INFO}</p>
+	<!-- END INFO -->
+	<!-- BEGIN ST_NR -->
+	<h4 id="efnr_synonymie_stnr">{st_nr}</h4>
+	<ul>
+		<!-- BEGIN ST_NR_LIGNE -->
+		<li>
+			<a href="{SYNONYME_URL}">{SYNONYME_NOM}</a>
+		</li>
+		<!-- END ST_NR_LIGNE -->
+	</ul>
+	<!-- END ST_NR -->
+	<!-- BEGIN ST_I -->
+	<h4 id="efnr_synonymie_sti">{st_i}</h4>
+	<ul>
+		<!-- BEGIN ST_I_LIGNE -->
+		<li>
+			<a href="{SYNONYME_URL}">{SYNONYME_NOM}</a>
+		</li>
+		<!-- END ST_I_LIGNE -->
+	</ul>
+	<!-- END ST_I -->
+	<!-- BEGIN ST_P -->
+	<h4 id="efnr_synonymie_stp">{st_p}</h4>
+	<ul>
+		<!-- BEGIN ST_P_LIGNE -->
+		<li>
+			<a href="{SYNONYME_URL}">{SYNONYME_NOM}</a>
+		</li>
+		<!-- END ST_P_LIGNE -->
+	</ul>
+	<!-- END ST_P -->
+	<!-- BEGIN ST -->
+	<h4 id="efnr_synonymie_st">{st}</h4>
+	<ul>
+		<!-- BEGIN ST_LIGNE -->
+		<li>
+			<a href="{SYNONYME_URL}">{SYNONYME_NOM}</a>
+		</li>
+		<!-- END ST_LIGNE -->
+	</ul>
+	<!-- END ST -->
+	<!-- BEGIN SN -->
+	<h4 id="efnr_synonymie_sn">{sn}</h4>
+	<ul>
+		<!-- BEGIN SN_LIGNE -->
+		<li>
+			<a href="{SYNONYME_URL}">{SYNONYME_NOM}</a>
+		</li>
+		<!-- END SN_LIGNE -->
+	</ul>
+	<!-- END SN -->
+	<!-- BEGIN SI -->
+	<h4 id="efnr_synonymie_si">{si}</h4>
+	<ul>
+		<!-- BEGIN SI_LIGNE -->
+		<li>
+			<a href="{SYNONYME_URL}">{SYNONYME_NOM}</a>
+		</li>
+		<!-- END SI_LIGNE -->
+	</ul>
+	<!-- END SI -->
+	<!-- BEGIN SID -->
+	<h4 id="efnr_synonymie_sid">{sid}</h4>
+	<ul>
+		<!-- BEGIN SID_LIGNE -->
+		<li>
+			<a href="{SYNONYME_URL}">{SYNONYME_NOM}</a>
+		</li>
+		<!-- END SID_LIGNE -->
+	</ul>
+	<!-- END SID -->
+	<!-- BEGIN SASD -->
+	<h4 id="efnr_synonymie_sasd">{sasd}</h4>
+	<ul>
+		<!-- BEGIN SASD_LIGNE -->
+		<li>
+			<a href="{SYNONYME_URL}">{SYNONYME_NOM}</a>
+		</li>
+		<!-- END SASD_LIGNE -->
+	</ul>
+	<!-- END SASD -->
+	<!-- BEGIN SP -->
+	<h4 id="efnr_synonymie_sp">{sp}</h4>
+	<ul>
+		<!-- BEGIN SP_LIGNE -->
+		<li>
+			<a href="{SYNONYME_URL}">{SYNONYME_NOM}</a>
+		</li>
+		<!-- END SP_LIGNE -->
+	</ul>
+	<!-- END SP -->	
+</div>

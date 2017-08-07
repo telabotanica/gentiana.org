@@ -1,0 +1,27 @@
+<h1>{titre_general}<span id="ef_referentiel">{TITRE_GENERAL_REFERENTIEL}</span></h1>
+{FORMULAIRE_RECHERCHE_NOM}
+<h1 id="ef_vernaculaire_titre">{TITRE}<span id="ef_famille">{NOM_RETENU_FAMILLE}</span></h1>
+<div id="ef_verna_info">
+	<!-- BEGIN VERNA_INFO -->
+	<p class="information">{NOM_VERNA_INFO}</p>
+	<!-- END VERNA_INFO -->
+	<!-- BEGIN VERNA -->
+	<table class="table_cadre" summary="Liste de noms communs pour {NOM_RETENU_SIMPLE}.">
+	<thead>
+		<!-- BEGIN VERNA_HEAD --><tr><!-- BEGIN VERNA_CELLULE_HEAD --><th>{VERNA_CLE}</th><!-- END VERNA_CELLULE_HEAD --></tr><!-- END VERNA_HEAD -->
+	</thead>
+	<tbody>
+		<!-- BEGIN VERNA_BODY -->
+		<tr>
+			<!-- BEGIN VERNA_CELL_BODY_LG --><td>{VERNA_VAL_LGI} (<abbr title="{VERNA_VAL_LGI}">{VERNA_VAL_LGC}</abbr>)</td><!-- END VERNA_CELL_BODY_LG -->
+			<!-- BEGIN VERNA_CELL_BODY_ZG --><td>{VERNA_VAL_ZGI} (<abbr title="{VERNA_VAL_ZGI}">{VERNA_VAL_ZGC}</abbr>)</td><!-- END VERNA_CELL_BODY_ZG -->
+			<!-- BEGIN VERNA_CELL_BODY_NV --><td><strong>{VERNA_VAL_NOM}</strong></td><!-- END VERNA_CELL_BODY_NV -->
+			<!-- BEGIN VERNA_CELL_BODY_GN --><td>{VERNA_VAL_GN}</td><!-- END VERNA_CELL_BODY_GN -->
+			<!-- BEGIN VERNA_CELL_BODY_CE --><td>{VERNA_VAL_CE}</td><!-- END VERNA_CELL_BODY_CE -->
+			<!-- BEGIN VERNA_CELL_BODY_NOTE --><td>{VERNA_VAL_NOTE}</td><!-- END VERNA_CELL_BODY_NOTE -->
+		</tr>
+		<!-- END VERNA_BODY -->
+	</tbody>
+	</table>
+	<!-- END VERNA -->
+</div>

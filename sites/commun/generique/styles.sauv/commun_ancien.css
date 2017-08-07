@@ -1,0 +1,74 @@
+/*
+Feuille de style supportée par les vieux navigateurs (version 4 et moins)
+Auteur:  Jean-Pascal MILCENT 
+*/
+/*Général*/
+body {
+  font-family:Trebuchet, "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  font-size:12px;
+  background-color:#fff;
+  margin:2px;}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:bold;
+	color:black;}
+h5, h6 {
+	font-weight:normal;
+	font-style:italic;
+	line-height:1.2em;
+	margin:0 0 1px 0;}
+h1 {
+	font-size:20px;
+	line-height:1.3em;
+	margin:0 0 4px 0;}
+h2 {
+	font-size:13px;
+	text-transform:uppercase;
+	line-height:1.3em;
+	margin:0 0 4px 0;}
+h3 {
+	font-size:15px;
+	line-height:1.3em;
+	margin:0 0 4px 0;
+	text-transform:none;}
+h4 {
+	font-size:13px;
+	letter-spacing:0.1em;
+	line-height:1.3em;
+	margin:0 0 2px 0;}
+h5 {
+	font-size:13px;}
+h6 {
+	font-size:12px;}
+caption {
+	font-weight:bold;
+	margin:2px;}
+table {
+	border-collapse:collapse;
+	margin:5px;}
+
+/* Présentation des images */
+img {
+	border:0;
+	margin:5px;}
+
+/*Bandeau*/
+#titre_site{
+	font-size:23px}
+#bandeau_contenu {
+	font-size:11px;}
+
+/* Tableau */
+.table_bordure {
+	border-spacing:0;
+	text-align:center;
+	border: 1px solid black;}
+.table_bordure th, .table_bordure td {
+	border-bottom: 1px dotted grey;
+	border-left: 1px dotted grey;}
+.table_bordure th {
+	background-color:#E4B842;
+	padding:0 5px;
+	text-align:center;}
+.table_bordure td	{
+	padding:2px;
+	text-align:left;}

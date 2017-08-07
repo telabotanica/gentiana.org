@@ -1,0 +1,595 @@
+<map name="isere_640x644_Map">
+	<area shape="poly" title="Penol" alt="Penol" coords="153,305, 158,302, 157,307" href="INSEE_C-38300" />
+	<area shape="poly" title="Morestel" alt="Morestel" coords="276,104, 290,115, 286,119, 270,119" href="INSEE_C-38261" />
+	<area shape="poly" title="Saint Etienne de Saint Geoirs" alt="Saint Etienne de Saint Geoirs" coords="230,291, 239,285, 245,287, 244,302, 249,307, 247,310, 245,309, 229,309" href="INSEE_C-38384" />
+	<area shape="poly" title="Champagnier" alt="Champagnier" coords="385,431, 394,419, 390,410, 385,410, 378,423" href="INSEE_C-38068" />
+	<area shape="poly" title="Brezin" alt="Brezin" coords="214,297, 224,295, 225,290, 230,290, 229,306, 221,307" href="INSEE_C-38058" />
+	<area shape="poly" title="Vertrieu" alt="Vertrieu" coords="224,2, 234,3, 250,14, 241,17, 239,14, 225,13, 222,8" href="INSEE_C-38539" />
+	<area shape="poly" title="Parmilieu" alt="Parmilieu" coords="235,30, 224,40, 223,26, 226,14, 238,14" href="INSEE_C-38295" />
+	<area shape="poly" title="La Balme les Grottes" alt="La Balme les Grottes" coords="205,39, 209,17, 221,9, 226,14, 222,27, 221,37" href="INSEE_C-38026" />
+	<area shape="poly" title="Charette" alt="Charette" coords="224,41, 236,31, 238,49, 242,52, 242,59, 235,60" href="INSEE_C-38083" />
+
+	<area shape="poly" title="Porcieu Amblagnieu" alt="Porcieu Amblagnieu" coords="237,19, 252,15, 267,29, 252,30, 238,49" href="INSEE_C-38320" />
+	<area shape="poly" title="Montalieu Vercieu" alt="Montalieu Vercieu" coords="239,49, 251,29, 262,29, 259,38, 254,46" href="INSEE_C-38247" />
+	<area shape="poly" title="Bouvesse Quirieu" alt="Bouvesse Quirieu" coords="259,39, 274,57, 259,71, 243,61, 243,52, 255,47" href="INSEE_C-38054" />
+	<area shape="poly" title="Creys M&#233;pieu" alt="Creys M&#233;pieu" coords="258,72, 260,83, 287,93, 296,80, 275,57" href="INSEE_C-38139" />
+	<area shape="poly" title="Courtenay" alt="Courtenay" coords="246,105, 233,88, 244,69, 236,61, 242,60, 257,72, 259,84" href="INSEE_C-38135" />
+	<area shape="poly" title="Optevoz" alt="Optevoz" coords="214,79, 219,68, 227,68, 239,75, 233,87, 225,81" href="INSEE_C-38282" />
+	<area shape="poly" title="Saint Baudille de la Tour" alt="Saint Baudille de la Tour" coords="222,39, 217,39, 217,52, 210,59, 220,68, 227,67, 238,75, 244,69, 227,53" href="INSEE_C-38365" />
+	<area shape="poly" title="Hi&#232;res sur Amby" alt="Hi&#232;res sur Amby" coords="205,40, 199,51, 209,62, 215,51, 215,39" href="INSEE_C-38190" />
+	<area shape="poly" title="Vernas" alt="Vernas" coords="186,61, 200,51, 208,62, 201,68" href="INSEE_C-38535" />
+
+	<area shape="poly" title="Annoisin Chatelans" alt="Annoisin Chatelans" coords="210,58, 201,67, 196,85, 211,82, 218,68" href="INSEE_C-38010" />
+	<area shape="poly" title="Leyrieu" alt="Leyrieu" coords="186,63, 200,68, 195,85, 187,86" href="INSEE_C-38210" />
+	<area shape="poly" title="Cr&#233;mieu" alt="Cr&#233;mieu" coords="208,82, 186,87, 189,94, 196,95" href="INSEE_C-38138" />
+	<area shape="poly" title="Saint Romain de Jalionas" alt="Saint Romain de Jalionas" coords="186,62, 173,64, 173,88, 187,86" href="INSEE_C-38451" />
+	<area shape="poly" title="Chavanoz" alt="Chavanoz" coords="170,72, 171,62, 162,62, 151,74" href="INSEE_C-38097" />
+	<area shape="poly" title="Anthon" alt="Anthon" coords="152,73, 161,62, 168,60, 169,53, 149,45, 151,65, 146,72" href="INSEE_C-38011" />
+	<area shape="poly" title="Villette d'Athon" alt="Villette d'Athon" coords="117,71, 145,71, 150,64, 148,46, 135,44, 126,56, 114,57" href="INSEE_C-38557" />
+	<area shape="poly" title="Janneyrias" alt="Janneyrias" coords="127,73, 128,86, 141,90, 148,88, 147,73" href="INSEE_C-38197" />
+	<area shape="poly" title="Charvieu Chavagneux" alt="Charvieu Chavagneux" coords="142,90, 147,88, 149,73, 156,75, 159,84, 163,84, 158,88, 154,100" href="INSEE_C-38085" />
+
+	<area shape="poly" title="Pont de Ch&#233;ruy" alt="Pont de Ch&#233;ruy" coords="157,75, 170,73, 171,75, 167,82, 160,82" href="INSEE_C-38316" />
+	<area shape="poly" title="Tignieu Jameysieu" alt="Tignieu Jameysieu" coords="172,76, 159,88, 152,105, 167,98, 173,89" href="INSEE_C-38507" />
+	<area shape="poly" title="Villemoirieu" alt="Villemoirieu" coords="168,97, 173,88, 185,90, 190,95, 195,95, 204,99, 204,105, 188,106" href="INSEE_C-38554" />
+	<area shape="poly" title="Siccieu Saint Julien" alt="Siccieu Saint Julien" coords="212,81, 202,89, 218,99, 225,98, 231,87, 223,81" href="INSEE_C-38488" />
+	<area shape="poly" title="Dizimieu" alt="Dizimieu" coords="207,109, 218,98, 203,90, 196,94, 204,98" href="INSEE_C-38146" />
+	<area shape="poly" title="Soleymieu" alt="Soleymieu" coords="226,99, 231,88, 247,109, 235,117" href="INSEE_C-38494" />
+	<area shape="poly" title="Arandon" alt="Arandon" coords="259,84, 256,92, 251,100, 261,98, 274,103, 283,95" href="INSEE_C-38014" />
+	<area shape="poly" title="Passins" alt="Passins" coords="248,106, 260,99, 274,104, 269,121" href="INSEE_C-38297" />
+	<area shape="poly" title="Saint Victor de Morestel" alt="Saint Victor de Morestel" coords="296,82, 287,95, 282,95, 276,104, 289,112, 290,99, 298,89" href="INSEE_C-38465" />
+
+	<area shape="poly" title="Brangues" alt="Brangues" coords="309,111, 291,112, 292,100, 299,87, 307,88, 320,99" href="INSEE_C-38055" />
+	<area shape="poly" title="Vezeronce Curtin" alt="Vezeronce Curtin" coords="285,120, 269,119, 266,134, 274,133, 280,129, 287,138, 289,126" href="INSEE_C-38543" />
+	<area shape="poly" title="Sermerieu" alt="Sermerieu" coords="247,108, 269,120, 265,134, 244,128" href="INSEE_C-38483" />
+	<area shape="poly" title="Salagnon" alt="Salagnon" coords="245,110, 237,118, 225,118, 222,121, 243,128" href="INSEE_C-38467" />
+	<area shape="poly" title="Trept" alt="Trept" coords="225,99, 217,100, 207,110, 216,117, 213,129, 225,118, 234,115" href="INSEE_C-38515" />
+	<area shape="poly" title="Saint Hilaire de Brens" alt="Saint Hilaire de Brens" coords="206,110, 215,117, 212,128, 203,119" href="INSEE_C-38392" />
+	<area shape="poly" title="V&#233;n&#233;rieu" alt="V&#233;n&#233;rieu" coords="203,137, 197,124, 202,119, 215,129" href="INSEE_C-38532" />
+	<area shape="poly" title="Moras" alt="Moras" coords="190,106, 205,105, 203,119, 197,122, 190,121" href="INSEE_C-38260" />
+	<area shape="poly" title="Chozeau" alt="Chozeau" coords="168,98, 188,106, 179,114, 172,108" href="INSEE_C-38109" />
+
+	<area shape="poly" title="Veyssilieu" alt="Veyssilieu" coords="188,107, 178,113, 178,127, 189,120" href="INSEE_C-38542" />
+	<area shape="poly" title="Panossas" alt="Panossas" coords="177,114, 172,110, 167,110, 161,123, 177,127" href="INSEE_C-38294" />
+	<area shape="poly" title="Chamagnieu" alt="Chamagnieu" coords="167,97, 155,108, 152,133, 160,124, 166,108, 172,108" href="INSEE_C-38067" />
+	<area shape="poly" title="Satolas et Bonce" alt="Satolas et Bonce" coords="131,121, 136,114, 136,106, 152,104, 155,108, 152,132, 139,127" href="INSEE_C-38475" />
+	<area shape="poly" title="Frontonas" alt="Frontonas" coords="153,132, 161,124, 178,129, 175,146" href="INSEE_C-38176" />
+	<area shape="poly" title="Saint Marcel Bel Accueil" alt="Saint Marcel Bel Accueil" coords="203,139, 196,122, 190,121, 178,129, 178,144" href="INSEE_C-38415" />
+	<area shape="poly" title="Saint Savin" alt="Saint Savin" coords="202,141, 213,130, 244,151, 238,158, 225,155" href="INSEE_C-38455" />
+	<area shape="poly" title="Saint Chef" alt="Saint Chef" coords="214,130, 220,121, 249,129, 251,144, 256,149, 244,149" href="INSEE_C-38374" />
+	<area shape="poly" title="Vignieu" alt="Vignieu" coords="251,132, 266,134, 265,149, 250,144" href="INSEE_C-38546" />
+
+	<area shape="poly" title="Vasselin" alt="Vasselin" coords="268,134, 266,147, 275,146, 275,136" href="INSEE_C-38525" />
+	<area shape="poly" title="Dolomieu" alt="Dolomieu" coords="288,138, 296,144, 296,150, 286,153, 268,148, 283,146" href="INSEE_C-38148" />
+	<area shape="poly" title="Saint Sorlin de Morestel" alt="Saint Sorlin de Morestel" coords="273,134, 277,147, 282,147, 287,139, 279,131" href="INSEE_C-38458" />
+	<area shape="poly" title="Veyrins Thuellin" alt="Veyrins Thuellin" coords="289,137, 290,128, 298,125, 317,140, 316,144, 303,148" href="INSEE_C-38541" />
+	<area shape="poly" title="Le Bouchage" alt="Le Bouchage" coords="290,126, 286,119, 292,110, 319,111, 311,122, 298,126" href="INSEE_C-38050" />
+	<area shape="poly" title="Les Aveni&#232;res" alt="Les Aveni&#232;res" coords="320,112, 313,121, 296,126, 316,139, 316,144, 320,147, 329,146, 334,136" href="INSEE_C-38022" />
+	<area shape="poly" title="Aoste" alt="Aoste" coords="334,136, 330,146, 329,158, 326,162, 335,167, 345,157" href="INSEE_C-38012" />
+	<area shape="poly" title="Granieu" alt="Granieu" coords="329,148, 321,148, 320,159, 325,162, 329,158" href="INSEE_C-38183" />
+	<area shape="poly" title="Corbelin" alt="Corbelin" coords="296,144, 296,149, 305,156, 305,161, 317,164, 321,148, 315,144, 308,148" href="INSEE_C-38124" />
+
+	<area shape="poly" title="Faverges de la Tour" alt="Faverges de la Tour" coords="295,151, 285,154, 285,160, 293,163, 304,161, 304,155" href="INSEE_C-38162" />
+	<area shape="poly" title="La Chapelle de la Tour" alt="La Chapelle de la Tour" coords="274,151, 272,176, 294,164, 284,160, 284,154" href="INSEE_C-38076" />
+	<area shape="poly" title="Saint Clair de la Tour" alt="Saint Clair de la Tour" coords="273,175, 294,165, 299,177, 277,179" href="INSEE_C-38377" />
+	<area shape="poly" title="La B&#226;tie Montgascon" alt="La B&#226;tie Montgascon" coords="299,176, 309,177, 317,174, 317,165, 306,162, 295,165" href="INSEE_C-38029" />
+	<area shape="poly" title="Chimilin" alt="Chimilin" coords="318,174, 317,165, 321,159, 335,168, 335,182" href="INSEE_C-38104" />
+	<area shape="poly" title="Romagnieu" alt="Romagnieu" coords="345,158, 335,167, 336,181, 359,184" href="INSEE_C-38343" />
+	<area shape="poly" title="Les Abrets" alt="Les Abrets" coords="337,183, 327,180, 315,192, 315,195, 331,194" href="INSEE_C-38001" />
+	<area shape="poly" title="Fitilieu" alt="Fitilieu" coords="327,180, 318,174, 308,178, 311,191, 316,191" href="165" />
+	<area shape="poly" title="Saint Andr&#233; le Gaz" alt="Saint Andr&#233; le Gaz" coords="308,177, 299,177, 296,193, 305,197, 313,196" href="INSEE_C-38357" />
+
+	<area shape="poly" title="Saint Ondras" alt="Saint Ondras" coords="306,197, 315,196, 316,208, 306,208, 300,203" href="INSEE_C-38434" />
+	<area shape="poly" title="Charancieu" alt="Charancieu" coords="316,196, 331,195, 324,209, 317,209" href="INSEE_C-38080" />
+	<area shape="poly" title="La B&#226;tie Divisin" alt="La B&#226;tie Divisin" coords="323,209, 337,214, 344,206, 333,195" href="INSEE_C-38028" />
+	<area shape="poly" title="Pressins" alt="Pressins" coords="333,195, 338,184, 342,185, 352,201, 344,207" href="INSEE_C-38323" />
+	<area shape="poly" title="Le Pont de Beauvoisin" alt="Le Pont de Beauvoisin" coords="344,185, 358,185, 364,196, 352,199" href="INSEE_C-38315" />
+	<area shape="poly" title="Valencogne" alt="Valencogne" coords="306,209, 319,209, 303,224, 293,218" href="INSEE_C-38520" />
+	<area shape="poly" title="Chassignieu" alt="Chassignieu" coords="299,203, 291,206, 294,217, 306,209" href="INSEE_C-38089" />
+	<area shape="poly" title="Le Passage" alt="Le Passage" coords="296,193, 289,199, 295,205, 305,198" href="INSEE_C-38296" />
+	<area shape="poly" title="Saint Didier de la Tour" alt="Saint Didier de la Tour" coords="297,177, 276,180, 282,192, 293,195" href="INSEE_C-38381" />
+
+	<area shape="poly" title="La Tour du Pin" alt="La Tour du Pin" coords="277,180, 272,174, 272,161, 267,167, 267,181" href="INSEE_C-38509" />
+	<area shape="poly" title="Montcarra" alt="Montcarra" coords="243,149, 265,149, 257,154, 243,154" href="INSEE_C-38250" />
+	<area shape="poly" title="Ruy" alt="Ruy" coords="226,175, 217,174, 217,162, 225,156, 236,159, 241,154, 252,155, 250,168, 238,168" href="INSEE_C-38348" />
+	<area shape="poly" title="Rochetoirin" alt="Rochetoirin" coords="254,154, 264,151, 264,166, 261,176, 257,177, 256,170, 251,165" href="INSEE_C-38341" />
+	<area shape="poly" title="Saint Jean de Soudain" alt="Saint Jean de Soudain" coords="265,150, 265,165, 260,178, 258,178, 259,183, 267,182, 267,166, 273,160, 273,149" href="INSEE_C-38401" />
+	<area shape="poly" title="Torchefelon" alt="Torchefelon" coords="257,214, 244,207, 245,200, 260,194, 264,205" href="INSEE_C-38508" />
+	<area shape="poly" title="Montagnieu" alt="Montagnieu" coords="265,204, 263,197, 279,191, 290,196, 291,201" href="INSEE_C-38246" />
+	<area shape="poly" title="Sainte Blandine" alt="Sainte Blandine" coords="256,183, 276,181, 280,190, 262,195" href="INSEE_C-38369" />
+	<area shape="poly" title="Saint Victor de Cessieu" alt="Saint Victor de Cessieu" coords="245,200, 233,192, 253,182, 260,193" href="INSEE_C-38464" />
+
+	<area shape="poly" title="Cessieu" alt="Cessieu" coords="252,169, 237,168, 227,176, 232,184, 256,181, 256,172" href="INSEE_C-38064" />
+	<area shape="poly" title="S&#233;rezin de la Tour" alt="S&#233;rezin de la Tour" coords="221,177, 227,177, 233,184, 247,184, 232,191, 221,190" href="INSEE_C-38481" />
+	<area shape="poly" title="Succieu" alt="Succieu" coords="223,190, 231,193, 244,202, 242,208, 222,197" href="INSEE_C-38498" />
+	<area shape="poly" title="Ch&#226;teauvilain" alt="Ch&#226;teauvilain" coords="242,208, 222,197, 221,202, 224,203, 221,215, 226,216, 228,219" href="INSEE_C-38091" />
+	<area shape="poly" title="Biol" alt="Biol" coords="256,216, 244,208, 228,219, 252,224" href="INSEE_C-38044" />
+	<area shape="poly" title="Doissin" alt="Doissin" coords="273,206, 265,204, 259,215, 267,219" href="INSEE_C-38147" />
+	<area shape="poly" title="Montrevel" alt="Montrevel" coords="258,216, 252,224, 250,235, 258,240, 266,228, 266,218" href="INSEE_C-38257" />
+	<area shape="poly" title="Chelieu" alt="Chelieu" coords="290,201, 273,205, 292,218" href="INSEE_C-38098" />
+	<area shape="poly" title="Panissage" alt="Panissage" coords="284,214, 274,206, 270,214, 279,221" href="INSEE_C-38293" />
+
+	<area shape="poly" title="Blandin" alt="Blandin" coords="270,214, 266,227, 273,230, 278,222" href="INSEE_C-38047" />
+	<area shape="poly" title="Virieu" alt="Virieu" coords="274,232, 285,214, 295,219, 284,239" href="INSEE_C-38560" />
+	<area shape="poly" title="Le Pin" alt="Le Pin" coords="285,240, 295,220, 303,224, 301,239" href="INSEE_C-38305" />
+	<area shape="poly" title="Paladru" alt="Paladru" coords="302,239, 303,223, 320,209, 326,211" href="INSEE_C-38292" />
+	<area shape="poly" title="Montferrat" alt="Montferrat" coords="327,211, 337,214, 324,231, 323,236, 308,235" href="INSEE_C-38256" />
+	<area shape="poly" title="Bilieu" alt="Bilieu" coords="303,240, 309,236, 322,236, 322,244, 318,249, 310,247" href="INSEE_C-38043" />
+	<area shape="poly" title="Charavines" alt="Charavines" coords="302,240, 295,247, 296,262, 302,261, 306,267, 310,263, 306,254, 308,246" href="INSEE_C-38082" />
+	<area shape="poly" title="Apprieu" alt="Apprieu" coords="286,279, 281,263, 303,261, 305,267, 297,272, 294,283" href="INSEE_C-38013" />
+	<area shape="poly" title="Oyeu" alt="Oyeu" coords="295,261, 276,261, 283,241, 300,240, 295,246" href="INSEE_C-38287" />
+
+	<area shape="poly" title="Burcin" alt="Burcin" coords="275,259, 283,239, 280,238, 275,240, 267,255" href="INSEE_C-38063" />
+	<area shape="poly" title="Ch&#226;bons" alt="Ch&#226;bons" coords="265,230, 258,240, 255,252, 267,253, 276,240, 281,238" href="INSEE_C-38065" />
+	<area shape="poly" title="Bizonnes" alt="Bizonnes" coords="248,233, 259,241, 254,254, 240,246, 243,233" href="INSEE_C-38046" />
+	<area shape="poly" title="Grenay" alt="Grenay" coords="119,130, 126,118, 139,128, 133,137" href="INSEE_C-38184" />
+	<area shape="poly" title="La Verpill&#232;re" alt="La Verpill&#232;re" coords="166,141, 152,132, 146,141, 150,148" href="INSEE_C-38537" />
+	<area shape="poly" title="Saint Quentin Fallavier" alt="Saint Quentin Fallavier" coords="139,129, 133,140, 135,151, 145,157, 149,148, 146,141, 152,130" href="INSEE_C-38449" />
+	<area shape="poly" title="Villefontaine" alt="Villefontaine" coords="146,157, 151,147, 167,141, 163,151, 170,157, 166,164" href="INSEE_C-38553" />
+	<area shape="poly" title="Vaulx Milieu" alt="Vaulx Milieu" coords="166,164, 171,157, 165,152, 167,141, 172,146, 172,150, 178,153, 176,165" href="INSEE_C-38530" />
+	<area shape="poly" title="L'Isle d'Abeau" alt="L'Isle d'Abeau" coords="172,146, 195,143, 198,149, 177,164, 177,153, 173,150" href="INSEE_C-38193" />
+
+	<area shape="poly" title="Saint Alban de Roche" alt="Saint Alban de Roche" coords="178,165, 189,158, 195,165, 190,172, 181,174" href="INSEE_C-38352" />
+	<area shape="poly" title="Domarin" alt="Domarin" coords="194,165, 190,173, 202,171" href="INSEE_C-38149" />
+	<area shape="poly" title="Maubec" alt="Maubec" coords="192,185, 200,187, 202,172, 191,175" href="INSEE_C-38223" />
+	<area shape="poly" title="Meyrie" alt="Meyrie" coords="200,187, 203,175, 207,175, 208,188" href="INSEE_C-38230" />
+	<area shape="poly" title="Nivolas Vermelle" alt="Nivolas Vermelle" coords="209,187, 208,175, 220,175, 219,188" href="INSEE_C-38276" />
+	<area shape="poly" title="Bourgoin Jallieu" alt="Bourgoin Jallieu" coords="224,155, 217,161, 216,173, 204,174, 199,166, 194,164, 189,157, 198,149, 195,142, 201,140" href="INSEE_C-38053" />
+	<area shape="poly" title="Les Eparres" alt="Les Eparres" coords="202,189, 220,188, 220,201, 204,202" href="INSEE_C-38156" />
+	<area shape="poly" title="Badini&#232;res" alt="Badini&#232;res" coords="220,215, 223,203, 213,203, 209,215" href="INSEE_C-38024" />
+	<area shape="poly" title="Tramole" alt="Tramole" coords="212,203, 203,202, 193,208, 208,214" href="INSEE_C-38512" />
+
+	<area shape="poly" title="Culin" alt="Culin" coords="204,201, 202,197, 188,199, 185,203, 188,209, 193,209" href="INSEE_C-38141" />
+	<area shape="poly" title="Saint Agnin sur Bion" alt="Saint Agnin sur Bion" coords="201,188, 192,190, 180,197, 176,194, 174,199, 185,203, 189,198, 202,196" href="INSEE_C-38351" />
+	<area shape="poly" title="Crachier" alt="Crachier" coords="180,196, 191,190, 191,184, 177,191" href="INSEE_C-38136" />
+	<area shape="poly" title="Chezeneuve" alt="Chezeneuve" coords="178,191, 190,184, 190,172, 179,175, 164,190" href="INSEE_C-38102" />
+	<area shape="poly" title="Four" alt="Four" coords="177,165, 168,166, 168,182, 164,189, 179,175" href="INSEE_C-38172" />
+	<area shape="poly" title="Roche" alt="Roche" coords="166,164, 153,162, 149,174, 141,174, 153,190, 162,189, 169,180" href="INSEE_C-38339" />
+	<area shape="poly" title="Bonnefamille" alt="Bonnefamille" coords="150,161, 134,150, 141,163, 141,174, 148,173" href="INSEE_C-38048" />
+	<area shape="poly" title="Di&#233;moz" alt="Di&#233;moz" coords="140,175, 140,162, 134,153, 125,160, 122,165, 129,176" href="INSEE_C-38144" />
+	<area shape="poly" title="Heyrieux" alt="Heyrieux" coords="116,130, 109,138, 109,149, 124,160, 135,152, 132,139" href="INSEE_C-38189" />
+
+	<area shape="poly" title="Artas" alt="Artas" coords="152,191, 163,189, 177,192, 174,200, 165,204, 155,199, 149,204" href="INSEE_C-38015" />
+	<area shape="poly" title="Meyrieu les Etangs" alt="Meyrieu les Etangs" coords="174,199, 167,204, 170,214, 179,213, 185,208, 185,203" href="INSEE_C-38231" />
+	<area shape="poly" title="Sainte Anne sur Gervonde" alt="Sainte Anne sur Gervonde" coords="179,215, 187,208, 204,214, 184,219" href="INSEE_C-38358" />
+	<area shape="poly" title="Eclose" alt="Eclose" coords="209,224, 203,215, 225,216, 230,229" href="INSEE_C-38152" />
+	<area shape="poly" title="Belmont" alt="Belmont" coords="250,233, 251,225, 227,221, 231,228" href="INSEE_C-38038" />
+	<area shape="poly" title="Saint Didier de Bizonnes" alt="Saint Didier de Bizonnes" coords="242,233, 238,243, 230,242, 229,228" href="INSEE_C-38380" />
+	<area shape="poly" title="Flach&#232;res" alt="Flach&#232;res" coords="213,226, 227,229, 228,241" href="INSEE_C-38167" />
+	<area shape="poly" title="Eydoche" alt="Eydoche" coords="228,241, 239,248, 229,254, 224,251" href="INSEE_C-38159" />
+	<area shape="poly" title="Longechenal" alt="Longechenal" coords="229,254, 241,247, 252,256, 250,259, 235,263, 230,262" href="INSEE_C-38213" />
+
+	<area shape="poly" title="Mottier" alt="Mottier" coords="212,250, 208,259, 228,261, 228,254, 222,250" href="INSEE_C-38267" />
+	<area shape="poly" title="Champier" alt="Champier" coords="209,225, 225,241, 224,250, 213,250, 209,238, 201,238" href="INSEE_C-38069" />
+	<area shape="poly" title="Saint Jean de Bournay" alt="Saint Jean de Bournay" coords="147,207, 156,200, 166,204, 170,217, 164,235, 150,228, 146,221" href="INSEE_C-38399" />
+	<area shape="poly" title="Chatonnay" alt="Chatonnay" coords="170,215, 166,234, 177,234, 179,243, 198,241, 207,223, 202,218, 183,218, 178,214" href="INSEE_C-38094" />
+	<area shape="poly" title="Lieudieu" alt="Lieudieu" coords="160,239, 164,234, 176,235, 176,243, 168,247" href="INSEE_C-38211" />
+	<area shape="poly" title="Nantoin" alt="Nantoin" coords="207,239, 196,241, 199,257, 209,257, 212,248" href="INSEE_C-38274" />
+	<area shape="poly" title="Commelle" alt="Commelle" coords="197,242, 183,243, 185,262, 199,261" href="INSEE_C-38121" />
+	<area shape="poly" title="Semons" alt="Semons" coords="167,247, 181,243, 185,262, 178,264" href="INSEE_C-38479" />
+	<area shape="poly" title="Arzay" alt="Arzay" coords="156,241, 161,240, 177,264, 173,266, 157,251" href="INSEE_C-38016" />
+
+	<area shape="poly" title="Bossieu" alt="Bossieu" coords="173,268, 154,272, 148,260, 148,249, 156,250" href="INSEE_C-38049" />
+	<area shape="poly" title="Saint Julien de l'Herms" alt="Saint Julien de l'Herms" coords="124,251, 128,259, 141,261, 147,259, 147,255, 134,248" href="INSEE_C-38406" />
+	<area shape="poly" title="Villeneuve de Marc" alt="Villeneuve de Marc" coords="135,247, 135,225, 145,220, 149,229, 162,235, 156,242, 156,249, 147,249, 146,253" href="INSEE_C-38555" />
+	<area shape="poly" title="Royas" alt="Royas" coords="145,220, 145,208, 138,208, 134,223" href="INSEE_C-38346" />
+	<area shape="poly" title="Beauvoir de Marc" alt="Beauvoir de Marc" coords="120,205, 131,196, 137,207, 135,223" href="INSEE_C-38035" />
+	<area shape="poly" title="Charantonnay" alt="Charantonnay" coords="133,195, 140,207, 149,204, 152,188, 142,188" href="INSEE_C-38081" />
+	<area shape="poly" title="Saint Georges d'Esp&#233;ranche" alt="Saint Georges d'Esp&#233;ranche" coords="118,171, 122,166, 128,177, 142,175, 150,186, 140,187, 121,203, 117,197" href="INSEE_C-38389" />
+	<area shape="poly" title="Meyssi&#232;s" alt="Meyssi&#232;s" coords="114,242, 115,229, 134,232, 135,248, 124,249" href="INSEE_C-38232" />
+	<area shape="poly" title="Savas Mepin" alt="Savas Mepin" coords="134,224, 123,209, 117,211, 121,223, 115,227, 130,229" href="INSEE_C-38476" />
+
+	<area shape="poly" title="Moidieu Detourbe" alt="Moidieu Detourbe" coords="94,213, 102,201, 116,199, 122,208, 118,210, 121,221, 114,225" href="INSEE_C-38238" />
+	<area shape="poly" title="Oytier Saint Oblas" alt="Oytier Saint Oblas" coords="117,171, 98,178, 101,188, 116,198" href="INSEE_C-38288" />
+	<area shape="poly" title="Sept&#232;me" alt="Sept&#232;me" coords="97,178, 101,189, 110,198, 79,200, 76,193, 85,180" href="INSEE_C-38480" />
+	<area shape="poly" title="Saint Just Chaleyssin" alt="Saint Just Chaleyssin" coords="116,169, 93,161, 86,180" href="INSEE_C-38408" />
+	<area shape="poly" title="Serpaize" alt="Serpaize" coords="84,182, 62,182, 53,188, 60,197, 75,193" href="INSEE_C-38484" />
+	<area shape="poly" title="Pont Ev&#234;que" alt="Pont Ev&#234;que" coords="59,196, 75,193, 78,201, 70,211" href="INSEE_C-38318" />
+	<area shape="poly" title="Estrablin" alt="Estrablin" coords="70,212, 79,201, 100,201, 85,224, 76,223" href="INSEE_C-38157" />
+	<area shape="poly" title="Eyzin Pinet" alt="Eyzin Pinet" coords="88,241, 86,225, 94,216, 114,225, 113,243" href="INSEE_C-38160" />
+	<area shape="poly" title="Cour et Buis" alt="Cour et Buis" coords="122,250, 114,244, 98,243, 106,265, 115,255" href="INSEE_C-38134" />
+
+	<area shape="poly" title="Montseveroux" alt="Montseveroux" coords="78,272, 105,265, 96,242, 90,242, 86,262, 78,267" href="INSEE_C-38259" />
+	<area shape="poly" title="Monsteroux Milieu" alt="Monsteroux Milieu" coords="77,266, 72,256, 87,245, 88,252, 84,262" href="INSEE_C-38244" />
+	<area shape="poly" title="Ch&#226;lons" alt="Ch&#226;lons" coords="70,255, 67,244, 87,244" href="INSEE_C-38066" />
+	<area shape="poly" title="Saint Sorlin de Vienne" alt="Saint Sorlin de Vienne" coords="87,242, 84,226, 76,223, 69,236, 69,243" href="INSEE_C-38459" />
+	<area shape="poly" title="Jardin" alt="Jardin" coords="69,235, 75,222, 69,212, 62,214, 60,230" href="INSEE_C-38199" />
+	<area shape="poly" title="Vienne" alt="Vienne" coords="38,197, 56,192, 69,211, 61,214, 58,229, 39,216, 47,206" href="INSEE_C-38544" />
+	<area shape="poly" title="Valencin" alt="Valencin" coords="95,147, 90,155, 117,168, 123,162, 109,149, 108,152" href="INSEE_C-38519" />
+	<area shape="poly" title="Luzinay" alt="Luzinay" coords="92,158, 85,180, 75,180, 75,156" href="INSEE_C-38215" />
+	<area shape="poly" title="Vilette de Vienne" alt="Vilette de Vienne" coords="75,156, 56,160, 61,181, 74,178" href="INSEE_C-38558" />
+
+	<area shape="poly" title="Chuzelles" alt="Chuzelles" coords="55,160, 40,172, 47,191, 60,182" href="INSEE_C-38110" />
+	<area shape="poly" title="Seyssuel" alt="Seyssuel" coords="37,195, 25,184, 35,181, 41,174, 46,193" href="INSEE_C-38487" />
+	<area shape="poly" title="Chasse sur Rh&#244;ne" alt="Chasse sur Rh&#244;ne" coords="12,174, 21,168, 33,170, 40,177, 36,181, 25,184" href="INSEE_C-38087" />
+	<area shape="poly" title="Vernioz" alt="Vernioz" coords="72,259, 67,252, 49,259, 53,262, 67,263" href="INSEE_C-38536" />
+	<area shape="poly" title="Assieu" alt="Assieu" coords="71,262, 66,265, 52,264, 37,274, 55,274, 63,268, 76,266" href="INSEE_C-38017" />
+	<area shape="poly" title="Chessieu" alt="Chessieu" coords="36,272, 51,264, 35,248" href="INSEE_C-38101" />
+	<area shape="poly" title="Les C&#244;tes d'Arey" alt="Les C&#244;tes d'Arey" coords="48,259, 34,248, 58,229, 67,235, 67,250" href="INSEE_C-38131" />
+	<area shape="poly" title="Reventin Vaugris" alt="Reventin Vaugris" coords="40,217, 59,229, 33,248, 36,237, 25,228" href="INSEE_C-38336" />
+	<area shape="poly" title="Chonas l'Amballan" alt="Chonas l'Amballan" coords="24,231, 12,238, 16,246, 32,247, 35,237" href="INSEE_C-38107" />
+
+	<area shape="poly" title="Auberives sur Var&#232;ze" alt="Auberives sur Var&#232;ze" coords="24,260, 34,251, 36,271, 32,272" href="INSEE_C-38019" />
+	<area shape="poly" title="Saint Prim" alt="Saint Prim" coords="22,259, 16,248, 26,246, 31,250" href="INSEE_C-38448" />
+	<area shape="poly" title="Les Roches de Condrieu" alt="Les Roches de Condrieu" coords="6,243, 5,247, 15,248, 13,243" href="INSEE_C-38340" />
+	<area shape="poly" title="Saint Clair du Rh&#244;ne" alt="Saint Clair du Rh&#244;ne" coords="6,248, 5,258, 12,266, 21,259, 15,248" href="INSEE_C-38378" />
+	<area shape="poly" title="Clonas sur Var&#232;ze" alt="Clonas sur Var&#232;ze" coords="23,261, 11,266, 13,271, 29,272" href="INSEE_C-38114" />
+	<area shape="poly" title="Saint Alban du Rh&#244;ne" alt="Saint Alban du Rh&#244;ne" coords="5,257, -1,262, 0,273, 11,270" href="INSEE_C-38353" />
+	<area shape="poly" title="Le P&#233;age de Roussillon" alt="Le P&#233;age de Roussillon" coords="11,300, 6,290, 20,290, 27,280, 24,297" href="INSEE_C-38298" />
+	<area shape="poly" title="Saint Maurice l'Exil" alt="Saint Maurice l'Exil" coords="1,273, 13,271, 29,274, 20,289, 7,289" href="INSEE_C-38425" />
+	<area shape="poly" title="Roussillon" alt="Roussillon" coords="24,296, 29,273, 37,277, 41,285, 39,296" href="INSEE_C-38344" />
+
+	<area shape="poly" title="Sablons" alt="Sablons" coords="31,327, 26,332, 8,319, 10,306, 26,317" href="INSEE_C-38349" />
+	<area shape="poly" title="Salaise sur Sanne" alt="Salaise sur Sanne" coords="12,301, 25,297, 41,299, 41,312, 26,316, 11,305" href="INSEE_C-38468" />
+	<area shape="poly" title="Chanas" alt="Chanas" coords="28,318, 41,312, 50,322, 46,325, 31,327" href="INSEE_C-38072" />
+	<area shape="poly" title="Agnin" alt="Agnin" coords="43,301, 42,311, 50,321, 54,314, 53,303" href="INSEE_C-38003" />
+	<area shape="poly" title="Anjou" alt="Anjou" coords="55,313, 53,300, 61,293, 63,306" href="INSEE_C-38009" />
+	<area shape="poly" title="Ville sous Anjou" alt="Ville sous Anjou" coords="36,276, 53,276, 55,287, 65,289, 51,301, 39,298, 42,283" href="INSEE_C-38556" />
+	<area shape="poly" title="Saint Romain de Surieu" alt="Saint Romain de Surieu" coords="53,276, 64,269, 66,288, 56,286" href="INSEE_C-38452" />
+	<area shape="poly" title="La Chapelle de Surieu" alt="La Chapelle de Surieu" coords="64,269, 77,266, 77,272, 74,286, 66,286" href="INSEE_C-38077" />
+	<area shape="poly" title="Sonnay" alt="Sonnay" coords="60,294, 66,287, 74,289, 78,304, 64,306" href="INSEE_C-38496" />
+
+	<area shape="poly" title="Bouge Chambalud" alt="Bouge Chambalud" coords="45,327, 52,333, 74,318, 71,314, 73,305, 62,307, 54,314" href="INSEE_C-38051" />
+	<area shape="poly" title="Bellegarde Poussieu" alt="Bellegarde Poussieu" coords="77,272, 88,270, 93,292, 86,303, 78,303, 74,287" href="INSEE_C-38037" />
+	<area shape="poly" title="Jarcieu" alt="Jarcieu" coords="75,318, 71,312, 78,302, 96,305, 87,315, 79,314" href="INSEE_C-38198" />
+	<area shape="poly" title="Pact" alt="Pact" coords="86,303, 92,293, 101,291, 110,300, 106,308" href="INSEE_C-38290" />
+	<area shape="poly" title="Moissieu sur Dolon" alt="Moissieu sur Dolon" coords="88,270, 103,266, 103,291, 92,292" href="INSEE_C-38240" />
+	<area shape="poly" title="Primarette" alt="Primarette" coords="104,266, 105,286, 127,269, 128,260, 120,253" href="INSEE_C-38324" />
+	<area shape="poly" title="Revel Tourdan" alt="Revel Tourdan" coords="109,300, 104,293, 107,284, 121,275, 121,294" href="INSEE_C-38335" />
+	<area shape="poly" title="Pisieu" alt="Pisieu" coords="121,292, 121,274, 129,269, 128,261, 139,262, 138,300" href="INSEE_C-38307" />
+	<area shape="poly" title="Pommier de Beaurepaire" alt="Pommier de Beaurepaire" coords="140,261, 146,260, 154,272, 149,281, 148,294, 142,302, 138,300" href="INSEE_C-38311" />
+
+	<area shape="poly" title="Faramans" alt="Faramans" coords="154,272, 175,269, 163,286, 151,281" href="INSEE_C-38161" />
+	<area shape="poly" title="Pajay" alt="Pajay" coords="163,287, 150,280, 149,294, 142,302, 151,306, 163,298" href="INSEE_C-38291" />
+	<area shape="poly" title="Beaufort" alt="Beaufort" coords="157,308, 143,302, 141,313, 155,320" href="INSEE_C-38032" />
+	<area shape="poly" title="Saint Barthel&#233;my" alt="Saint Barthel&#233;my" coords="142,313, 142,302, 126,295, 134,316" href="INSEE_C-38363" />
+	<area shape="poly" title="Beaurepaire" alt="Beaurepaire" coords="109,301, 107,307, 109,318, 129,321, 134,316, 125,294" href="INSEE_C-38034" />
+	<area shape="poly" title="Marcollin" alt="Marcollin" coords="128,323, 141,314, 152,320, 130,330" href="INSEE_C-38219" />
+	<area shape="poly" title="Lentiol" alt="Lentiol" coords="131,329, 156,320, 154,328, 140,336, 131,335" href="INSEE_C-38209" />
+	<area shape="poly" title="Saint Clair sur Galaure" alt="Saint Clair sur Galaure" coords="151,355, 156,327, 170,332, 172,336, 165,340, 162,357" href="INSEE_C-38379" />
+	<area shape="poly" title="Montfalcon" alt="Montfalcon" coords="164,351, 165,340, 173,337, 177,341, 177,351, 171,354" href="INSEE_C-38255" />
+
+	<area shape="poly" title="Thodure" alt="Thodure" coords="155,327, 158,306, 173,307, 173,326, 170,331" href="INSEE_C-38505" />
+	<area shape="poly" title="Penol" alt="Penol" coords="174,272, 165,285, 162,295, 168,288, 174,298, 180,294, 176,272" href="INSEE_C-38300" />
+	<area shape="poly" title="Marcilloles" alt="Marcilloles" coords="161,306, 162,296, 168,287, 174,298, 179,294, 186,303, 174,306" href="INSEE_C-38218" />
+	<area shape="poly" title="Virville" alt="Virville" coords="194,335, 178,340, 170,331, 173,325, 173,307, 186,303, 193,322" href="INSEE_C-38561" />
+	<area shape="poly" title="Chatenay" alt="Chatenay" coords="187,303, 196,302, 197,321, 194,321" href="INSEE_C-38093" />
+	<area shape="poly" title="Marnans" alt="Marnans" coords="196,336, 193,321, 197,321, 211,331, 206,337" href="INSEE_C-38221" />
+	<area shape="poly" title="Saint Sim&#233;on de Bressieux" alt="Saint Sim&#233;on de Bressieux" coords="197,302, 211,299, 220,307, 219,313, 212,304, 207,305, 207,311, 209,317, 210,330, 198,321" href="INSEE_C-38457" />
+	<area shape="poly" title="Ornacieux" alt="Ornacieux" coords="173,267, 185,262, 199,262, 196,268, 176,272" href="INSEE_C-38284" />
+	<area shape="poly" title="Balbins" alt="Balbins" coords="178,273, 195,269, 191,283, 180,282" href="INSEE_C-38025" />
+
+	<area shape="poly" title="Sardieu" alt="Sardieu" coords="186,301, 178,288, 179,282, 190,282, 198,300" href="INSEE_C-38473" />
+	<area shape="poly" title="La C&#244;te Saint Andr&#233;" alt="La C&#244;te Saint Andr&#233;" coords="199,300, 191,282, 193,277, 200,258, 208,257, 212,297" href="INSEE_C-38130" />
+	<area shape="poly" title="Gillonay" alt="Gillonay" coords="209,261, 222,262, 224,293, 212,295" href="INSEE_C-38180" />
+	<area shape="poly" title="Saint Hilare de la C&#244;te" alt="Saint Hilare de la C&#244;te" coords="224,289, 222,263, 231,261, 236,265, 234,278, 239,285, 231,289" href="INSEE_C-38393" />
+	<area shape="poly" title="La Frette" alt="La Frette" coords="240,285, 233,277, 236,263, 248,260, 247,277, 252,281, 253,286" href="INSEE_C-38174" />
+	<area shape="poly" title="Bevenais" alt="Bevenais" coords="251,287, 253,281, 248,277, 248,260, 252,257, 255,260, 262,288" href="INSEE_C-38042" />
+	<area shape="poly" title="Le Grand Lemps" alt="Le Grand Lemps" coords="263,287, 256,259, 253,258, 259,252, 265,254, 275,289" href="INSEE_C-38182" />
+	<area shape="poly" title="Colombe" alt="Colombe" coords="265,255, 279,263, 284,279, 274,287" href="INSEE_C-38118" />
+	<area shape="poly" title="Rives" alt="Rives" coords="276,286, 283,280, 289,285, 296,285, 305,293, 303,298, 299,298, 293,293" href="INSEE_C-38337" />
+
+	<area shape="poly" title="Renage" alt="Renage" coords="300,304, 298,298, 293,294, 290,302, 290,313" href="INSEE_C-38332" />
+	<area shape="poly" title="Beaucroissant" alt="Beaucroissant" coords="274,288, 292,293, 289,301, 289,313, 278,309" href="INSEE_C-38030" />
+	<area shape="poly" title="Izeaux" alt="Izeaux" coords="275,289, 264,289, 260,308, 266,313, 278,308" href="INSEE_C-38194" />
+	<area shape="poly" title="Sillans" alt="Sillans" coords="247,288, 263,288, 260,307, 251,308, 246,302" href="INSEE_C-38490" />
+	<area shape="poly" title="Plan" alt="Plan" coords="247,311, 252,307, 259,307, 265,313, 262,318, 254,319" href="INSEE_C-38308" />
+	<area shape="poly" title="Saint Paul d'Izeaux" alt="Saint Paul d'Izeaux" coords="262,318, 265,313, 277,309, 275,324, 267,324" href="INSEE_C-38437" />
+	<area shape="poly" title="La Forteresse" alt="La Forteresse" coords="255,320, 261,319, 266,324, 273,324, 270,331, 260,335, 253,329" href="INSEE_C-38171" />
+	<area shape="poly" title="Saint Geoirs" alt="Saint Geoirs" coords="228,318, 228,309, 245,309, 255,320, 253,329, 249,331, 247,327, 249,320, 246,314, 236,314, 236,319" href="INSEE_C-38387" />
+	<area shape="poly" title="Saint Michel de Saint Geoirs" alt="Saint Michel de Saint Geoirs" coords="249,331, 247,327, 249,320, 244,315, 236,315, 243,334" href="INSEE_C-38427" />
+
+	<area shape="poly" title="Brion" alt="Brion" coords="243,333, 235,318, 229,318, 232,338" href="INSEE_C-38060" />
+	<area shape="poly" title="Bressieux" alt="Bressieux" coords="207,311, 208,306, 214,306, 219,311, 210,316" href="INSEE_C-38056" />
+	<area shape="poly" title="Saint Pierre de Bressieux" alt="Saint Pierre de Bressieux" coords="207,336, 213,324, 211,316, 220,308, 227,307, 232,336, 210,339" href="INSEE_C-38440" />
+	<area shape="poly" title="Saint Jean d'Avelanne" alt="Saint Jean d'Avelanne" coords="345,206, 353,198, 366,196, 364,206, 359,215, 353,215" href="INSEE_C-38398" />
+	<area shape="poly" title="Saint Martin de Vaulserre" alt="Saint Martin de Vaulserre" coords="354,215, 358,214, 363,206, 366,207, 363,215, 365,217, 354,223" href="INSEE_C-38420" />
+	<area shape="poly" title="Saint Bueil" alt="Saint Bueil" coords="355,224, 365,219, 369,229, 360,229" href="INSEE_C-38372" />
+	<area shape="poly" title="Velanne" alt="Velanne" coords="338,214, 344,206, 351,215, 354,215, 355,225" href="INSEE_C-38531" />
+	<area shape="poly" title="Saint Albin de Vaulserre" alt="Saint Albin de Vaulserre" coords="366,196, 375,211, 365,220, 363,215, 366,207, 363,206" href="INSEE_C-38354" />
+	<area shape="poly" title="Voissant" alt="Voissant" coords="375,212, 365,221, 368,229, 377,218" href="INSEE_C-38564" />
+
+	<area shape="poly" title="Saint Sulpice des Rivoires" alt="Saint Sulpice des Rivoires" coords="323,235, 323,231, 338,213, 341,217, 340,229, 333,238" href="INSEE_C-38460" />
+	<area shape="poly" title="Saint Geoire en Valdaine" alt="Saint Geoire en Valdaine" coords="333,237, 342,228, 342,217, 359,229, 346,243" href="INSEE_C-38386" />
+	<area shape="poly" title="Massieu" alt="Massieu" coords="328,254, 322,245, 323,235, 345,243, 333,254" href="INSEE_C-38222" />
+	<area shape="poly" title="Merlas" alt="Merlas" coords="333,254, 346,244, 359,229, 369,229, 360,250, 350,256" href="INSEE_C-38228" />
+	<area shape="poly" title="Chirens" alt="Chirens" coords="316,274, 328,255, 322,245, 319,250, 309,248, 305,254, 310,262, 306,268, 307,273" href="INSEE_C-38105" />
+	<area shape="poly" title="Saint Blaise du Buis" alt="Saint Blaise du Buis" coords="296,282, 297,274, 306,268, 305,279" href="INSEE_C-38368" />
+	<area shape="poly" title="R&#233;aumont" alt="R&#233;aumont" coords="296,282, 305,279, 313,284, 315,294, 305,292" href="INSEE_C-38331" />
+	<area shape="poly" title="Charn&#232;cles" alt="Charn&#232;cles" coords="301,304, 299,299, 304,297, 305,292, 314,294, 314,299, 309,303" href="INSEE_C-38084" />
+	<area shape="poly" title="La Murette" alt="La Murette" coords="307,274, 317,275, 320,278, 312,283, 306,279" href="INSEE_C-38270" />
+
+	<area shape="poly" title="Saint Cassien" alt="Saint Cassien" coords="312,282, 320,279, 320,296, 315,296, 315,289" href="INSEE_C-38373" />
+	<area shape="poly" title="Coublevie" alt="Coublevie" coords="349,293, 349,284, 339,279, 333,283, 332,291" href="INSEE_C-38133" />
+	<area shape="poly" title="Voiron" alt="Voiron" coords="321,298, 321,279, 317,273, 328,256, 334,271, 339,278, 332,283, 332,294" href="INSEE_C-38563" />
+	<area shape="poly" title="Saint Nicolas de Macherin" alt="Saint Nicolas de Macherin" coords="349,256, 334,254, 328,255, 334,272, 350,265" href="INSEE_C-38432" />
+	<area shape="poly" title="Saint Etienne de Crossey" alt="Saint Etienne de Crossey" coords="340,279, 335,270, 349,264, 358,274, 357,280, 350,284" href="INSEE_C-38383" />
+	<area shape="poly" title="Saint Aupre" alt="Saint Aupre" coords="349,256, 361,250, 363,266, 359,276, 349,264" href="INSEE_C-38362" />
+	<area shape="poly" title="Miribel les Echelles" alt="Miribel les Echelles" coords="378,219, 369,228, 360,251, 362,267, 368,264, 382,252, 386,239, 382,222" href="INSEE_C-38236" />
+	<area shape="poly" title="Vourey" alt="Vourey" coords="297,312, 301,304, 310,303, 310,322" href="INSEE_C-38566" />
+	<area shape="poly" title="Moirans" alt="Moirans" coords="309,303, 311,323, 322,315, 331,316, 335,312, 322,299, 316,297" href="INSEE_C-38239" />
+
+	<area shape="poly" title="Saint Jean de Moirans" alt="Saint Jean de Moirans" coords="323,298, 332,293, 335,310" href="INSEE_C-38400" />
+	<area shape="poly" title="La Buisse" alt="La Buisse" coords="336,309, 333,293, 349,293, 356,299, 352,308" href="INSEE_C-38061" />
+	<area shape="poly" title="Pommiers la Placette" alt="Pommiers la Placette" coords="351,308, 355,298, 372,299, 378,298, 378,310, 374,317, 358,315" href="INSEE_C-38312" />
+	<area shape="poly" title="Saint Julien de Raz" alt="Saint Julien de Raz" coords="349,293, 350,283, 358,280, 358,292, 372,299, 356,298" href="INSEE_C-38407" />
+	<area shape="poly" title="Saint Joseph de Rivi&#232;re" alt="Saint Joseph de Rivi&#232;re" coords="363,266, 358,279, 357,291, 372,299, 384,293, 369,266" href="INSEE_C-38405" />
+	<area shape="poly" title="Saint Laurent du Pont" alt="Saint Laurent du Pont" coords="369,265, 383,253, 404,273, 394,291, 382,291" href="INSEE_C-38412" />
+	<area shape="poly" title="Entre Deux Guiers" alt="Entre Deux Guiers" coords="385,242, 399,241, 405,256, 403,270, 383,252" href="INSEE_C-38155" />
+	<area shape="poly" title="Saint Christophe sur Guiers" alt="Saint Christophe sur Guiers" coords="398,240, 410,241, 422,252, 414,272, 404,274, 405,255" href="INSEE_C-38376" />
+	<area shape="poly" title="Saint Pierre d'Entremont" alt="Saint Pierre d'Entremont" coords="423,250, 415,273, 441,292, 446,257" href="INSEE_C-38446" />
+
+	<area shape="poly" title="Saint Pierre de Chartreuse" alt="Saint Pierre de Chartreuse" coords="378,310, 382,292, 396,292, 403,275, 415,272, 441,293, 435,310, 422,325, 410,325, 401,318, 386,319, 389,307" href="INSEE_C-38442" />
+	<area shape="poly" title="Sarcenas" alt="Sarcenas" coords="391,329, 391,322, 388,320, 400,318, 409,323, 401,334" href="INSEE_C-38472" />
+	<area shape="poly" title="Le Sappey en Chartreuse" alt="Le Sappey en Chartreuse" coords="409,325, 400,335, 399,347, 401,350, 405,351, 417,338, 420,325" href="INSEE_C-38471" />
+	<area shape="poly" title="Quaix en Chartreuse" alt="Quaix en Chartreuse" coords="377,347, 379,337, 391,328, 399,334, 399,345, 394,345, 394,355, 382,353" href="INSEE_C-38328" />
+	<area shape="poly" title="Proveysieux" alt="Proveysieux" coords="379,308, 374,315, 372,334, 366,338, 364,346, 376,347, 378,335, 391,328, 391,323, 386,319, 389,308" href="INSEE_C-38325" />
+	<area shape="poly" title="Mont Saint Martin" alt="Mont Saint Martin" coords="369,316, 358,331, 366,338, 372,332, 375,316" href="INSEE_C-38258" />
+	<area shape="poly" title="Voreppe" alt="Voreppe" coords="330,317, 336,309, 351,309, 358,315, 368,316, 357,331, 358,340, 349,341, 341,334, 340,322" href="INSEE_C-38565" />
+	<area shape="poly" title="Montaud" alt="Montaud" coords="331,327, 323,331, 315,342, 314,352, 326,352, 323,340, 334,330" href="INSEE_C-38248" />
+	<area shape="poly" title="Saint Quentin sur Is&#232;re" alt="Saint Quentin sur Is&#232;re" coords="313,348, 302,346, 298,338, 305,338, 310,322, 323,316, 331,316, 339,321, 324,329, 315,341" href="INSEE_C-38450" />
+
+	<area shape="poly" title="Quincieu" alt="Quincieu" coords="248,334, 254,329, 260,334, 270,330, 255,341, 249,340" href="INSEE_C-38330" />
+	<area shape="poly" title="Chasselay" alt="Chasselay" coords="233,336, 243,333, 243,342, 247,347, 245,355, 228,348" href="INSEE_C-38086" />
+	<area shape="poly" title="Serre Nerpol" alt="Serre Nerpol" coords="251,363, 245,356, 248,347, 245,342, 244,333, 247,333, 248,340, 255,343, 254,357" href="INSEE_C-38275" />
+	<area shape="poly" title="Vatilieu" alt="Vatilieu" coords="270,333, 256,342, 254,357, 262,349, 273,348, 276,341" href="INSEE_C-38526" />
+	<area shape="poly" title="Notre Dame de l'Osier" alt="Notre Dame de l'Osier" coords="255,358, 262,349, 272,348, 276,360, 265,364" href="INSEE_C-38278" />
+	<area shape="poly" title="Chantesse" alt="Chantesse" coords="276,358, 273,348, 276,343, 284,342, 284,356" href="INSEE_C-38074" />
+	<area shape="poly" title="Cras" alt="Cras" coords="276,342, 270,332, 285,336, 284,341" href="INSEE_C-38137" />
+	<area shape="poly" title="Morette" alt="Morette" coords="272,331, 276,320, 287,325, 285,335" href="INSEE_C-38263" />
+	<area shape="poly" title="Tullins" alt="Tullins" coords="304,339, 286,333, 286,325, 277,321, 278,311, 292,315, 297,311, 308,325" href="INSEE_C-38517" />
+
+	<area shape="poly" title="Poli&#233;nas" alt="Poli&#233;nas" coords="283,357, 285,335, 297,337, 301,349, 294,362, 287,362" href="INSEE_C-38310" />
+	<area shape="poly" title="L'Albenc" alt="L'Albenc" coords="283,357, 273,361, 277,376, 293,368, 293,361, 286,361" href="INSEE_C-38004" />
+	<area shape="poly" title="Vinay" alt="Vinay" coords="255,358, 252,361, 250,373, 269,379, 277,375, 273,361, 263,363" href="INSEE_C-38559" />
+	<area shape="poly" title="Varacieux" alt="Varacieux" coords="229,349, 226,361, 240,377, 250,372, 251,362, 245,355" href="INSEE_C-38523" />
+	<area shape="poly" title="Murinais" alt="Murinais" coords="227,379, 221,373, 224,360, 239,377" href="INSEE_C-38272" />
+	<area shape="poly" title="Roybon" alt="Roybon" coords="186,374, 172,355, 177,351, 179,342, 197,334, 210,340, 231,335, 225,360, 215,363, 215,369, 199,374, 193,370, 189,374" href="INSEE_C-38347" />
+	<area shape="poly" title="Saint Nizier du Moucherotte" alt="Saint Nizier du Moucherotte" coords="352,401, 346,398, 350,384, 358,376" href="INSEE_C-38433" />
+	<area shape="poly" title="Engins" alt="Engins" coords="347,364, 332,354, 333,393, 345,397, 350,383, 356,376" href="INSEE_C-38153" />
+	<area shape="poly" title="Autrans" alt="Autrans" coords="331,354, 313,354, 311,378, 302,395, 331,398" href="INSEE_C-38021" />
+
+	<area shape="poly" title="La Rivi&#232;re" alt="La Rivi&#232;re" coords="302,348, 293,361, 293,367, 310,377, 314,353" href="INSEE_C-38338" />
+	<area shape="poly" title="Saint Gervais" alt="Saint Gervais" coords="292,368, 285,373, 296,386, 294,395, 301,396, 310,376" href="INSEE_C-38390" />
+	<area shape="poly" title="Rovon" alt="Rovon" coords="276,377, 285,374, 295,385, 294,394, 284,387" href="INSEE_C-38345" />
+	<area shape="poly" title="Malleval" alt="Malleval" coords="279,419, 292,395, 283,386, 276,391, 274,403, 270,406, 268,411" href="INSEE_C-38216" />
+	<area shape="poly" title="Cognin les Gorges" alt="Cognin les Gorges" coords="270,405, 251,402, 258,393, 269,387, 270,378, 275,376, 281,387, 274,390, 273,403" href="INSEE_C-38117" />
+	<area shape="poly" title="Beaulieu" alt="Beaulieu" coords="248,376, 253,373, 260,377, 269,379, 270,387, 259,392, 257,380, 251,380" href="INSEE_C-38033" />
+	<area shape="poly" title="T&#234;che" alt="T&#234;che" coords="251,381, 257,381, 259,391, 254,398, 250,394" href="INSEE_C-38500" />
+	<area shape="poly" title="Saint Sauveur" alt="Saint Sauveur" coords="233,419, 238,409, 236,399, 250,394, 253,397, 246,412, 240,419" href="INSEE_C-38454" />
+	<area shape="poly" title="Saint V&#233;rand" alt="Saint V&#233;rand" coords="226,380, 230,387, 236,399, 250,393, 252,382, 245,376" href="INSEE_C-38463" />
+
+	<area shape="poly" title="Saint Marcellin" alt="Saint Marcellin" coords="233,417, 225,410, 225,400, 228,386, 236,399, 237,411" href="INSEE_C-38416" />
+	<area shape="poly" title="Chevri&#232;res" alt="Chevri&#232;res" coords="225,399, 214,397, 218,376, 216,364, 222,362, 223,376, 228,387" href="INSEE_C-38099" />
+	<area shape="poly" title="Bessins" alt="Bessins" coords="215,369, 198,373, 201,380, 210,383, 217,376" href="INSEE_C-38041" />
+	<area shape="poly" title="Saint Appolinard" alt="Saint Appolinard" coords="216,377, 208,382, 199,379, 196,385, 205,397, 214,397" href="INSEE_C-38360" />
+	<area shape="poly" title="Dionay" alt="Dionay" coords="178,366, 168,371, 172,385, 197,384, 200,379, 197,371, 187,374" href="INSEE_C-38145" />
+	<area shape="poly" title="Chatte" alt="Chatte" coords="224,400, 208,399, 199,410, 208,424, 221,417, 226,422, 233,418, 225,409" href="INSEE_C-38095" />
+	<area shape="poly" title="Saint Antoine" alt="Saint Antoine" coords="178,397, 172,385, 197,384, 207,399, 197,410" href="INSEE_C-38359" />
+	<area shape="poly" title="Izeron" alt="Izeron" coords="251,401, 266,404, 268,412, 280,419, 255,416, 247,410" href="INSEE_C-38195" />
+	<area shape="poly" title="Saint Pierre de Ch&#233;rennes" alt="Saint Pierre de Ch&#233;rennes" coords="246,412, 241,418, 250,426, 277,421, 255,417" href="INSEE_C-38443" />
+
+	<area shape="poly" title="Beauvoir en Royans" alt="Beauvoir en Royans" coords="247,430, 251,424, 240,418, 234,419" href="INSEE_C-38036" />
+	<area shape="poly" title="Saint Andr&#233; en Royans" alt="Saint Andr&#233; en Royans" coords="237,452, 227,442, 246,433, 251,434, 252,439" href="INSEE_C-38356" />
+	<area shape="poly" title="Saint Romans" alt="Saint Romans" coords="234,419, 224,423, 212,430, 225,441, 249,430" href="INSEE_C-38453" />
+	<area shape="poly" title="La S&#244;ne" alt="La S&#244;ne" coords="212,430, 208,424, 220,419, 225,421" href="INSEE_C-38495" />
+	<area shape="poly" title="Saint Bonnet de Chavagne" alt="Saint Bonnet de Chavagne" coords="190,436, 190,425, 186,423, 195,409, 207,423" href="INSEE_C-38370" />
+	<area shape="poly" title="Montagne" alt="Montagne" coords="179,398, 195,408, 186,423, 178,421" href="INSEE_C-38245" />
+	<area shape="poly" title="Presles" alt="Presles" coords="250,427, 277,423, 276,436, 285,438, 273,447, 252,441, 252,435, 248,433" href="INSEE_C-38322" />
+	<area shape="poly" title="Choranche" alt="Choranche" coords="242,449, 251,440, 272,448, 285,437, 279,451, 249,452" href="INSEE_C-38108" />
+	<area shape="poly" title="Ch&#226;telus" alt="Ch&#226;telus" coords="262,468, 245,462, 249,453, 280,452" href="INSEE_C-38092" />
+
+	<area shape="poly" title="Pont en Royans" alt="Pont en Royans" coords="245,462, 235,454, 242,448, 249,454" href="INSEE_C-38319" />
+	<area shape="poly" title="Auberives en Royans" alt="Auberives en Royans" coords="237,453, 228,445, 221,454" href="INSEE_C-38018" />
+	<area shape="poly" title="Saint Just de Claix" alt="Saint Just de Claix" coords="221,454, 203,454, 212,446, 214,431, 228,443" href="INSEE_C-38409" />
+	<area shape="poly" title="Saint Hilaire du Rosier" alt="Saint Hilaire du Rosier" coords="203,453, 191,444, 190,439, 207,423, 213,432, 213,446" href="INSEE_C-38394" />
+	<area shape="poly" title="Saint Lattier" alt="Saint Lattier" coords="158,445, 177,422, 190,425, 189,444, 178,444, 172,453, 159,450" href="INSEE_C-38410" />
+	<area shape="poly" title="Rencurel" alt="Rencurel" coords="276,435, 293,439, 300,447, 313,444, 303,439, 295,427, 299,397, 293,395, 276,425" href="INSEE_C-38333" />
+	<area shape="poly" title="M&#233;audre" alt="M&#233;audre" coords="295,428, 318,432, 331,399, 300,395" href="INSEE_C-38225" />
+	<area shape="poly" title="Lans en Vercors" alt="Lans en Vercors" coords="318,431, 346,436, 343,421, 351,401, 333,392" href="INSEE_C-38205" />
+	<area shape="poly" title="Villars de Lans" alt="Villars de Lans" coords="292,469, 286,456, 293,440, 301,447, 311,444, 300,431, 341,438, 332,480, 326,480, 314,456" href="INSEE_C-38548" />
+
+	<area shape="poly" title="Corren&#231;on en Vercors" alt="Corren&#231;on en Vercors" coords="292,471, 297,485, 294,492, 297,497, 312,501, 319,487, 326,480, 314,455" href="INSEE_C-38129" />
+	<area shape="poly" title="Ch&#226;teau Bernard" alt="Ch&#226;teau Bernard" coords="330,504, 314,500, 319,487, 325,481, 330,481, 343,494" href="INSEE_C-38090" />
+	<area shape="poly" title="Le Gua" alt="Le Gua" coords="332,481, 337,457, 353,461, 360,466, 364,479, 344,492" href="INSEE_C-38187" />
+	<area shape="poly" title="Saint Paul de Varces" alt="Saint Paul de Varces" coords="343,437, 355,437, 364,433, 367,445, 350,460, 336,457" href="INSEE_C-38436" />
+	<area shape="poly" title="Vif" alt="Vif" coords="353,458, 367,445, 381,438, 374,448, 376,471, 371,475, 364,477, 361,464" href="INSEE_C-38545" />
+	<area shape="poly" title="Varces Alli&#232;res et Risset" alt="Varces Alli&#232;res et Risset" coords="347,434, 360,424, 376,423, 386,433, 367,445, 366,434, 362,433, 355,436" href="INSEE_C-38524" />
+	<area shape="poly" title="Pont de Claix" alt="Pont de Claix" coords="377,422, 370,414, 370,405, 384,411" href="INSEE_C-38317" />
+	<area shape="poly" title="Echirolles" alt="Echirolles" coords="382,410, 371,404, 375,393, 391,395, 394,403, 389,408" href="INSEE_C-38151" />
+	<area shape="poly" title="Claix" alt="Claix" coords="346,434, 344,420, 351,401, 371,404, 370,415, 375,421, 360,423" href="INSEE_C-38111" />
+
+	<area shape="poly" title="Seyssins" alt="Seyssins" coords="352,402, 355,394, 372,384, 375,393, 371,404" href="INSEE_C-38486" />
+	<area shape="poly" title="Seyssinet Pariset" alt="Seyssinet Pariset" coords="355,394, 359,378, 374,383" href="INSEE_C-38485" />
+	<area shape="poly" title="Fontaine" alt="Fontaine" coords="372,381, 378,375, 369,367, 369,374, 355,375" href="INSEE_C-38169" />
+	<area shape="poly" title="Sassenage" alt="Sassenage" coords="354,374, 346,363, 357,356, 368,367, 367,372" href="INSEE_C-38474" />
+	<area shape="poly" title="Noyarey" alt="Noyarey" coords="347,361, 357,356, 358,348, 352,348, 350,341, 335,340, 332,352" href="INSEE_C-38281" />
+	<area shape="poly" title="Veurey Voroize" alt="Veurey Voroize" coords="348,341, 340,334, 339,322, 333,323, 332,331, 322,339, 327,352, 332,352, 334,340" href="INSEE_C-38540" />
+	<area shape="poly" title="Fontanil Cornillon" alt="Fontanil Cornillon" coords="350,342, 358,341, 359,332, 364,337, 364,345, 358,348, 351,347" href="INSEE_C-38170" />
+	<area shape="poly" title="Saint Egr&#232;ve" alt="Saint Egr&#232;ve" coords="358,356, 367,366, 379,358, 381,351, 376,346, 365,345, 358,350" href="INSEE_C-38382" />
+	<area shape="poly" title="Saint Martin le Vinoux" alt="Saint Martin le Vinoux" coords="368,366, 381,357, 381,352, 392,355, 386,371" href="INSEE_C-38423" />
+
+	<area shape="poly" title="Corenc" alt="Corenc" coords="394,345, 398,345, 400,351, 404,351, 406,357, 399,368, 395,368" href="INSEE_C-38126" />
+	<area shape="poly" title="La Tronche" alt="La Tronche" coords="387,370, 393,353, 395,353, 396,368, 400,369, 401,374, 395,376, 392,370" href="INSEE_C-38516" />
+	<area shape="poly" title="Meylan" alt="Meylan" coords="408,349, 405,352, 407,358, 400,368, 401,373, 404,371, 415,377, 419,374, 420,367, 414,361" href="INSEE_C-38229" />
+	<area shape="poly" title="Saint Nazaire les Eymes" alt="Saint Nazaire les Eymes" coords="425,319, 420,326, 439,351, 444,350, 445,347" href="INSEE_C-38431" />
+	<area shape="poly" title="Saint Ismier" alt="Saint Ismier" coords="420,327, 438,350, 433,353, 432,358, 429,358, 422,350, 424,345, 418,337" href="INSEE_C-38397" />
+	<area shape="poly" title="Biviers" alt="Biviers" coords="408,349, 419,338, 424,345, 423,348, 413,356" href="INSEE_C-38045" />
+	<area shape="poly" title="Montbonnot Saint Martin" alt="Montbonnot Saint Martin" coords="412,356, 423,350, 429,361, 423,367, 416,363" href="INSEE_C-38249" />
+	<area shape="poly" title="Dom&#232;ne" alt="Dom&#232;ne" coords="422,368, 431,359, 438,366, 435,372, 426,372" href="INSEE_C-38150" />
+	<area shape="poly" title="Murianette" alt="Murianette" coords="421,367, 426,374, 435,373, 434,381, 430,386, 419,376" href="INSEE_C-38271" />
+
+	<area shape="poly" title="Venon" alt="Venon" coords="428,386, 419,375, 415,377, 415,387, 419,391" href="INSEE_C-38533" />
+	<area shape="poly" title="Gi&#232;res" alt="Gi&#232;res" coords="419,390, 412,395, 410,382, 404,371, 415,377, 415,387" href="INSEE_C-38179" />
+	<area shape="poly" title="Saint Martin d'H&#232;res" alt="Saint Martin d'H&#232;res" coords="396,377, 404,372, 409,382, 410,394, 396,391" href="INSEE_C-38421" />
+	<area shape="poly" title="Bresson" alt="Bresson" coords="391,409, 394,404, 405,402, 398,414" href="INSEE_C-38057" />
+	<area shape="poly" title="Poisat" alt="Poisat" coords="412,393, 397,391, 405,402" href="INSEE_C-38309" />
+	<area shape="poly" title="Eybens" alt="Eybens" coords="395,403, 406,402, 396,391, 390,395" href="INSEE_C-38158" />
+	<area shape="poly" title="Grenoble" alt="Grenoble" coords="370,367, 391,371, 396,379, 396,391, 390,395, 375,392, 373,382, 378,376" href="INSEE_C-38185" />
+	<area shape="poly" title="Saint Pancrasse" alt="Saint Pancrasse" coords="430,326, 425,319, 435,309, 441,320" href="INSEE_C-38435" />
+	<area shape="poly" title="Saint Hilaire" alt="Saint Hilaire" coords="441,296, 436,308, 442,319, 449,311, 455,302, 448,302" href="INSEE_C-38395" />
+
+	<area shape="poly" title="Bernin" alt="Bernin" coords="435,325, 429,326, 445,347, 449,337" href="INSEE_C-38039" />
+	<area shape="poly" title="Crolles" alt="Crolles" coords="434,326, 449,312, 460,326, 449,336" href="INSEE_C-38140" />
+	<area shape="poly" title="Lumbin" alt="Lumbin" coords="454,301, 449,312, 459,323, 461,308" href="INSEE_C-38214" />
+	<area shape="poly" title="Les Adrets" alt="Les Adrets" coords="473,336, 476,332, 474,324, 478,324, 505,334, 505,343, 500,349" href="INSEE_C-38002" />
+	<area shape="poly" title="Le Champ Pr&#232;s Froges" alt="Le Champ Pr&#232;s Froges" coords="459,325, 461,319, 473,324, 475,332" href="INSEE_C-38070" />
+	<area shape="poly" title="La Pierre" alt="La Pierre" coords="464,309, 461,310, 461,318, 473,322, 477,315" href="INSEE_C-38303" />
+	<area shape="poly" title="Hurti&#232;res" alt="Hurti&#232;res" coords="477,322, 487,325, 486,313, 481,311, 477,315" href="INSEE_C-38192" />
+	<area shape="poly" title="Saint Bernard" alt="Saint Bernard" coords="445,268, 463,275, 458,289, 454,303, 447,301, 440,292" href="INSEE_C-38367" />
+	<area shape="poly" title="La Terrasse" alt="La Terrasse" coords="455,301, 458,289, 475,298, 464,309" href="INSEE_C-38503" />
+
+	<area shape="poly" title="Tencin" alt="Tencin" coords="465,308, 476,314, 486,305, 475,298" href="INSEE_C-38501" />
+	<area shape="poly" title="Le Touvet" alt="Le Touvet" coords="463,275, 459,289, 474,297, 481,283" href="INSEE_C-38511" />
+	<area shape="poly" title="Goncelin" alt="Goncelin" coords="474,296, 482,282, 493,284, 498,296, 487,305" href="INSEE_C-38181" />
+	<area shape="poly" title="Moretel de Mailles" alt="Moretel de Mailles" coords="492,284, 504,263, 494,264, 491,270, 490,277, 484,282" href="INSEE_C-38262" />
+	<area shape="poly" title="Saint Vincent de Mercuze" alt="Saint Vincent de Mercuze" coords="464,273, 469,264, 473,264, 482,273, 478,276, 480,281" href="INSEE_C-38466" />
+	<area shape="poly" title="Le Cheylas" alt="Le Cheylas" coords="480,281, 485,281, 491,276, 491,270, 495,264, 502,264, 504,261, 490,255, 489,262, 482,272, 478,276" href="INSEE_C-38100" />
+	<area shape="poly" title="Pontcharra" alt="Pontcharra" coords="493,230, 504,235, 499,239, 498,245, 507,255, 505,262, 489,255, 488,244" href="INSEE_C-38314" />
+	<area shape="poly" title="La Buissi&#232;re" alt="La Buissi&#232;re" coords="480,261, 489,261, 489,245, 483,245, 475,257" href="INSEE_C-38062" />
+	<area shape="poly" title="Barraux" alt="Barraux" coords="493,228, 477,229, 471,240, 471,248, 475,256, 482,245, 489,244" href="INSEE_C-38027" />
+
+	<area shape="poly" title="Saint Marie d'Alloix" alt="Saint Marie d'Alloix" coords="474,266, 479,261, 488,262, 481,272" href="INSEE_C-38417" />
+	<area shape="poly" title="La Flach&#232;re" alt="La Flach&#232;re" coords="479,261, 471,249, 469,252, 469,263, 475,264" href="INSEE_C-38166" />
+	<area shape="poly" title="Sainte Marie du Mont" alt="Sainte Marie du Mont" coords="448,268, 452,255, 448,255, 450,245, 471,238, 470,248, 469,252, 469,265, 463,274" href="INSEE_C-38418" />
+	<area shape="poly" title="Chapareillan" alt="Chapareillan" coords="455,218, 452,242, 473,238, 475,228, 492,228, 490,219, 473,206" href="INSEE_C-38075" />
+	<area shape="poly" title="Saint Maximin" alt="Saint Maximin" coords="498,245, 498,239, 509,231, 516,232, 513,246, 508,254" href="INSEE_C-38426" />
+	<area shape="poly" title="Le Moutaret" alt="Le Moutaret" coords="513,245, 515,234, 522,230, 525,234, 525,249" href="INSEE_C-38268" />
+	<area shape="poly" title="Saint Pierre d'Allevard" alt="Saint Pierre d'Allevard" coords="505,261, 493,285, 499,295, 513,303, 520,283" href="INSEE_C-38439" />
+	<area shape="poly" title="Theys" alt="Theys" coords="480,311, 499,294, 512,302, 509,312, 505,333, 486,325, 486,314" href="INSEE_C-38504" />
+	<area shape="poly" title="Pinsot" alt="Pinsot" coords="519,290, 520,282, 526,268, 542,274, 553,290, 562,290, 544,313" href="INSEE_C-38306" />
+
+	<area shape="poly" title="Allevard" alt="Allevard" coords="505,261, 513,247, 523,249, 541,261, 557,278, 563,278, 563,290, 553,289, 541,273, 525,266, 519,282" href="INSEE_C-38006" />
+	<area shape="poly" title="La Chapelle du Bard" alt="La Chapelle du Bard" coords="526,235, 535,233, 560,262, 563,273, 557,277, 540,260, 524,249" href="INSEE_C-38078" />
+	<area shape="poly" title="Herbeys" alt="Herbeys" coords="418,393, 407,401, 413,410, 419,410, 424,404" href="INSEE_C-38188" />
+	<area shape="poly" title="Bri&#233; et Angonnes" alt="Bri&#233; et Angonnes" coords="411,426, 407,421, 402,410, 405,401, 408,402, 412,409, 418,410, 419,418" href="INSEE_C-38059" />
+	<area shape="poly" title="Vaulnavey le Haut" alt="Vaulnavey le Haut" coords="424,402, 445,411, 446,423, 436,427, 419,417, 419,411, 423,407" href="INSEE_C-38529" />
+	<area shape="poly" title="Vaulnavey le Bas" alt="Vaulnavey le Bas" coords="411,426, 419,416, 436,427, 419,433" href="INSEE_C-38528" />
+	<area shape="poly" title="Jarrie" alt="Jarrie" coords="386,431, 396,420, 389,408, 399,415, 402,409, 406,420, 397,434" href="INSEE_C-38200" />
+	<area shape="poly" title="Le Versoud" alt="Le Versoud" coords="439,365, 432,360, 433,353, 438,349, 450,353" href="INSEE_C-38538" />
+	<area shape="poly" title="Villard Bonnot" alt="Villard Bonnot" coords="445,350, 449,335, 453,334, 459,338, 449,351" href="INSEE_C-38547" />
+
+	<area shape="poly" title="Froges" alt="Froges" coords="454,334, 460,326, 475,332, 459,337" href="INSEE_C-38175" />
+	<area shape="poly" title="Laval" alt="Laval" coords="505,343, 499,348, 472,335, 456,338, 456,341, 473,345, 493,362, 503,359, 510,346" href="INSEE_C-38206" />
+	<area shape="poly" title="Sainte Agn&#232;s" alt="Sainte Agn&#232;s" coords="457,343, 472,345, 493,362, 489,383, 480,384, 481,374, 476,362, 464,349" href="INSEE_C-38350" />
+	<area shape="poly" title="Saint Jean le Vieux" alt="Saint Jean le Vieux" coords="440,366, 449,354, 455,369" href="INSEE_C-38404" />
+	<area shape="poly" title="Saint Mury Monteymond" alt="Saint Mury Monteymond" coords="479,379, 482,377, 477,364, 464,349, 453,343, 460,368" href="INSEE_C-38430" />
+	<area shape="poly" title="La Combe de Lancey" alt="La Combe de Lancey" coords="453,346, 460,367, 482,383, 469,384, 454,370, 451,355, 450,350" href="INSEE_C-38120" />
+	<area shape="poly" title="Revel" alt="Revel" coords="440,367, 435,372, 451,385, 451,391, 462,396, 462,401, 468,405, 488,383, 468,385, 453,369" href="INSEE_C-38334" />
+	<area shape="poly" title="Saint Martin d'Uriage" alt="Saint Martin d'Uriage" coords="419,392, 434,382, 434,372, 450,384, 449,391, 459,395, 461,401, 444,409, 424,401" href="INSEE_C-38422" />
+	<area shape="poly" title="Champ sur Drac" alt="Champ sur Drac" coords="375,447, 388,433, 394,434, 395,455, 384,450" href="INSEE_C-38071" />
+
+	<area shape="poly" title="Notre Dame de M&#233;sage" alt="Notre Dame de M&#233;sage" coords="396,455, 396,435, 406,431, 406,447" href="INSEE_C-38279" />
+	<area shape="poly" title="Montchaboud" alt="Montchaboud" coords="398,433, 405,421, 411,428" href="INSEE_C-38252" />
+	<area shape="poly" title="Vizille" alt="Vizille" coords="419,434, 411,428, 407,431, 406,447, 412,454, 420,452, 411,445" href="INSEE_C-38562" />
+	<area shape="poly" title="Saint Pierre de M&#233;sage" alt="Saint Pierre de M&#233;sage" coords="398,456, 405,445, 412,453, 419,452, 425,455, 419,458" href="INSEE_C-38445" />
+	<area shape="poly" title="Saint Barth&#233;l&#233;my de S&#233;chilienne" alt="Saint Barth&#233;l&#233;my de S&#233;chilienne" coords="428,468, 440,455, 434,449, 418,452, 425,455, 420,457" href="INSEE_C-38364" />
+	<area shape="poly" title="S&#233;chilienne" alt="S&#233;chilienne" coords="419,434, 446,423, 449,427, 434,448, 417,451, 412,446" href="INSEE_C-38478" />
+	<area shape="poly" title="Chamrousse" alt="Chamrousse" coords="450,425, 446,421, 445,409, 461,402, 468,406" href="INSEE_C-38567" />
+	<area shape="poly" title="Saint Martin de la Cluze" alt="Saint Martin de la Cluze" coords="370,477, 360,482, 355,500, 368,496, 376,482" href="INSEE_C-38115" />
+	<area shape="poly" title="Miribel Lanch&#226;tre" alt="Miribel Lanch&#226;tre" coords="332,505, 344,492, 359,482, 354,501" href="INSEE_C-38235" />
+
+	<area shape="poly" title="Saint Georges de Commiers" alt="Saint Georges de Commiers" coords="375,450, 376,468, 389,475, 397,469, 398,457, 384,450" href="INSEE_C-38388" />
+	<area shape="poly" title="Saint Jean de Vaulx" alt="Saint Jean de Vaulx" coords="399,459, 398,470, 389,475, 396,481, 405,481, 408,469" href="INSEE_C-38402" />
+	<area shape="poly" title="Laffrey" alt="Laffrey" coords="399,458, 410,470, 424,464, 419,457" href="INSEE_C-38203" />
+	<area shape="poly" title="Cholonge" alt="Cholonge" coords="420,483, 430,476, 424,464, 410,469, 412,477" href="INSEE_C-38106" />
+	<area shape="poly" title="Villard Saint Christophe" alt="Villard Saint Christophe" coords="420,484, 430,476, 444,477, 438,488, 423,499, 417,496" href="INSEE_C-38552" />
+	<area shape="poly" title="Susville" alt="Susville" coords="403,528, 414,529, 417,518, 403,513" href="INSEE_C-38499" />
+	<area shape="poly" title="Pierre Ch&#226;tel" alt="Pierre Ch&#226;tel" coords="403,512, 418,516, 422,500, 416,495, 408,493, 402,498" href="INSEE_C-38304" />
+	<area shape="poly" title="La Motte d'Aveillans" alt="La Motte d'Aveillans" coords="396,494, 402,497, 402,528, 397,528, 392,501" href="INSEE_C-38265" />
+	<area shape="poly" title="Saint Th&#233;offrey" alt="Saint Th&#233;offrey" coords="417,493, 419,483, 411,478, 409,468, 406,482, 407,492" href="INSEE_C-38462" />
+
+	<area shape="poly" title="Notre Dame de Vaulx" alt="Notre Dame de Vaulx" coords="392,490, 401,496, 406,493, 405,481, 395,481, 389,475, 386,481, 392,486" href="INSEE_C-38280" />
+	<area shape="poly" title="Notre Dame de Commiers" alt="Notre Dame de Commiers" coords="376,469, 371,476, 376,482, 385,481, 387,474" href="INSEE_C-38277" />
+	<area shape="poly" title="Monteynard" alt="Monteynard" coords="375,482, 369,495, 378,505, 391,491, 392,485, 386,481" href="INSEE_C-38254" />
+	<area shape="poly" title="La Motte Saint Martin" alt="La Motte Saint Martin" coords="392,491, 378,506, 380,511, 393,529, 396,526, 391,500, 396,494" href="INSEE_C-38266" />
+	<area shape="poly" title="La Morte" alt="La Morte" coords="445,474, 447,476, 430,475, 428,470, 441,455, 449,450, 463,456" href="INSEE_C-38264" />
+	<area shape="poly" title="Livet et Gavet" alt="Livet et Gavet" coords="435,447, 451,425, 479,394, 483,394, 486,422, 466,435, 472,446, 463,456, 449,450, 441,455" href="INSEE_C-38212" />
+	<area shape="poly" title="Allemond" alt="Allemond" coords="494,361, 489,383, 480,391, 484,392, 487,412, 504,412, 514,398, 507,365, 522,353, 510,347, 504,359" href="INSEE_C-38005" />
+	<area shape="poly" title="La Ferri&#232;re" alt="La Ferri&#232;re" coords="518,290, 545,315, 543,340, 524,352, 505,343, 509,313" href="INSEE_C-38163" />
+	<area shape="poly" title="Saint Arey" alt="Saint Arey" coords="396,548, 395,530, 406,547" href="INSEE_C-38361" />
+
+	<area shape="poly" title="Pruni&#232;res" alt="Pruni&#232;res" coords="395,529, 414,529, 408,546" href="INSEE_C-38326" />
+	<area shape="poly" title="Saint Guillaume" alt="Saint Guillaume" coords="331,506, 349,503, 349,517, 341,520, 330,519" href="INSEE_C-38391" />
+	<area shape="poly" title="Saint And&#233;ol" alt="Saint And&#233;ol" coords="296,525, 329,518, 329,505, 298,498, 294,493" href="INSEE_C-38355" />
+	<area shape="poly" title="Marcieu" alt="Marcieu" coords="376,536, 370,526, 379,512, 393,530, 387,539" href="INSEE_C-38217" />
+	<area shape="poly" title="Mayres Savel" alt="Mayres Savel" coords="376,539, 386,540, 393,531, 395,550, 383,547" href="INSEE_C-38224" />
+	<area shape="poly" title="Avignonet" alt="Avignonet" coords="358,500, 370,498, 377,504, 375,516, 366,505" href="INSEE_C-38023" />
+	<area shape="poly" title="Sinard" alt="Sinard" coords="352,503, 361,520, 369,523, 374,516, 364,504" href="INSEE_C-38492" />
+	<area shape="poly" title="Gresse en Vercors" alt="Gresse en Vercors" coords="316,560, 301,580, 288,577, 296,530, 330,519, 338,520, 339,538" href="INSEE_C-38186" />
+	<area shape="poly" title="Chichilianne" alt="Chichilianne" coords="327,598, 336,605, 350,601, 353,592, 341,573, 319,561, 289,595, 330,612" href="INSEE_C-38103" />
+
+	<area shape="poly" title="Saint Paul les Monestier" alt="Saint Paul les Monestier" coords="350,504, 349,518, 339,522, 340,534, 347,537, 351,531, 355,514" href="INSEE_C-38438" />
+	<area shape="poly" title="Monestier de Clermont" alt="Monestier de Clermont" coords="360,537, 353,531, 355,513, 362,522" href="INSEE_C-38242" />
+	<area shape="poly" title="Treffort" alt="Treffort" coords="364,522, 361,538, 371,547, 374,538, 369,532, 369,525" href="INSEE_C-38513" />
+	<area shape="poly" title="Lavars" alt="Lavars" coords="376,546, 367,556, 367,564, 374,576, 392,553" href="INSEE_C-38208" />
+	<area shape="poly" title="Roissard" alt="Roissard" coords="347,539, 352,532, 371,548, 366,554, 360,553" href="INSEE_C-38342" />
+	<area shape="poly" title="Saint Michel les Portes" alt="Saint Michel les Portes" coords="330,567, 316,558, 341,536, 359,553, 352,559, 336,557" href="INSEE_C-38429" />
+	<area shape="poly" title="Saint Martin de Clelles" alt="Saint Martin de Clelles" coords="342,574, 332,567, 338,559, 352,560, 359,555, 367,555, 366,561" href="INSEE_C-38419" />
+	<area shape="poly" title="Clelles" alt="Clelles" coords="342,576, 366,564, 374,577, 354,591" href="INSEE_C-38113" />
+	<area shape="poly" title="Saint Jean d'H&#233;rans" alt="Saint Jean d'H&#233;rans" coords="392,551, 397,571, 417,564, 422,542" href="INSEE_C-38403" />
+
+	<area shape="poly" title="Cornillon en Tri&#232;ves" alt="Cornillon en Tri&#232;ves" coords="384,582, 396,572, 391,553, 374,577" href="INSEE_C-38127" />
+	<area shape="poly" title="Pr&#233;bois" alt="Pr&#233;bois" coords="381,583, 406,611, 388,624, 383,619, 390,601, 380,595" href="INSEE_C-38321" />
+	<area shape="poly" title="Percy" alt="Percy" coords="337,605, 351,600, 354,591, 374,577, 379,582, 355,601, 353,617" href="INSEE_C-38301" />
+	<area shape="poly" title="Le Monestier du Percy" alt="Le Monestier du Percy" coords="356,614, 356,601, 376,584, 380,597" href="INSEE_C-38243" />
+	<area shape="poly" title="Saint Maurice en Tri&#232;ves" alt="Saint Maurice en Tri&#232;ves" coords="356,617, 380,596, 385,598, 372,614, 363,629" href="INSEE_C-38424" />
+	<area shape="poly" title="Lalley" alt="Lalley" coords="387,598, 373,614, 363,631, 386,632, 386,622, 382,619, 389,603" href="INSEE_C-38204" />
+	<area shape="poly" title="Mens" alt="Mens" coords="384,585, 397,571, 412,567, 432,586, 406,585, 393,598" href="INSEE_C-38226" />
+	<area shape="poly" title="Saint Baudille et Pipet" alt="Saint Baudille et Pipet" coords="393,599, 407,587, 432,587, 435,604, 408,612" href="INSEE_C-38366" />
+	<area shape="poly" title="Tr&#233;minis" alt="Tr&#233;minis" coords="389,624, 433,606, 432,632, 407,645" href="INSEE_C-38514" />
+
+	<area shape="poly" title="Vaujany" alt="Vaujany" coords="514,395, 533,390, 548,400, 554,362, 541,339, 523,353, 507,366" href="INSEE_C-38527" />
+	<area shape="poly" title="Oz" alt="Oz" coords="516,397, 504,413, 519,417, 544,404, 531,392" href="INSEE_C-38289" />
+	<area shape="poly" title="Huez" alt="Huez" coords="521,417, 540,407, 539,429, 515,432" href="INSEE_C-38191" />
+	<area shape="poly" title="Villard Reculas" alt="Villard Reculas" coords="507,418, 512,431, 520,418" href="INSEE_C-38550" />
+	<area shape="poly" title="La Garde" alt="La Garde" coords="505,418, 512,433, 526,431, 520,446, 503,429" href="INSEE_C-38177" />
+	<area shape="poly" title="Auris" alt="Auris" coords="528,432, 522,448, 527,460, 538,448" href="INSEE_C-38020" />
+	<area shape="poly" title="Le Freney d'Oisans" alt="Le Freney d'Oisans" coords="545,403, 539,431, 532,435, 544,452, 552,441" href="INSEE_C-38173" />
+	<area shape="poly" title="Clavans en Haut Oisans" alt="Clavans en Haut Oisans" coords="555,385, 574,385, 553,441, 548,402" href="INSEE_C-38112" />
+	<area shape="poly" title="Besse" alt="Besse" coords="577,388, 596,392, 583,432, 555,440" href="INSEE_C-38040" />
+
+	<area shape="poly" title="Mizoen" alt="Mizoen" coords="553,441, 551,449, 577,460, 581,434" href="INSEE_C-38237" />
+	<area shape="poly" title="Mont de Lans" alt="Mont de Lans" coords="528,460, 530,471, 556,471, 564,479, 575,479, 575,462, 550,451, 537,452" href="INSEE_C-38253" />
+	<area shape="poly" title="Venosc" alt="Venosc" coords="530,475, 555,474, 562,481, 550,493, 540,509, 531,508" href="INSEE_C-38534" />
+	<area shape="poly" title="Oulles" alt="Oulles" coords="485,423, 467,434, 473,445, 496,443, 500,437" href="INSEE_C-38286" />
+	<area shape="poly" title="Le Bourg d'Oisans" alt="Le Bourg d'Oisans" coords="488,413, 490,428, 503,438, 508,451, 513,452, 520,463, 519,477, 510,492, 519,506, 530,506, 529,475, 522,451, 502,427, 503,414" href="INSEE_C-38052" />
+	<area shape="poly" title="Villard Notre Dame" alt="Villard Notre Dame" coords="510,452, 518,462, 518,475, 514,484, 503,478, 507,472" href="INSEE_C-38549" />
+	<area shape="poly" title="Villard Reymond" alt="Villard Reymond" coords="497,445, 508,452, 506,473, 498,473" href="INSEE_C-38551" />
+	<area shape="poly" title="Ornon" alt="Ornon" coords="472,445, 477,465, 496,466, 496,443" href="INSEE_C-38285" />
+	<area shape="poly" title="Chantelouve" alt="Chantelouve" coords="479,467, 473,498, 508,489, 501,475, 494,474, 492,468" href="INSEE_C-38073" />
+
+	<area shape="poly" title="Le P&#233;rier" alt="Le P&#233;rier" coords="473,500, 473,518, 499,525, 517,508, 510,493" href="INSEE_C-38302" />
+	<area shape="poly" title="Entraigues" alt="Entraigues" coords="476,521, 499,527, 497,543, 484,544" href="INSEE_C-38154" />
+	<area shape="poly" title="Lavaldens" alt="Lavaldens" coords="469,452, 439,488, 446,503, 470,507, 476,466" href="INSEE_C-38207" />
+	<area shape="poly" title="Saint Honor&#233;" alt="Saint Honor&#233;" coords="419,516, 425,517, 436,505, 438,489, 423,499" href="INSEE_C-38396" />
+	<area shape="poly" title="La Mure" alt="La Mure" coords="418,517, 421,518, 420,531, 411,538, 410,536, 417,523" href="INSEE_C-38269" />
+	<area shape="poly" title="Sousville" alt="Sousville" coords="422,520, 426,519, 426,525, 431,530, 427,532, 422,530" href="INSEE_C-38497" />
+	<area shape="poly" title="Ponsonnas" alt="Ponsonnas" coords="419,539, 415,537, 422,531, 427,534, 426,539" href="INSEE_C-38313" />
+	<area shape="poly" title="Cognet" alt="Cognet" coords="410,540, 414,536, 417,540, 410,546" href="INSEE_C-38116" />
+	<area shape="poly" title="Nantes en Ratier" alt="Nantes en Ratier" coords="436,507, 426,519, 428,527, 441,521" href="INSEE_C-38273" />
+
+	<area shape="poly" title="La Valette" alt="La Valette" coords="438,496, 447,503, 446,522, 442,522, 438,506" href="INSEE_C-38521" />
+	<area shape="poly" title="Oris en Rattier" alt="Oris en Rattier" coords="451,502, 469,511, 469,518, 455,527, 447,522, 448,502" href="INSEE_C-38283" />
+	<area shape="poly" title="Si&#233;voz" alt="Si&#233;voz" coords="432,529, 438,523, 448,524, 454,528, 454,531, 442,532" href="INSEE_C-38489" />
+	<area shape="poly" title="Valbonnais" alt="Valbonnais" coords="470,519, 450,533, 457,538, 480,539" href="INSEE_C-38518" />
+	<area shape="poly" title="Saint Michel en Beaumont" alt="Saint Michel en Beaumont" coords="457,540, 459,551, 486,551, 480,539" href="INSEE_C-38428" />
+	<area shape="poly" title="Saint Laurent en Beaumont" alt="Saint Laurent en Beaumont" coords="432,530, 428,538, 446,547, 455,545, 455,539" href="INSEE_C-38413" />
+	<area shape="poly" title="Saint Pierre de M&#233;aroz" alt="Saint Pierre de M&#233;aroz" coords="425,539, 435,550, 445,549" href="INSEE_C-38444" />
+	<area shape="poly" title="Saint S&#233;bastien" alt="Saint S&#233;bastien" coords="424,541, 442,559, 428,578, 415,567" href="INSEE_C-38456" />
+	<area shape="poly" title="La Salle en Beaumont" alt="La Salle en Beaumont" coords="447,561, 439,552, 445,549, 455,549, 459,553" href="INSEE_C-38470" />
+
+	<area shape="poly" title="Quet en Beaumont" alt="Quet en Beaumont" coords="448,563, 457,556, 467,567, 461,570" href="INSEE_C-38329" />
+	<area shape="poly" title="Sainte Luce" alt="Sainte Luce" coords="459,554, 474,552, 468,565" href="INSEE_C-38414" />
+	<area shape="poly" title="Les C&#244;tes de Corps" alt="Les C&#244;tes de Corps" coords="484,554, 475,554, 464,571, 484,566" href="INSEE_C-38132" />
+	<area shape="poly" title="Cord&#233;ac" alt="Cord&#233;ac" coords="444,561, 457,574, 437,601, 434,573" href="INSEE_C-38125" />
+	<area shape="poly" title="Pellafol" alt="Pellafol" coords="457,576, 436,607, 452,613, 469,591, 467,579" href="INSEE_C-38299" />
+	<area shape="poly" title="Corps" alt="Corps" coords="465,575, 486,566, 493,574, 481,581" href="INSEE_C-38128" />
+	<area shape="poly" title="Ambel" alt="Ambel" coords="469,580, 473,592, 480,592, 480,584" href="INSEE_C-38008" />
+	<area shape="poly" title="Monestier d'Ambel" alt="Monestier d'Ambel" coords="473,594, 482,604, 470,612, 457,608" href="INSEE_C-38241" />
+	<area shape="poly" title="Beaufin" alt="Beaufin" coords="483,585, 483,601, 495,591" href="INSEE_C-38031" />
+
+	<area shape="poly" title="La Salette Fallavaux" alt="La Salette Fallavaux" coords="488,546, 499,548, 506,562, 500,574, 487,564" href="INSEE_C-38469" />
+	<area shape="poly" title="Valjouffrey" alt="Valjouffrey" coords="501,533, 523,571, 550,547, 573,547, 524,508" href="INSEE_C-38522" />
+	<area shape="poly" title="Saint Christophe en Oisans" alt="Saint Christophe en Oisans" coords="585,469, 547,509, 591,549, 613,531, 632,546, 633,501, 619,470" href="INSEE_C-38375" />
+</map>

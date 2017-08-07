@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tmx version="1.4">
+	<header
+		creationtool="fait main"
+		creationtoolversion="1"
+		datatype="PlainText"
+		segtype="sentence"
+		adminlang="fr-FR"
+		srclang="FR"
+		o-tmf="ABCTransMem">
+	</header>
+	<body>
+		<tu tuid="statut_general_reu" datatype="plaintext">
+			<tuv xml:lang="FR">
+				<seg>Statut global d'indigénat ou d'introduction</seg>
+			</tuv>
+		</tu>
+		<tu tuid="statut_general_reu#legende" datatype="plaintext">
+			<tuv xml:lang="FR">
+				<seg>
+					LISTE;
+					DEFINITION = Statut global d'indigénat ou d'introduction du taxon à la Réunion, intégrant à la fois les
+					populations spontanées et les populations cultivées.
+					Le statut général Réunion est applicable à tous les taxons de l'Index. Il est aussi appliquable
+					La typologie de statut d' indigénat ou d'introduction des taxons, adoptée ici, s'appuie 
+					principalement à l'origine sur le système de statuts et de traitement des plantes étrangères
+					(xénophytes) de E.J. CLEMENT et M.C. FOSTER (Aliens Plants of the British Isles, 1994) et le
+					système de statuts des index de références de la flore vasculaire du Nord/PasdeCalais,
+					de Picardie et de HauteNormandie (BOULLET 1998 et 1999) inspiré initialement de LAMBINON et al. (1993). Il a
+					également été tenu compte, notamment pour les notions d'indigène et d'étranger, des mises au point
+					terminologiques récentes développées dans le contexte des plantes exotiques invasives
+					(RICHARDSON et al. 2000, PYS EK et al. 2004).;
+					I = indigène.;
+					K = cryptogène.;
+					Z = amphinaturalisé (ou assimilé indigène) [correspond grosso modo à la notion de « largement naturalisé »].;
+					N = sténonaturalisé [correspond grosso modo à la notion de « localement naturalisé »].;
+					S = établi [correspond approximativement et en partie à la notion classique de subspontané].;
+					R = persistant (ou rémanent).;
+					A = accidentel (ou casuel) (correspond approximativement à la notion classique d' adventice).;
+					Q = cultivé (voir contenu, champ suivant).;
+					E = taxon cité par erreur dans le territoire.;
+					? = indication complémentaire de statut douteux ou incertain se plaçant soit seul (cas
+					des plantes à statut inconnu ou mal connu), soit après le code de statut (I?, K?, Z?, N?, S?, A?, E?).;
+					?? = taxon dont la présence est hypothétique dans le territoire (indication vague pour le
+					territoire, détermination rapportée en confert, ou encore présence probable à confirmer en
+					absence de citation).
+				</seg>
+			</tuv>
+		</tu>
+	</body>
+</tmx>

@@ -1,0 +1,60 @@
+<h2>Saisie assistée de noms scientifiques de plantes de la flore française</h2>
+<form id="eflore_form_saisie_continue" name="eflore_form_saisie_continue" action="" onsubmit="FillWithQueryField('eflore_nom', 'eflore_noms');return false;" method="post">
+	<fieldset>
+		<legend>{form_legende}</legend>
+		<table>
+			<!-- BEGIN REFERENCIEL_MULTIPLE -->
+			<tr>
+				<td>
+					<label for="eflore_referenciel_select">{form_referentiel}</label>
+					<select id="eflore_referenciel_select" name="eflore_referenciel" tabindex="1001" onchange="actualiserUrl();cache = new Object();">
+		  				<option value="0">Tous</option>
+						<!-- BEGIN REFERENCIEL -->
+			  			<option value="{EFLORE_REF_MULTIPLE_ID}" title="{EFLORE_REF_MULTIPLE_INTITULE}" {EFLORE_REF_MULTIPLE_SELECTED}>{EFLORE_REF_MULTIPLE_ABREVIATION} (version {EFLORE_REF_MULTIPLE_VERSION})</option>
+			  			<!-- END REFERENCIEL --> 
+					</select>
+				</td>
+			</tr>
+			<!-- END REFERENCIEL_MULTIPLE -->
+			<tr>
+				<td>
+					<label for="eflore_nom">{form_nom}</label>
+					<input id="eflore_nom" name="eflore_nom" class="champ" tabindex="1000" size="30" maxlength="255" type="text" autocomplete="off" />
+					<input id="eflore_num_nomenclatural" name="eflore_num_nomenclatural" type="hidden"/>
+					<!-- BEGIN REFERENCIEL_UNIQUE -->
+					<input id="eflore_referenciel" name="eflore_referenciel" type="hidden" value="{EFLORE_REF_UNIQUE_ID}"/>
+					<!-- END REFERENCIEL_UNIQUE -->				
+				</td>
+			</tr>
+		</table>
+	</fieldset>
+</form>
+<form method="post" action="">
+	<table>
+		<tr>
+			<td>
+				<textarea cols="60" rows="30" name="eflore_noms"></textarea>
+			<td>				
+		</tr>
+		<tr>
+			<td>
+
+				<input id="eflore_nomenclature_submit" type="reset" value="Effacer" />
+				<input name="submit" value="ok" type="submit" />
+			</td>
+		</tr>
+	</table>
+</form>
+
+<script type="text/javascript" language="JavaScript" src="{EF_URL_JS}XmlHttpLookup.js"></script>
+<script type="text/javascript"language="JavaScript">
+<!-- 
+	function actualiserUrl()
+	{
+		url_referentiel = document.getElementsByName('eflore_referenciel').item(0).value;
+		return '{URL_COMPLETION_PREFIXE}'+url_referentiel+'{URL_COMPLETION_PARAM}';
+	}
+	url = actualiserUrl();
+	document.onLoad = InitQueryCode('eflore_nom', url, '', 'eflore_num_nomenclatural', '{URL_NOMENCLATURAL}');
+//-->
+</script>

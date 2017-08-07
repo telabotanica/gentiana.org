@@ -1,0 +1,115 @@
+<h1>{titre_general}<span id="ef_referentiel">{TITRE_GENERAL_REFERENTIEL}</span></h1>
+{FORMULAIRE_RECHERCHE_NOM}
+<h1 id="ef_illustration_titre">{TITRE}<span id="ef_famille">{NOM_RETENU_FAMILLE}</span></h1>
+<div id="ef_illustration_info">
+	<!-- BEGIN TELABOTANICA -->
+	<h2 id="efii_titre_tb" class="clear">Illustrations fournies par le réseau Tela Botanica</h2>
+	<ul id="efii_liste_tb">
+	<!-- BEGIN TB_IMG -->
+		<li>
+			<a onclick="javascript: window.open(this.href, 'Photo_{TB_IMG_ID}', 'height={TB_IMG_HAUTEUR}, width={TB_IMG_LARGEUR}, top=100, left=100, toolbar=no, menubar=no, location=no, resizable=yes, scrollbars=no, status=no'); return false;" href="{TB_IMG_NORMALE_URL}">
+				<img src="{TB_IMG_MINIATURE_URL}" alt="Photographie n°{TB_IMG_ID} du taxon {NOM_RETENU_ULTRA_SIMPLE}" />
+			</a>
+			<dl class="ajout_2point">
+				<dt>Photo n°</dt>
+				<dd>{TB_IMG_ID}</dd>
+				<dt>Titre</dt>
+				<dd>{TB_IMG_TITRE}</dd>
+				<dt>Localisation</dt>
+				<dd>{TB_IMG_LIEU}</dd>
+				<dt>Auteur</dt>
+				<dd>{TB_IMG_AUTEUR}</dd>
+				<dt>Contributeur</dt>
+				<dd>{TB_IMG_CONTRIBUTEUR}</dd>
+				<dt>Type</dt>
+				<dd>{TB_IMG_TYPE}</dd>
+				<dt>Date de création</dt>
+				<dd>{TB_IMG_DATE_CREATION}</dd>
+				<dt>Licence</dt>
+				<dd><a class="lien_ext" href="{TB_IMG_LICENCE}" rel="license">{TB_IMG_LICENCE}</a></dd>
+			</dl>
+		</li>
+	<!-- END TB_IMG -->
+	</ul>
+	<!-- BEGIN TB_INFO -->
+	<p class="information">{TB_INFO}</p>
+	<!-- END TB_INFO -->
+	<!-- END TELABOTANICA -->
+
+	<h2 id="efii_titre_photoflora" class="clear">Illustrations fournies par Photoflora</h2>
+	<!-- BEGIN PHOTOFLORA_INTRO -->
+	<p id="photoflora_intro">
+	Ces images sont fournies par le site <a href="{PHOTOFLORA_URL_ACCUEIL}" class="lien_ext">Photoflora</a>.<br />
+	Des informations complémentaires sur l'auteur, la localité... sont diponibles sur la <a href="{PHOTOFLORA_URL_TAXON}" class="lien_ext">page du taxon <span class="nom_latin">{NOM_RETENU_ULTRA_SIMPLE}</span></a>.</p>
+	<!-- END PHOTOFLORA_INTRO -->
+	<!-- BEGIN PHOTOFLORA -->
+	<ul id="efii_liste_photoflora">
+	<!-- BEGIN PHOTOFLORA_IMG -->
+		<li>
+			<a onclick="javascript: window.open(this.href, 'Photo_{PHOTOFLORA_IMG_ID}', 'height={PHOTOFLORA_IMG_HAUTEUR}, width={PHOTOFLORA_IMG_LARGEUR}, top=100, left=100, toolbar=no, menubar=no, location=no, resizable=yes, scrollbars=no, status=no'); return false;" href="{PHOTOFLORA_IMG_NORMALE_URL}">
+				<img src="{PHOTOFLORA_IMG_MINIATURE_URL}" alt="Photographie n°{PHOTOFLORA_IMG_ID} du taxon {NOM_RETENU_ULTRA_SIMPLE}" />
+			</a>
+			<dl class="ajout_2point">
+				<dt>Photo n°</dt>
+				<dd>{PHOTOFLORA_IMG_ID}</dd>
+				<dt>Titre</dt>
+				<dd>{PHOTOFLORA_IMG_TITRE}</dd>
+				<dt>Localisation</dt>
+				<dd>{PHOTOFLORA_IMG_LIEU}</dd>
+				<dt>Auteur</dt>
+				<dd>{PHOTOFLORA_IMG_AUTEUR}</dd>
+				<dt>Contributeur</dt>
+				<dd>{PHOTOFLORA_IMG_CONTRIBUTEUR}</dd>
+				<dt>Type</dt>
+				<dd>{PHOTOFLORA_IMG_TYPE}</dd>
+				<dt>Date de création</dt>
+				<dd>{PHOTOFLORA_IMG_DATE_CREATION}</dd>
+				<dt>Licence</dt>
+				<dd>&copy;copyright {PHOTOFLORA_IMG_AUTEUR}</dd>
+			</dl>		</li>
+	<!-- END PHOTOFLORA_IMG -->
+	</ul>
+	<!-- END PHOTOFLORA -->
+	<!-- BEGIN PHOTOFLORA_INFO -->
+	<p class="information">{PHOTOFLORA_INFO}</p>
+	<!-- END PHOTOFLORA_INFO -->
+
+	<hr id="efii_separateur_moteur" class="clear"/>
+	<h2 id="efii_titre_avertissement" class="clear">Illustrations obtenues par des moteurs de recherche</h2>
+	<p class="attention">Les images obtenues par les moteurs de recherches (Google et Yahoo) peuvent ne pas correspondre toutes au taxon recherché. Le mode de recherche (pages contenant les chaînes correspondantes) et la plus ou moins grande fiabilité scientifique des sites doivent conduire à considérer ces illustrations avec prudence.</p>
+
+	<h3 id="efii_titre_google" class="clear">Rechercher des illustrations avec Google</h3>
+	<img id="ef_img_google" src="http://www.google.com/logos/Logo_25wht.gif" alt="Google" style="float:left;margin-right:10px;"/>
+	<form id="ef_form_google" action="http://images.google.fr/images" method="get" target="_blank">
+		<input id="q" name="q" maxlength="255" value="{NOM_RETENU_ULTRA_SIMPLE}" type="text"/>
+		<input id="ie" name="ie" value="ISO-8859-1" type="hidden"/>
+		<input id="oe" name="oe" value="ISO-8859-1" type="hidden"/>
+		<input id="hl" name="hl" value="fr" type="hidden"/>
+		<input id="btnG" name="btnG" value="Recherche Google" type="submit"/>
+	</form>
+
+	<h3 id="efii_titre_yahoo" class="clear">Illustrations fournies par Yahoo!Images</h3>
+	<!-- BEGIN YAHOO -->
+	<ul id="efii_liste_yahoo">
+	<!-- BEGIN YAHOO_IMG -->
+	<li>
+			<a onclick="javascript: window.open(this.href, 'Photo_{PHOTOFLORA_IMG_ID}', 'height={YAHOO_IMG_JS_HAUTEUR}, width={YAHOO_IMG_JS_LARGEUR}, top=100, left=100, toolbar=no, menubar=no, location=no, resizable=yes, scrollbars=no, status=no'); return false;" href="{YAHOO_IMG_NORMALE_URL}">
+				<img class="{YAHOO_IMG_CLASS}" src="{YAHOO_IMG_MINIATURE_URL}" alt="Photographie" />
+			</a>
+			<dl class="ajout_2point">
+				<dt>Page web d'origine</dt>
+				<dd><a href="{YAHOO_IMG_PAGE_WEB}">voir</a></dd>
+				<dt>Dimension</dt>
+				<dd>{YAHOO_IMG_HAUTEUR}x{YAHOO_IMG_LARGEUR}px</dd>
+				<dt>Format</dt>
+				<dd>{YAHOO_IMG_FORMAT}</dd>
+			</dl>
+		</li>
+	<!-- END YAHOO_IMG -->
+	</ul>
+	<!-- END YAHOO -->
+	<!-- BEGIN YAHOO_INFO -->
+	<p class="information">{YAHOO_INFO}</p>
+	<!-- END YAHOO_INFO -->
+
+</div>

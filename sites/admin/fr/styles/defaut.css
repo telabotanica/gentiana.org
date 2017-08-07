@@ -1,0 +1,215 @@
+/*****************Proprietes generales******************************************/
+* {margin:0; padding:0; text-indent:0;}
+body {background:#CCCCCC; font:70%/1.5em Verdana, Tahoma, arial, sans-serif; color: #333; text-align: center;}
+hr {margin:2px; width:100%; color:#333;  background-color:#333; height:2px;}
+a, a:visited {text-decoration:none; color:#4F82CB; background:inherit;}
+a:hover {color:#4EBF37; background:inherit;}
+table {width:90%; margin:2px auto; border: 1px solid #333; border-spacing:0; border-collapse:collapse;}
+th {background:#CCC url(../images/headerbg20.gif) repeat-x; color:#333; border: 1px solid #CCC; height:20px;}
+td {border: 1px solid #CCC;}
+.navi {padding:0;margin:0;text-align:center;}
+.other_month {color:#AAA;}
+.current_day {background: #FBB63C; color: #FFF;}
+.label_inscription {margin: 2px;float:left; clear:both; width:170px; text-align:right; }
+.symbole_obligatoire {color:red;}
+.input_inscription {float:left;  width:180px;}
+.input_inscription input, .input_inscription select {margin: 2px;border: 1px solid #000;font:12px Myriad, Arial, sans-serif; }
+.liste_inscription {margin: 2px;float:left; clear:both; }
+.inscription_bouton {float:left;margin: 3px;}
+.inscription_note_obligatoire {float:left; clear:both;}
+.bazar_checkbox {float:left;width:49%;}
+.bazar_fieldset {border: 1px solid #000;width:100%;margin-bottom:5px;}
+.bazar_fieldset legend {font-size:15px;font-weight: bold ;}
+.bazar_table {border:1px solid #000;width:100%;margin:5px;}
+.bazar_table td, .bazar_table tr, .bazar_table th {border:1px solid #000;}
+.inscription_table {border:0px;width:100%;margin:5px;}
+.inscription_cellule_gauche {font-size:12px;width:140px;text-align:right;}
+.inscription_cellule_droite {text-align:left;padding:5px;}
+.calendrier_applette {width:180px;}
+.calendrier_applette td {text-align:center;}
+
+/* headers */
+h1, h2, h3 {font-family: Tahoma, Verdana, 'Trebuchet MS', Sans-serif; font-weight: Bold;}
+h1 {font-size:120%;}
+h2 {font-size:110%; text-transform:uppercase; color:#88ac0b;}
+h3 {font-size:110%; color:#666666;}
+
+/* images */
+img {border: 2px solid #CCC;}
+img.float-right {margin: 5px 0px 10px 10px;}
+img.float-left {margin: 5px 10px 10px 0px;}
+
+h1, h2, h3, p {padding: 10px; margin: 0;}
+ul, ol {margin: 5px 10px; padding: 0 20px; color: #88ac0b;}
+ul span, ol span { color: #666666;}
+
+code {margin:5px 0; padding:10px; text-align:left; display:block; overflow:auto; font:500 1em/1.5em 'Lucida Console', 'courier new', monospace; background:#FAFAFA; border:1px solid #f2f2f2;}
+acronym {cursor:help; border-bottom:1px solid #777;}
+blockquote {margin:10px; padding:0 0 0 28px; border:1px solid #f2f2f2; background: #FAFAFA url(../images/quote.gif) no-repeat 5px 5px;}
+
+/* form elements */
+#main form {margin:10px; padding:0 5px; border:1px solid #f2f2f2; background-color:#FAFAFA;}
+#main form li {list-style-type:none; margin:0; padding:0; color:#000;}
+#main form ul {margin:0; padding:0;}
+#main label, #sidebar label {display:block; font-weight:bold; margin:5px 0 0 0; }
+#main select {padding:2px; border:1px solid #eee; font:normal 1em Verdana, sans-serif; color:#777;}
+#main input, #sidebar input {padding:2px; border:1px solid #eee; font:normal 1em Verdana, sans-serif; color:#777;}
+#main textarea {width:400px; padding:2px; font:normal 1em Verdana, sans-serif; border:1px solid #eee; height:100px; color:#777;}
+#main fieldset {background:#f3fce3; border:0; margin:5px; padding:5px;}
+#main fieldset legend {font-weight:bolder; text-decoration:none; background-image:none; color:#4F82CB;}
+#main input.button {margin:0; font:bolder 12px Arial, Sans-serif; border:1px solid #CCC; padding:2px 3px; background:#FFF; color:#88ac0b;}
+
+/* search */
+#main form.search {
+    position: absolute;
+    top: 35px; right: 25px;
+    background: transparent;
+    border: none;
+}
+#main form.search input.textbox {
+    margin: 0; padding: 1px 2px;
+    width: 120px;
+    background: #FFF;
+    color: #333;
+}
+#main form.search input.button {
+    background: #CCC url(../images/headerbg.gif) repeat-x;
+    color: #333;
+    border: none;
+    width: 70px; height: 21px;
+}
+
+.liste_bouton li {display:inline;}
+
+/********************************************
+   LAYOUT
+********************************************/
+#wrap {
+    width: 1265px;
+    background: #CCC url(../images/content.jpg) repeat-y center top;
+    margin: 0 auto;
+    text-align: left;
+}
+#content-wrap {
+    clear: both;
+    width: 1205px;
+    padding: 0;
+    margin: 0 auto;
+}
+#header {
+    width: 1265px;
+    position: relative;
+    height: 106px;
+    background: #CCC url(../images/header.jpg) no-repeat center top;
+    padding: 0;
+    font-size: 14px;
+    color: #FFF;
+}
+#header h1#logo-text {
+    position: absolute;
+    margin: 0; padding: 0;
+    font: bolder 3.3em 'Trebuchet MS', Arial, Sans-serif;
+    letter-spacing: -2px;
+    color: #FFF;
+    text-transform: none;
+
+    /* change the values of top and left to adjust the position of the logo*/
+    top: 40px; left: 50px;
+}
+#header h2#slogan {
+    position: absolute;
+    margin: 0; padding: 0;
+    font: normal .8em 'Trebuchet MS', Arial, Sans-serif;
+    text-transform: none;
+    color: #FFF;
+
+    /* change the values of top and left to adjust the position of the slogan*/
+    top: 85px; left: 53px;
+}
+#header h1#titre_site {position:absolute; top:50px; left:280px;}
+
+/* Menu */
+#menu {margin:0; padding:0 9px 0 50px; background:url(../images/menu.jpg) repeat-y center top; font:11px/20px Verdana, Arial, Tahoma, Sans-serif;}
+#vous_etes_ici {width:300px; display:inline;}
+#menus_communs {float:right; margin:-20px 36px 0 0;}
+#menu ul {float:right; list-style: none; margin:0; padding: 0;}
+#menu ul li {display: inline;}
+#menu ul li a {display: block; float: left; padding: 0 8px; color: #FFF; text-decoration: none;}
+#menu ul li a:hover {background-color: #ECECEC; color: #333;}
+#menu ul li.menu_actif a {background-color: #FFF; color: #333;}
+#menu a:hover {color:#FFF;}
+
+/* Main Column */
+#main {float:right; width:986px; padding:0; margin:0;}
+#main h1 {margin-top: 10px; font: Bold 125% Verdana, 'Trebuchet MS', Sans-serif; color: #88ac0b; padding: 5px 0 5px 25px; border-bottom: 1px solid #EFF0F1; background: #FFF url(../images/square-green.png) no-repeat 3px 50%;}
+
+/* Sidebar */
+#sidebar {float:left; width:200px; padding:0; margin:0 0 0 13px;}
+#sidebar h1 { margin-top: 10px; padding: 5px 0 5px 10px; font: bold 1.1em Verdana, 'Trebuchet MS', Sans-serif; color: #555; background: #EEF0F1 url(../images/headerbg.gif) repeat-x left bottom; border: 1px solid #EFF0F1;}
+#sidebar .left-box {border: 1px solid #EFF0F1; margin: 0 0 5px 0;}
+#sidebar ul.sidemenu, #sidebar ul.menu_classique_n1 {list-style: none; text-align: left; margin: 3px 0 8px 0; padding: 0; text-decoration: none;}
+#sidebar ul.sidemenu li, #sidebar ul.menu_classique_n1 li { border-bottom: 1px solid #EFF0F1; background: url(../images/go.gif) no-repeat 5px 5px; padding: 2px 0 2px 25px; margin: 0 2px;}
+#sidebar ul.sidemenu a, #sidebar ul.menu_classique_n1 a {font-weight: bolder; text-decoration: none; background-image: none;}
+#sidebar ul.menu_classique_n1 li.menu_actif {background: url(../images/go_bas.gif) no-repeat 5px 5px;}
+#sidebar li.menu_actif a {color:#FBB63C;}
+#sidebar li.menu_inactif, #sidebar li.menu_inactif a {color:#4F82CB;}
+#sidebar li a:hover {color:#4EBF37; background:inherit; background-image: none;}
+#sidebar ul ul {margin:0; padding:0;}
+#sidebar ul ul li {list-style-type:none;}
+/* Footer */
+#footer {color: #666666; background: #CCC url(../images/footer.jpg) no-repeat center top; clear: both; width: 1265px; height: 68px; text-align: center; font-size: 92%;}
+#footer a {text-decoration:none;}
+#footer a img {border:none;}
+
+/* alignment classes */
+.float-left  { float: left; }
+.float-right { float: right; }
+.align-left  { text-align: left; }
+.align-right { text-align: right; }
+
+/* display and additional classes */
+.clear { clear: both; }
+.gray { color: #CCC; }
+
+
+#zone_onglets {float : right;margin : 0 20px -1px 0 ;text-align:left;font-weight:bold;}
+#zone_onglets ul { margin:0; padding:0; list-style:none;}
+#zone_onglets li { background:url(../images/Boutons/right_both_green.png) no-repeat right top; float:left; margin:0; padding:0; color: #006495;}
+#zone_onglets a {float:left; display:block; color: #006495; font-size:12px; background:url(../images/Boutons/left_both_green.png) no-repeat left top; width:.1em; white-space:nowrap;/*2 lignes ajoutees pour compatibilite IE : extension de la zone cliquable a l'ensemble de zone_contenu_haut*/ padding:5px 15px 4px;  text-decoration:none;}
+/* On retablit le float a sa valeur correct mais le hack de l'antislash commente cache cette regle a IE5-Mac \*/ #zone_onglets a {float:none;} /* End IE5-Mac hack */
+#zone_onglets > ul a { width:auto;} /*propriete ajoutee pour contredire la ligne speciale IE (ci dessus) pour les autres navigateurs*/
+#zone_onglets li:hover { background-position:100% -150px;}
+#zone_onglets li:hover a { background-position:0% -150px;}
+#zone_onglets .inactif { border-bottom:0px solid; font-weight:normal;}
+#zone_onglets .actif, #zone_onglets .actif { position:relative; background-position:100% -150px; padding-bottom:2px; font-weight:bold;}
+#zone_onglets .actif a, #zone_onglets .actif a { position:relative; background-position:0% -150px; padding-bottom:3px;}
+/*-------------------------------APPLETTES--------------------------------------*/
+#moteur_recherche {position:absolute; top:80px; right:50px; width:200px; height:33px; text-align:right; background:transparent;}
+#moteur_recherche legend {display:none;}
+#moteur_recherche fieldset {margin:0;padding:0;border: 0;}
+#moteur_recherche label {display:none;}
+.form_label {float:left;/* width:250px; */padding-right:3px; text-align:right;}
+.formulaire_element {margin:3px 0; padding:0; float:left; clear:both; }
+.formulaire_element label {float:left; text-align:right; width:250px; margin-right:4px;}
+#more_motif {padding:2px; width:140px; border:1px solid #eee; font:normal 0.8em Verdana, sans-serif; color:#777;}
+#sesi_ok, #more_ok, #connexion, .liste_bouton input, #site_modifier, #form_annuler, #effacer, #choisir_site, #site_enregistrer {background:#CCC url(../images/headerbg20.gif) repeat-x; color:#333; border:none; height:20px;}
+#selecteur_monde {position:absolute; top: 45px; right: 50px; width:200px; height:33px; text-align:right; background:transparent;}
+#selecteur_monde select {padding:1px; width:146px; border:1px solid #eee; font:normal 0.8em Verdana, sans-serif; color:#777;}
+#selecteur_monde legend {display: none;}
+#selecteur_monde fieldset {border:0; margin:0; padding:0;}
+#copyright {margin:15px 0 10px 10px; padding:0; float:left; width:400px;}
+#copyright a {color:#006495;}
+#copyright a:hover {color:#222;}
+#identification {width:180px; margin:0 auto 5px auto;}
+#identification fieldset {border:0; margin:0; padding:0;}
+#identification form {margin:5px; padding:0 5px; width:175px; border:1px solid #f2f2f2;  background-color:#FAFAFA;  }
+#identification legend {display: none;}
+#identification label {display: block;}
+#identification_message {display:none;}
+#username, #password {width:145px;}
+#persistant, #persistant_label {float:left;}
+#persistant {margin:7px 2px 0 0;}
+.rss_page{padding:2px 0 0 0;}
+.rss_titre_site{font-size:11px; font-weight:normal; border-bottom:0;}
+.rss_date{color:rgb(80, 80, 80); text-align:justify;}
+.rss_titre_article{font-size:11px; text-transform:none; margin-bottom:5px;}

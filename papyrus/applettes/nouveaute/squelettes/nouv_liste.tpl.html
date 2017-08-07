@@ -1,0 +1,42 @@
+<!-- NOUVEAUTE - DEBUT -->
+<?php if ($erreurs) : ?>
+	<?php foreach ($erreurs as $erreur) : ?>
+		<p class="pap_erreur"><?=$erreur;?></p>
+	<?php endforeach; ?>
+<?php elseif ($informations) : ?>
+	<?php foreach ($informations as $information) : ?>
+		<p class="pap_info"><?=$information;?></p>
+	<?php endforeach; ?>
+<?php else : ?>
+
+<ul class="page_liste">
+<?php foreach ($pages as $page) : ?>
+	<li class="page_modification_<?=$page['type'];?>">
+		<h2 class="page_titre"><a href="<?=$page['url'];?>"><span class="page_titre"><?=$page['titre'];?></span></a></h2>
+		<dl>
+			<dt class="page_auteur">Auteur(s)&nbsp;:</dt>
+			<dd><?=$page['auteur'];?></dd>
+			<dt class="page_contributeur">Contributeur(s)&nbsp;:</dt>
+			<dd><?=$page['contributeur'];?></dd>
+			<dt class="page_modification_date">Modifié le&nbsp;:</dt>
+			<dd>
+				<span class="page_creation_heure"><?=$page['heure'];?></span>
+				<span class="page_separateur_heure">:</span>
+				<span class="page_creation_minute"><?=$page['minute'];?></span>
+				<span class="page_separateur_heure">:</span>
+				<span class="page_creation_seconde"><?=$page['seconde'];?></span>
+				<span class="page_separateur_date_heure"> - </span>
+				<span class="page_creation_jour"><?=$page['jour'];?></span>
+				<span class="page_creation_mois"><?=$page['mois'];?></span>
+				<span class="page_creation_annee"><?=$page['annee'];?></span>
+			</dd>
+			<dt class="page_description">Description&nbsp;:</dt>
+			<dd><?=$page['description'];?></dd>
+			<dt class="page_resumer_modification_">Résumer modification&nbsp;:</dt>
+			<dd><?=$page['resumer'];?></dd>
+		</dl>
+	</li>
+<?php endforeach; ?>
+</ul>
+<?php endif; ?>
+<!-- NOUVEAUTE - FIN -->

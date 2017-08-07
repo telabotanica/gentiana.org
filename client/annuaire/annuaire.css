@@ -1,0 +1,27 @@
+/* Pied de page */
+#annuaire_pied_page {
+	color:#A9A9A9;
+	font-size:10px;
+	padding-top:10px;
+	text-align:center;}
+
+/* Parcourir l'alphabet */
+#annuaire_alphabet{
+	font-size:15px;}
+
+/* Tableau des inscrits */
+#annuaire {
+	border:1px solid;}
+#annuaire table{
+	width:100%;
+	margin:0;
+	border:none;}
+#annuaire tbody{
+	vertical-align:top;
+	min-height:1em;
+	height:200px;
+	overflow: auto;}
+#annuaire td{
+	border:none;}
+#annuaire tr{
+	height:1em;}

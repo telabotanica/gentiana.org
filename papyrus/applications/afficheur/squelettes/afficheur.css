@@ -1,0 +1,57 @@
+/* vim: set expandtab tabstop=4 shiftwidth=4: */
+/* ========================================================================================================
+| Copyright (C) 1999-2004 Tela Botanica (accueil@tela-botanica.org)                                       |
++---------------------------------------------------------------------------------------------------------+
+| This file is part of Papyrus.                                                                           |
+|                                                                                                         |
+| Foobar is free software; you can redistribute it and/or modify it under the terms of the GNU General    |
+| Public License as published by the Free Software Foundation; either version 2 of the License, or        |
+| (at your option) any later version.                                                                     |
+|                                                                                                         |
+| Foobar is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the    |
+| implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public    |
+| License for more details.                                                                               |
+|                                                                                                         |
+| You should have received a copy of the GNU General Public License along with Foobar; if not, write to   |
+| the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA             |
++---------------------------------------------------------------------------------------------------------+
+ CVS : $Id: afficheur.css,v 1.1 2007-06-26 13:30:48 jp_milcent Exp $
+===========================================================================================================
+ DESCRIPTION : Fichier de style de l'application d'administration de l'affichage.
+ 
+ 
+===========================================================================================================
+ Auteur original : Jean-Pascal MILCENT <jpm@tela-botanica.org>
+
+ Autres auteurs :
+
+===========================================================================================================
+ AUTEUR   : $Author: jp_milcent $
+ VERSION  : $Revision: 1.1 $ $Date: 2007-06-26 13:30:48 $
+=======================================================================================================  */
+
+/* +----------------------------------------------------------------------------------------------------+
+|                                                STRUCTURE                                           |
++----------------------------------------------------------------------------------------------------+*/
+#gmc_contenu {
+  width: 100%;
+  min-height:400px;
+}
+
+/* +----------------------------------------------------------------------------------------------------+
+|                                                  DESIGN                                            |
++----------------------------------------------------------------------------------------------------+*/
+
+/* +--Fin des CSS ----------------------------------------------------------------------------------------+
+*
+* $Log: afficheur.css,v $
+* Revision 1.1  2007-06-26 13:30:48  jp_milcent
+* Suppression de l'utilisation de Quickform.
+* Utilisation de squellette PHP.
+*
+* Revision 1.1  2005-04-25 13:56:08  jpm
+* Ajout du style pour l'afficheur.
+*
+*
+* +-- Fin des CSS ----------------------------------------------------------------------------------------+
+*/

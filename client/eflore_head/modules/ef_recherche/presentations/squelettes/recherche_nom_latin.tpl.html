@@ -1,0 +1,29 @@
+<h1>{titre_general}<span id="ef_referentiel">{TITRE_GENERAL_REFERENTIEL}</span></h1>
+{FORMULAIRE_RECHERCHE_NOM}
+<hr/>
+{{OpenSearch action="url" nvp="{NVP}"}}
+<hr/>
+<script type="text/javascript" language="JavaScript" src="{EF_URL_JS}PlierDeplier.js"></script>
+<!-- BEGIN NOM_INFO -->
+<h1>{titre_info}</h1>
+	<p class="information">{NOM_INFO}</p>
+<!-- END NOM_INFO -->
+<!-- BEGIN NOM_APPROCHE -->
+	<p id="efr_ortho_approche"> <span style="color:red;">{orthographe}</span><a href="{EFLORE_NOM_APPROCHE_URL}">{EFLORE_NOM_APPROCHE}</a></p>
+<!-- END NOM_APPROCHE -->
+<!-- BEGIN RESULTAT -->
+<h1>{titre_nom_trouve}{RESULTAT_NBRE}</h1>
+<script type="text/javascript">afficherAide();</script>
+<ol id="efr_resultat">
+<!-- BEGIN NOM -->
+	<li>
+	<!-- BEGIN NOM_SYNONYME -->
+		<a href="{EFLORE_URL_FICHE}">{EFLORE_NOM}</a>
+	<!-- END NOM_SYNONYME -->
+	<!-- BEGIN NOM_RETENU -->
+		<strong class="nl_retenu"><a href="{EFLORE_URL_FICHE}">{EFLORE_NOM}</a></strong>
+	<!-- END NOM_RETENU -->
+	</li>
+<!-- END NOM -->
+</ol>
+<!-- END RESULTAT -->

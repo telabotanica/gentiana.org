@@ -1,0 +1,159 @@
+/*
+	Feuille de style du monde Gentiana
+	Auteur : Jean-Pascal MILCENT
+*/
+h1{
+  color:#003300;}
+h2, h3, h4, h5, h6, hr{
+  color:#99CC00;}
+a img {
+  border:1px dotted #99CC00;}
+a {
+	color:#003300;}
+a:hover {
+	color:#99CC00;}
+
+/*DIFFERENTS BLOCS DE LA PAGE*/
+
+/* Logo */
+#zone_logo {
+	margin-top: 12px;
+	margin-left: 25px;
+}
+
+/* Bandeau */
+#zone_bandeau {
+	background: transparent url("http://www.gentiana.org/sites/gestion/generique/images/graphisme/bandeau.jpg") no-repeat top left;}
+#bandeau_contenu {
+	background: transparent url("http://www.gentiana.org/sites/gestion/generique/images/graphisme/fond_menu_commun_bandeau.png") repeat-x top left;}
+#bandeau_contenu a {
+	color:#FFFF00;}
+
+/* Zone moteur recherche */
+#form_more_recherche input#more_ok {
+	color:#003300;}
+#form_more_recherche input#more_ok:hover {
+	color:#CCFF00;
+	border-color:#999900;}
+#form_more_recherche input#more_motif{
+	color:#99CC00;
+	font-weight:bold;}
+
+/* Zone contenu -> VEI */
+#zone_vei {
+	background: transparent url("http://www.gentiana.org/sites/gestion/generique/images/graphisme/picto_vei.png") no-repeat top left;}
+#vei {
+	color:#003300;}
+
+/* Zone contenu -> Navigation */
+#zone_contenu_navigation {
+  border-color:#003300;}
+#zone_contenu_navigation li {
+	border-radius: 10px 10px 0 0;
+	border: solid #909090 1px;
+	border-bottom: solid #b0b0b0 1px;
+	margin-right: 2px;
+}
+#zone_contenu_navigation li.menu_actif {
+	border-bottom: none;
+}
+#zone_contenu_navigation li.menu_inactif {
+	background-color: #d0d0d0;
+}
+#zone_contenu_navigation li.menu_inactif a {
+	color: #404040;
+}
+#zone_contenu_navigation li:hover {
+  color:#99CC00;}
+#zone_contenu_navigation li a:hover {
+  color:#99CC00;}
+#zone_contenu_navigation .menu_inactif {
+  border-bottom:#003300;}
+#zone_contenu_navigation .menu_actif a {
+  color:#003300;}
+
+/* Zone contenu -> Page */
+#zone_contenu_page {
+}
+
+/* Zone liste sites */
+#zone_liste_site a {
+	color:white;}
+#site_gestion_raisonnable a{
+	color:#CCFF66;
+  background:url("http://www.gentiana.org/sites/gestion/generique/images/graphisme/site_gestion_raisonnable.png") center left no-repeat;}
+
+/* Zone menu */
+#zone_menu {
+  /*background:transparent url("http://www.gentiana.org/sites/gestion/generique/images/graphisme/fond_menu_classique.png") repeat-x;*/
+  border-right: solid 1px #dedede;
+}
+#zone_menu a{
+  color:#003300;
+}
+#zone_menu a:hover, #form_connexion #connexion:hover {
+	color:#99CC00;
+	border-color:#99CC00;
+}
+
+/* Zone menu -> menus classique */
+#zone_menu_classique a:hover {/* Menu tout niveau : survol */
+  background-color: #FFCC00;
+  color:black;}
+#zone_menu_classique .menu_classique_n1>li.menu_actif>a {/* Menu niveau 1 actif */
+  /*background:#FFFF00 url("http://www.gentiana.org/sites/gestion/generique/images/graphisme/puce_triangle.png") no-repeat center left;*/
+  background-color: #FFCC00;
+}
+#zone_menu_classique .menu_classique_n2 .menu_actif {/* Menu niveau 2 actif */
+  background-color: #FFCC00;}
+#zone_menu_classique .menu_classique_n2 .menu_inactif {/* Menu niveau 2 inactif */
+  background-color: #FFFFCC;}
+
+/* Zone menu -> menus déroulants */
+#zone_menu_classique a:hover { /* Menu tout niveau : survol */
+	background-color: #FFCC00;
+	color:black;
+}
+#zone_menu_classique .menu_deroulant_n1 > li.menu_actif > a { /* Menu niveau 1 actif */
+	/*background:#FFFF00 url("http://www.gentiana.org/sites/gentiana/generique/images/graphisme/puce_triangle.png") no-repeat center left;*/
+	background-color: #FFCC00;
+}
+#zone_menu_classique .menu_deroulant_n2 .menu_actif { /* Menu niveau 2 actif */
+	background-color: #FFCC00;
+}
+#zone_menu_classique .menu_deroulant_n1 > li.menu_actif > .menu_deroulant_n2 .menu_inactif { /* Menu niveau 2 inactif */
+	background-color: #FFFFCC;
+}
+#zone_menu_classique .menu_deroulant_n1 > li > a {
+	border: solid #819D3C 1px;
+	border-radius: 8px;
+}
+
+/* Zone menu -> Identification */
+#zone_identification {
+	background: transparent url("http://www.gentiana.org/sites/gestion/generique/images/graphisme/identification_cadre.png") no-repeat top left;}
+#form_connexion, #iden_action {
+	background: transparent url("http://www.gentiana.org/sites/gestion/generique/images/graphisme/identification_fleur.png") no-repeat bottom right;}
+#identification_message, #zone_identification legend, #zone_identification a, #zone_identification label, #form_connexion #connexion {	
+	color:#003300;}
+
+/* Zone pied */
+#pied_menu_commun {
+	background: transparent url("http://www.gentiana.org/sites/gestion/generique/images/graphisme/fond_menu_commun_pied.png") repeat-x top left;}
+
+/* Tableau*/
+.table_cadre {
+  border:1px solid #003300;
+  margin:0 0 15px 0;}
+.table_cadre th { 
+	color:#99CC00;
+  border:1px solid #003300;
+	background: transparent url("http://www.gentiana.org/sites/gestion/generique/images/graphisme/fond_menu_commun_bandeau.png") repeat-x top left;}
+.table_cadre th a {
+	color:#99CC00;}
+.table_cadre td {
+  border:1px solid #003300;}
+.table_cadre {
+  background-color:white;}
+.ligne_paire {
+  background-color:#E6E5DC;}

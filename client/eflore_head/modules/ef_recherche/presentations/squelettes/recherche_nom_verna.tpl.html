@@ -1,0 +1,35 @@
+<h1>{titre_general}<span id="ef_referentiel">{TITRE_GENERAL_REFERENTIEL}</span></h1>
+{FORMULAIRE_RECHERCHE_NOM}
+<!-- BEGIN INFO -->
+<h1>{titre_info}</h1>
+<p class="information">{EFLORE_INFO}</p>
+<!-- END INFO -->
+<!-- BEGIN NOM_VERNACULAIRE_APPROCHE -->
+	<p id="efr_ortho_approche"> <span class="erreur">{orthographe}</span><a href="{EFLORE_NOM_VERNACULAIRE_APPROCHE_URL}">{EFLORE_NOM_VERNACULAIRE_APPROCHE}</a></p>
+<!-- END NOM_VERNACULAIRE_APPROCHE -->
+<h1>{titre_nom_trouve}{EFLORE_RESULTAT_NBRE}</h1>
+<!-- BEGIN RESULTAT -->
+<table id="ef_resultat" summary="{table_resumer} {EFLORE_RADICAL}">
+	<caption>{table_titre}</caption>
+	<thead>
+		<tr>
+			<th>{numero}</th>
+			<th>{langue}</th>
+			<th>{pays}</th>
+			<th>{nom_commun}</th>
+			<th>{nom_latin}</th>
+		</tr>
+	</thead>
+	<tbody>
+		<!-- BEGIN NOM -->
+		<tr>
+			<td>{EFLORE_NOM_VERNA_LISTE_NUM}</td>
+        	<td><abbr title="{EFLORE_NOM_VERNA_LG_INTITULE}">{EFLORE_NOM_VERNA_LG_ABREVIATION}</abbr></td>
+			<td><abbr title="{EFLORE_NOM_VERNA_ZG_INTITULE}">{EFLORE_NOM_VERNA_ZG_ABREVIATION}</abbr></td>
+			<td><a href="{EFLORE_FICHE_URL}">{EFLORE_NOM_VERNA}</a></td>
+			<td><strong class="nl_retenu"><a href="{EFLORE_FICHE_URL}">{EFLORE_NOM}</a></strong></td>
+		</tr>
+		<!-- END NOM -->
+	</tbody>
+</table>
+<!-- END RESULTAT -->

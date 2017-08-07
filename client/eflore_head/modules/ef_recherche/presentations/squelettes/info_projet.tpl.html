@@ -1,0 +1,27 @@
+<h1>Informations sur les référentiels</h1>
+<?php foreach ($referentiels as $referentiel) : ?>
+	<h3><?=$referentiel['intitule'];?></h3>
+	<p><?=$referentiel['description'];?></p>
+	<?php if (count($referentiel['versions']) > 0) : ?>
+	<h4>Statistiques</h4>
+	<?php foreach ($referentiel['versions'] as $version) : ?>
+		<?php if (count($version['stats']) > 0) : ?>
+		<h4>Version : <?=$version['code'];?></h4>
+		<table class="table_cadre" summary="Nombre de noms pour chaque rang du projet <?=$referentiel['intitule'];?> version <?=$version['code'];?>">
+			<tr><th>Rang</th><th>Nombre de noms</th></tr>
+		<?php foreach ($version['stats'] as $rang => $stat) : ?>
+			<tr><td><?=$rang;?></td><td><?=$stat;?></td></tr>
+		<?php endforeach; ?>
+		</table>
+		<?php endif; ?>
+		<!-- 
+		<table summary="Nombre de noms par année de publication pour le projet <?=$referentiel['intitule'];?> version <?=$version['code'];?>">
+			<tr><th>Année</th><th>Nombre de noms</th></tr>
+		<?php foreach ($version['stats_annee'] as $annee => $stat) : ?>
+			<tr><td><?=$annee;?></td><td><?=$stat;?></td></tr>
+		<?php endforeach; ?>
+		</table>
+		 -->
+	<?php endforeach; ?>
+	<?php endif; ?>
+<?php endforeach; ?>

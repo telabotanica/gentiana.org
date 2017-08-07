@@ -1,0 +1,26 @@
+<h1><?=$titre;?></h1>
+<?php if ($nbre_pages == 0) : ?>
+	<p class="information"><?=$vide;?></p>
+<?php else : ?>
+<ul id="more_resultat">
+	<?php foreach ($resultats as $val) : ?>
+	<li>
+		<h2><a href="<?=$val['url'];?>" <?=$val['hreflang']!= ''?'hreflang="'.$val['hreflang'].'"':'';?> <?=$val['accesskey']!= ''?'accesskey="'.$val['accesskey'].'"':'';?> <?=$val['title']!= ''?'title="'.$val['title'].'"':'';?> ><?=$val['titre'];?></a></h2>
+		<dl>
+			<?php if ($val['score'] != '') : ?>
+				<dt><?=MORE_LG_RESULTAT_SCORE;?></dt>
+				<dd><?=$val['score'].MORE_LG_RESULTAT_POURCENT;?></dd>
+			<?php endif; ?>
+			<?php if ($val['date_creation'] != '') : ?>
+				<dt><?=MORE_LG_RESULTAT_DATE_CREATION;?></dt>
+				<dd><?=$val['date_creation'];?></dd>
+			<?php endif; ?>
+			<?php if ($val['description'] != '') : ?>
+				<dt><?=MORE_LG_RESULTAT_DESCRIPTION;?></dt>
+				<dd><?=$val['description'];?></dd>
+			<?php endif; ?>
+		</dl>
+	</li>
+	<?php endforeach; ?>
+</ul>
+<?php endif;?>

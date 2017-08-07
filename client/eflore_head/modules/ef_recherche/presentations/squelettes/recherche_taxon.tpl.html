@@ -1,0 +1,31 @@
+<h1>{titre_general}<span id="ef_referentiel">{TITRE_GENERAL_REFERENTIEL}</span></h1>
+{FORMULAIRE_RECHERCHE_TAXON}
+<!-- BEGIN INFO -->
+<h1>{titre_info}</h1>
+<p class="information">{EFLORE_INFO}</p>
+<!-- END INFO -->
+<!-- BEGIN RESULTAT -->
+<h1>{titre_taxon_trouve}{EFLORE_RESULTAT_NBRE}</h1>
+{EFLORE_CLASSIF}
+<!-- END RESULTAT -->
+<!-- BEGIN CLASSIF -->
+<ol>
+{EFLORE_TAXON}
+</ol>
+<!-- END CLASSIF -->
+<!-- BEGIN TAXON -->
+	<li>
+		{EFLORE_PLIER_DEPLIER}
+		<!-- BEGIN TAXON_DESCENDANT -->
+		<a href="{EFLORE_URL_CLASSIF}&amp;plier=0#efrr_taxon_{EFLORE_TAXON_ID}"><img class="ef_arbo_deplier" src="{EFLORE_CHEMIN_IMG}/modules/ef_recherche/presentations/images/deplier.png" alt="+" style="border:none;"/></a>
+		<!-- END TAXON_DESCENDANT -->
+		<!-- BEGIN TAXON_ASCENDANT -->
+		<a href="{EFLORE_URL_CLASSIF}&amp;plier=1#efrr_taxon_{EFLORE_TAXON_ID}"><img class="ef_arbo_plier" src="{EFLORE_CHEMIN_IMG}/modules/ef_recherche/presentations/images/plier.png" alt="-" style="border:none;"/></a>
+		<!-- END TAXON_ASCENDANT -->
+		<!-- BEGIN TAXON_FEUILLE -->
+		<img class="ef_arbo_branche" src="{EFLORE_CHEMIN_IMG}/modules/ef_recherche/presentations/images/branche.png" alt="|" style="border:none;"/>
+		<!-- END TAXON_FEUILLE -->
+		<a id="efrr_taxon_{EFLORE_TAXON_ID}" href="{EFLORE_URL_FICHE}">{EFLORE_NOM}</a>
+		{EFLORE_CLASSIF_FILS}
+	</li>
+<!-- END TAXON -->

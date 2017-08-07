@@ -1,0 +1,260 @@
+/*
+ +----------------------------------------------------------------------------+
+ | bazar.css                                                                  |
+ +----------------------------------------------------------------------------+
+ | Copyright (c) 2005 Tela Botanica                                           |
+ +----------------------------------------------------------------------------+
+ | Feuille de style interne spécifique a l'application Bazar                  |
+ +----------------------------------------------------------------------------+
+ | Auteur : Jean-Pascal MILCENT <jpm@tela-botanica.org>                       |
+ +----------------------------------------------------------------------------+
+*/
+#BAZ_corps {
+	width:100%;}
+#formulaire input, #formulaire textarea, #formulaire select {
+	border:1px solid #000;}
+.enligne {
+	padding:0;
+	margin:0;
+	display:inline;
+	list-style: none;
+	list-style-type:none;
+	background:#FFF;}
+/*-------------Les fiches Bazar-------------------------------------------------*/
+.BAZ_cadre_fiche {
+	margin:0 auto;
+	width:95%;
+	padding:10px;
+	border: 1px solid;
+	-moz-border-radius:10px;
+  text-indent:0;
+	font-size:13px;
+	color:#000;
+	text-align:justify;
+	line-height:17px;}
+.BAZ_cadre_fiche a {
+	font-size:14px;
+	text-decoration:underline;}
+.BAZ_cadre_fiche a:hover {
+	text-decoration:underline;}
+#fiche_image {
+	float:left;
+	height:150px;
+	width:150px;}
+#fiche_titre {
+	text-align:left;
+	width:100%;
+	padding-left:10px;
+	background:transparent;
+	border:0;
+	font-size:19px;}
+#BAZ_description {
+	min-height:120px;
+	font-size:15px;
+	text-align:justify;}
+#BAZ_bas_page, .bulle_haut, .bulle_bas {
+	margin:0;
+	padding:0;}
+.bulle_corps {
+	margin:0;
+	padding:10px 5px;
+	border:1px solid;
+	-moz-border-radius:10px;}
+#formation_qualifiante {
+	float:right;
+	margin:0 -15px 0 5px;
+	height:190px;
+	width:30px;
+	background:url(images/BAZ_formation_qualifiante.gif) bottom right no-repeat;}
+#formation_diplomante {
+	float:right;
+	margin:0 -15px 0 5px;
+	height:190px;
+	width:30px;
+	background:url(images/BAZ_formation_diplomante.gif) bottom right no-repeat;}
+#formation_continue {
+	float:right;
+	margin:0 -15px 0 5px;
+	height:190px;
+	width:30px;
+	background:url(images/BAZ_formation_continue.gif) bottom right no-repeat;}
+.centrer {
+	clear:both;
+	margin:0 auto;}
+.rubrique {
+	width:150px;
+	text-align:left;
+	font:bold 15px;}
+.rubrique_bulle {
+	width:90px;
+	text-align:left;
+	font:bold 15px;
+	color: #000;}
+.infos {
+	width:70%;
+	float:left;
+	min-height:120px;
+	font:bold 15px;
+	line-height:25px;}
+.bazar_checkbox {
+	float:left;
+	width:170px;
+	font-size:10px;
+	border:0;}
+.lien_wikini {
+	margin:0;
+	padding:10px 5px;
+	border:2px solid;
+	-moz-border-radius:10px;}
+div.lien_wikini a {
+	padding-left:100px;
+	color:#FFFFFF;}
+.table_bazar th{
+	font-weight:bold;}
+.table_bazar #col1,.table_bazar #col2,.table_bazar #col3,.table_bazar #col4 {
+	text-align:center;}
+
+/* GOOGLE MAP */
+.BAZ_cadre_map {
+	padding:0;
+	height:250px;
+	width:400px;
+	overflow:auto;}
+.BAZ_cadre_map .BAZ_cadre_fiche{
+	padding:0 2px 2px 2px;}
+.BAZ_cadre_map .BAZ_fiche_titre, .BAZ_cadre_map .BAZ_fiche{
+	font-size:13px;
+	padding:2px;
+	margin:2px 2px 2px 0;}
+#map{
+	min-height:600px;}
+
+/* CALENDRIER APPLETTE*/
+.calendrier_applette{
+	width:140px;}
+
+/* CALENDRIER */
+#cal_entete{
+	display:block;
+	background:transparent url(/client/bazar/images/cal_titre_fond.png) repeat-x;
+	margin:10px 0;
+	height:31px;
+	min-width:300px;
+	border-left: 2px solid #113054;
+	border-right: 2px solid #113054;}
+#cal_titre_img{
+	float:right;
+	display:block;
+	background:transparent;
+	padding-bottom:10px;
+	width:182px;}
+#cal_navigation{
+	display:block;
+	position:absolute;
+	background:transparent;
+	top:10px;
+	left:20px;}
+#cal_precedent_lien, #cal_suivant_lien{
+	display:block;
+	position:absolute;
+	top:12px;
+	background:transparent;}
+#cal_suivant_lien img, #cal_precedent_lien img{
+	display:block;
+	border:0;}
+#cal_precedent_lien:hover, #cal_suivant_lien:hover, #cal_mois_courrant:hover{
+	background-color:#b0cdfc;}
+#cal_precedent_lien{
+	left:15px;}
+#cal_mois_courrant{
+	display:block;
+	position:absolute;
+	top:14px;
+	left:40px;
+	width:100px;
+	padding:2px 25px;
+	background-color:#fff;
+	border:1px inset #113054;
+	text-align:center;
+	text-transform:uppercase;
+	font: bold 14px 'Arial narrow', arial, sans-serif;}
+#cal_suivant_lien{
+	left:195px;}
+.calendrier{
+	font: bold 16px 'Arial narrow', Arial, sans-serif;
+	border-collapse:separate;
+	border-spacing:2px;
+	width:100%;}
+/* Problème de la couleur entre les cellules...
+.calendrier tbody{
+	background:white url(/client/bazar/images/cal_img_fond.jpg) 2px 40px repeat-y;}*/
+.calendrier th, .calendrier_applette th {
+	color:white;
+	background-color:#174984;
+	border: 1px solid #113054;
+	text-align:center;}
+.calendrier th {
+	height:20px;
+	width:14%;
+	border-width:2px;}
+.calendrier td {
+	height:83px;
+	width:14%;
+	border:2px solid #4c4c4c;
+	vertical-align:top;
+	text-align:left;
+	-moz-border-radius:3px;}
+.cal_samedi, .cal_dimanche{
+	background-color:#fff9e7;}
+.cal_j{
+	display:block;
+	float:right;
+	padding:2px;}
+.cal_jc{
+	background-color:#c4d9fb;}
+.cal_ma{
+	background-color:#eaeaec;}
+.cal_evenemt_liste{
+	font: normal 10px Arial, sans-serif;
+	list-style-type:none;/*disc url(/client/bazar/images/cal_pastille.png) inside;*/
+	margin:20px 0 0 0;
+	padding:0;}
+.cal_evenemt_liste li{
+	display:block;
+	background:transparent url(/client/bazar/images/cal_pastille.png) top left no-repeat;}
+.cal_evenemt{
+	margin:0;
+	padding:0 0 0 13px;}
+/* Pour la bibliothèque JS DomToolTip */
+div.niceTitle {
+	background-color: #333333;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 13px;
+	font-family: "Trebuchet MS", sans-serif;
+	width: 250px;
+	left: 0;
+	top: 0;
+	padding: 4px;
+	position: absolute;
+	text-align: left;
+	z-index: 20;
+	-moz-border-radius: 0 10px 10px 10px;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=87);
+	-moz-opacity: .87;
+	-khtml-opacity: .87;
+	opacity: .87;}
+div.niceTitle .contents {
+	margin: 0;
+	padding: 0 3px;
+	filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+	-moz-opacity: 1;
+	-khtml-opacity: 1;
+	opacity: 1;}
+div.niceTitle p {
+	color: #D17E62;
+	font-size: 9px;
+	padding: 3px 0 0 0;
+	margin: 0;
+	text-align: left;
+	-moz-opacity: 1;}
