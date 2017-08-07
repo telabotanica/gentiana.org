@@ -24,3 +24,9 @@ ln -s gentiana.org/sites sites
 ## À savoir
 Nécessite `register_globals` ou [une simulation](http://www.kaffeetalk.de/using-register_globals-in-php-5-5/) pour fonctionner
 
+La directive `error_reporting` de PHP est écrasée par Papyrus, voir `papyrus/configuration/pap_config_avancee.inc.php` ligne 67
+
+Les contenus suivants ne sont pas versionnés (trop lourd) :
+ * sites/flore/generique/images/cartes
+ * sites/commun/generique/fckeditor
+
