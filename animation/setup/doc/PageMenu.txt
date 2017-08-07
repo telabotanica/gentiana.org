@@ -1,0 +1,10 @@
+""<center><a href="http://ecole-et-nature.org">""[[http://ecole-et-nature.org/images/Logo_REN-Site.png Logo Ecole et Nature]]""</a></center>""
+ - [[AccueiL Accueil]] 
+
+
+ - [[ParametresUtilisateur Identifiez-vous]]
+ - [[TableauDeBordDeCeWiki Tableau de bord]]
+ - [[PageMenu Editer le menu]]
+
+
+""<center><a href="wakka.php?wiki=DerniersChangementsRSS/xml"><img src="rss.png" alt="Syndication RSS" /></a></center>""

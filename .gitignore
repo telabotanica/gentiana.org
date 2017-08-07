@@ -2,9 +2,7 @@
 /client/eflore_head_config/configuration/ef_config.inc.php
 /client/eflore_head/configuration/ef_config.inc.php
 /papyrus/configuration/pap_config.inc.php
-
-# Wiki
-/animation
+/animation/wakka.config.php
 
 # fichiers lourds
 /sites/flore/generique/images/cartes

@@ -1,0 +1,49 @@
+/*---------------------------------------------------------------
+feuille de style pour l'action calendrier.php 
+Versin 0.6.0 Copyright  2004  
+---------------------------------------------------------------*/
+/* Conteneur premier niveau */
+.cal_cont_global{width:100%;height:100%;float: left;position: relative;}
+.cal_cont1_barre{position: absolute;left:0;top:0;width:400px;height:40px;}
+.cal_cont1_journee{position: absolute;left:0;top:50px;width:400px;height:auto;}
+.cal_cont_des_mois{margin-left: 410px;width:auto;height:auto;}
+/* Conteneur d'un calendrier mois */
+.cal_cont_mois{width:180px;position: relative;height: auto;border: thin solid #000000;margin: 2px;}
+/* ligne de nom jour de la semaine dans le calendrier mois */
+.cal_ligne_jours_sem{position: relative;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 10px;height: 20px;
+background-color: #666666;font-weight: bold;width: 100%;color: #FFFFFF;}
+/* ligne de nom du mois le calendrier mois */
+.cal_ligne_titre{font-size: 14px;font-weight: bold;text-align: center;background-color: #CCCCCC;}
+/* ligne de jour dans le calendrier mois */
+.cal_ligne_jours{position: relative;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;height: 18px;}
+/* jour du calendrier */
+.cal_j{width: 25px;text-align: center;vertical-align: middle;float: left;}
+/* jour courant */
+.cal_jj{width: 25px;text-align: center;vertical-align: middle;float: left;background-color: #CCCCCC;font-weight: bold;border: 1px solid #000000;}
+.jour_courant{width: 100%;text-align: left;vertical-align: top;float: left;background-color: #CCCCCC;font-weight: bold;border: 1px solid #000000;}
+/* barre de navigation dans le calendrier */
+.cal_cont_bar_nav{background: url(barre-noir_blanc.jpg) top left;background-repeat:no-repeat;display: block;float: Aucune;overflow: hidden;
+	margin: 2px;border: thin solid #000000;width: 400px;height: 40px;}
+/* Conteneur detail journée */
+.cal_cont_journee{background-color: #eeeeee;font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;border: thin solid #000000;
+	display: block;margin: 2px;padding: 12px;width: 376px;height: auto;}
+/* permet le changement d'image sur le survol des boutons */
+.cal_bt_style {display: block;height: 40px;width: 30px;float: left;}
+.cal_bt_style:hover {background: transparent url(barre-noir_blanc.jpg) no-repeat -400px 0px;}
+.cal_bt_style span {display: none;}
+.cal_bt_style:hover span {display: block;position: relative;top:18px;line-height: 18px;left:30px;width:200px;height:15px;
+text-align: left;border-top: 1px solid gray;color: #FFFFFF;background-color: #777777;}
+.cal_bt_aujourdhui {display: block;height: 40px;width: 90px;line-height: 40px;float: left;}
+.cal_bt_aujourdhui:hover {background: transparent url(barre-noir_blanc.jpg) no-repeat -430px 0px;}
+.cal_bt {display: block;height: 40px;width: 38px;line-height: 40px;float: left;}
+.cal_bt:hover {background: transparent url(barre-noir_blanc.jpg) no-repeat left top;}
+.cal_bt#a:hover {background-position: -520px 0px;}
+.cal_bt#b:hover {background-position: -558px 0px;}
+.cal_bt#c:hover {background-position: -596px 0px;}
+.cal_bt#d:hover {background-position: -634px 0px;}
+.cal_bt#e:hover {background-position: -672px 0px;}
+.cal_bt#f:hover {background-position: -710px 0px;}
+/* fin gestion survol */
+/* pour la gestion des listes à puces */
+ul {position: relative;left: 10px;list-style-type: disc;list-style-position: inside;}
+ol {position: relative;left: 10px;list-style-type: decimal;list-style-position: inside;}
