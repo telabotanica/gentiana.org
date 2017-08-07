@@ -22,5 +22,5 @@ ln -s gentiana.org/sites sites
 ```
 
 ## À savoir
-Nécessite `register_globals` ou [une simulation](www.kaffeetalk.de/using-register_globals-in-php-5-5/) pour fonctionner
+Nécessite `register_globals` ou [une simulation](http://www.kaffeetalk.de/using-register_globals-in-php-5-5/) pour fonctionner
 
