@@ -214,7 +214,7 @@ function GestionAffichageCalendrier($arguments = array(), $type = 'calendrier') 
 	// Vue Mois calendrier ou vue applette
 		
 	if ((!isset($_GET['id_fiche']) && $type == 'calendrier') || ($type == 'calendrier_applette')){
-		trigger_error('ICI', E_USER_NOTICE);
+		//trigger_error('ICI', E_USER_NOTICE);
 		// Recherche evenement de la periode selectionnée 
 		$ts_jour_fin_mois = $month->nextMonth('timestamp');
 		$ts_jour_debut_mois = $month->thisMonth('timestamp');; 
@@ -416,7 +416,7 @@ function GestionAffichageCalendrier($arguments = array(), $type = 'calendrier') 
 		}
 			$retour.= "</tbody></table>";
 	}
-	$retour.= '<script type="text/javascript">//<![CDATA['."\n".$script.'//]]></script>'."\n";
+	$retour.= '<script type="text/javascript">//<![CDATA['."\n".(empty($script) ? '' : $script).'//]]></script>'."\n";
 	// Vue detail
 	
 	if ((isset($_GET['id_fiches']))) {

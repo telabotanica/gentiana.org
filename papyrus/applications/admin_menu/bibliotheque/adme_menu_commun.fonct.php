@@ -205,9 +205,9 @@ function ADME_retournerXhtmlMenuCommun($db, $url, $adme_site_id, $adme_menu_id, 
     $xhtml_info='';
     //-------------------------------------------------------------------------------------------------------------------
     // XHTML du nom du menu et de ses infos
-    $xhtml_info .= htmlentities(empty($ligne->gm_nom) ? ADME_LG_PARENTHESE_OUVRANTE.$ligne->gm_nom.ADME_LG_PARENTHESE_FERMANTE : $ligne->gm_nom);
+    $xhtml_info .= htmlentities(empty($ligne->gm_nom) ? ADME_LG_PARENTHESE_OUVRANTE.'-'.ADME_LG_PARENTHESE_FERMANTE : $ligne->gm_nom);
     $xhtml_info .= '&nbsp;';
-    $xhtml_info .= ADME_LG_PARENTHESE_OUVRANTE.$ligne_app->gap_nom.'&nbsp;'.ADME_LG_SLASH.'&nbsp;'.$ligne->ga_prenom.ADME_LG_PARENTHESE_FERMANTE;
+    $xhtml_info .= ADME_LG_PARENTHESE_OUVRANTE.(empty($ligne_app->gap_nom) ? '-' : $ligne_app->gap_nom).'&nbsp;'.ADME_LG_SLASH.'&nbsp;'.(empty($ligne->ga_prenom) ? '-' : $ligne->ga_prenom).ADME_LG_PARENTHESE_FERMANTE;
     $xhtml_info .= '&nbsp;'."\n";
     
     //-------------------------------------------------------------------------------------------------------------------
