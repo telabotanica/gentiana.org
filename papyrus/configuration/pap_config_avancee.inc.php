@@ -64,7 +64,7 @@ define('GEN_VERSION', '0.25');
 // +------------------------------------------------------------------------------------------------------+
 // Param�trage du d�bogage.
 /** Constante stockant une valeur bool�en permettant de savoir si on veut d�boguer le code (true) ou pas (false).*/
-define('GEN_DEBOGAGE', true);// true ou false
+define('GEN_DEBOGAGE', false);// true ou false
 /** Constante permettant de savoir sous quelle forme le d�bogage va avoir lieu.*/
 //define('PAP_DEBOGAGE_TYPE', 'FIREBUG');// HTML ou FIREBUG
 define('PAP_DEBOGAGE_TYPE', 'HTML');// HTML ou FIREBUG

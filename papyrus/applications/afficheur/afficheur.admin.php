@@ -174,7 +174,7 @@ class Afficheur_Admin {
         $url->addQueryString('adme_menu_id', $adme_menu_id);
         $url->addQueryString('adme_action', $adme_action);
         
-		$donnees['archives'] = GEN_lireContenuMenuHistorique(&$db, $adme_menu_id);
+		$donnees['archives'] = GEN_lireContenuMenuHistorique($db, $adme_menu_id);
 		
 		foreach ($donnees['archives'] as $cle => $archive) {
 			$url->addQueryString('adme_version', $archive->gmc_id_contenu);

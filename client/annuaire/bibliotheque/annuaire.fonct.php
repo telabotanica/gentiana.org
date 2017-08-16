@@ -173,9 +173,9 @@ function carto_formulaire() {
 	$res .= '<p class="information message_a_tous">'.sprintf(ANN_MESSAGE_A_TOUS, '<a href="'.ANN_URL_ACTUALITE.'">'.ANN_ACTUALITE.'</a>').'</p>'."\n";
 	$res .= '<table>'."\n".
 			'<tr><td class="texte">'.ANN_SUJET.' :</td>'."\n".
-			'<td><input class="forml" type="text" name="titre_mail" size="60" value="'.$_POST['titre_mail'].'"/></td>'."\n".
+			'<td><input class="forml" type="text" name="titre_mail" size="60" value="'.(empty($_POST['titre_mail']) ? '' : $_POST['titre_mail']).'"/></td>'."\n".
 			'</tr><tr><td class="texte" valign="top">'.ANN_MESSAGE.'&nbsp;:&nbsp;</td>'."\n".
-			'<td><textarea class="forml" name="corps" rows="5" cols="60">'.$_POST['corps'].'</textarea></td>'."\n".
+			'<td><textarea class="forml" name="corps" rows="5" cols="60">'.(empty($_POST['corps']) ? '' : $_POST['corps']) .'</textarea></td>'."\n".
 			'</tr><tr><td></td><td align="center">';
 	$res .= '<input class="spip_bouton" type="submit" value="'.ANN_ENVOYER.'" />'."\n";
 	$res .= '</td>'."\n";
@@ -192,6 +192,7 @@ function carto_formulaire() {
 *	@return string  HTML
 */
 function carto_texte_cocher() {
+	$res = '';
 	$res .= '<div class="texte">'.ANN_CHECK_UNCHECK."\n";
 	$res .= '&nbsp;<input type="checkbox" name="selecttotal" onclick="javascript:setCheckboxes(\'formmail\');"/>'."\n";
 	$res .= '</div>';
