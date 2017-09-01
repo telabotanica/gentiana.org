@@ -235,7 +235,7 @@ class Afficheur_Admin {
                     'gmc_ce_admin = '.$auth->getAuthData('ga_id_administrateur').', '.
                     'gmc_ce_menu = '.$adme_menu_id.', '.
                     'gmc_ce_type_contenu = '.$tab_valeur['gmc_ce_type_contenu'].', '.
-                    'gmc_contenu = "'.$tab_valeur['gmc_contenu'].'", '.
+                    'gmc_contenu = "'.mysql_real_escape_string($tab_valeur['gmc_contenu']).'", '.
                     'gmc_ce_type_modification = '.$tab_valeur['gmc_ce_type_modification'].', '.
                     'gmc_resume_modification = "'.$tab_valeur['gmc_resume_modification'].'", '.
                     'gmc_date_modification = "'.date('Y-m-d H:i:s').'", '.
