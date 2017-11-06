@@ -174,7 +174,7 @@ class Afficheur_Admin {
         $url->addQueryString('adme_menu_id', $adme_menu_id);
         $url->addQueryString('adme_action', $adme_action);
         
-		$donnees['archives'] = GEN_lireContenuMenuHistorique($db, $adme_menu_id);
+		$donnees['archives'] = stripslashes(GEN_lireContenuMenuHistorique($db, $adme_menu_id));
 		
 		foreach ($donnees['archives'] as $cle => $archive) {
 			$url->addQueryString('adme_version', $archive->gmc_id_contenu);
@@ -235,7 +235,7 @@ class Afficheur_Admin {
                     'gmc_ce_admin = '.$auth->getAuthData('ga_id_administrateur').', '.
                     'gmc_ce_menu = '.$adme_menu_id.', '.
                     'gmc_ce_type_contenu = '.$tab_valeur['gmc_ce_type_contenu'].', '.
-                    'gmc_contenu = "'.mysql_real_escape_string($tab_valeur['gmc_contenu']).'", '.
+                    'gmc_contenu = "'.mysql_real_escape_string(stripslashes($tab_valeur['gmc_contenu'])).'", '.
                     'gmc_ce_type_modification = '.$tab_valeur['gmc_ce_type_modification'].', '.
                     'gmc_resume_modification = "'.$tab_valeur['gmc_resume_modification'].'", '.
                     'gmc_date_modification = "'.date('Y-m-d H:i:s').'", '.
