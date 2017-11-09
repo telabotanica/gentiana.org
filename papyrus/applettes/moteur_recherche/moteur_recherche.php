@@ -122,7 +122,7 @@ function afficherMoteurRecherche($tab_applette_arguments, $_GEN_commun)
     // --------------------------------------------------------------------------------------------------------
     // Lancement de la recherche si nécessaire
     $aso_squelette = array('formulaire' => MORE_FORM_SQUELETTE);
-    $_SESSION['_MOTEUR_RECHERCHE_']['rechercher']['more_motif'] = '';
+    //$_SESSION['_MOTEUR_RECHERCHE_']['rechercher']['more_motif'] = '';
 	$GLOBALS['_MOTEUR_RECHERCHE_']['formulaire']['form_url'] = $url->getUrl();
 	$GLOBALS['_MOTEUR_RECHERCHE_']['formulaire']['form_tab'] = MORE_FORM_MOTIF_TAB;
 	$GLOBALS['_MOTEUR_RECHERCHE_']['formulaire']['more_motif_base'] = MORE_LG_FORM_MOTIF_VALUE;
@@ -142,9 +142,14 @@ function afficherMoteurRecherche($tab_applette_arguments, $_GEN_commun)
         require_once MORE_CHEMIN_BIBLIO.'more_recherche_papyrus_menu.class.php';
         /** Inclusion de la classe Recherche_Spip_Article.*/
         require_once MORE_CHEMIN_BIBLIO.'more_recherche_spip_article.class.php';
-        $moteur = new More_Recherche($_SESSION['_MOTEUR_RECHERCHE_']['rechercher']['more_motif']);
-        $recherche_papyrus_menu = new More_Recherche_Papyrus_Menu($_SESSION['_MOTEUR_RECHERCHE_']['rechercher']['more_motif']);
-        $recherche_spip_article = new More_Recherche_Spip_Article($_SESSION['_MOTEUR_RECHERCHE_']['rechercher']['more_motif']);
+        if (isset($_SESSION['_MOTEUR_RECHERCHE_']['rechercher']['more_motif'])) {
+            $more_motif = $_SESSION['_MOTEUR_RECHERCHE_']['rechercher']['more_motif'];
+        } else {
+            $more_motif = '';
+        }
+        $moteur = new More_Recherche($more_motif);
+        $recherche_papyrus_menu = new More_Recherche_Papyrus_Menu($more_motif);
+        $recherche_spip_article = new More_Recherche_Spip_Article($more_motif);
         $moteur->ajouterRecherche($recherche_papyrus_menu);
         $moteur->ajouterRecherche($recherche_spip_article);
         $GLOBALS['_MOTEUR_RECHERCHE_']['resultat']['resultats'] = $moteur->rechercherMotif();
