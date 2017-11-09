@@ -34,3 +34,12 @@ RewriteRule ^page:.+$ /papyrus.php [QSA,L]
 
 # Gestion des erreurs 404
 ErrorDocument 404 /erreur_http.php?erreur=404
+
+#Blocage de robots relous (voir http://www.tela-botanica.org/wikini/DevInformatiques/wakka.php?wiki=MemoRobots)
+SetEnvIfNoCase User-Agent "^.*semrushbot.*$" bad_bot
+SetEnvIfNoCase User-Agent "^.*semrush.*$" bad_bot
+SetEnvIfNoCase User-Agent "^.*ahrefsbot.*$" bad_bot
+
+Order Allow,Deny
+Allow from All
+Deny from env=bad_bot
