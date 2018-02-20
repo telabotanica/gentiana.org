@@ -145,7 +145,7 @@ if ( (! isset($_GET[GEN_URL_CLE_SITE]) || empty($_GET[GEN_URL_CLE_SITE])) && (! 
  // Le code du menu est pr�sent dans l'url mais pas celui du site
 } else if ( (! isset($_GET[GEN_URL_CLE_SITE]) || empty($_GET[GEN_URL_CLE_SITE])) && (isset($_GET[GEN_URL_CLE_MENU]) || !empty($_GET[GEN_URL_CLE_MENU])) ) {
     // Nous r�cup�rons les infos du menu et du sites dans la variable globale de Papyrus.
-    $_GEN_commun['url_menu'] = $_GET[GEN_URL_CLE_MENU];
+    $_GEN_commun['url_menu'] = htmlspecialchars($_GET[GEN_URL_CLE_MENU]);
     // R�cup�ration des informations sur le menu demand�
     $requete =  'SELECT * '.
                 'FROM gen_menu '.
@@ -306,7 +306,7 @@ else
 if (! isset($_GET['url_menu']) && empty($_GEN_commun['url_menu'])) {
     // Le code du menu est pr�sent dans l'url et il n'a pas encore �t� r�cup�r�
     // Nous le r�cup�rons dans la variable globale de Papyrus.
-    $_GEN_commun['url_menu'] = $_GET[GEN_URL_CLE_MENU];
+    $_GEN_commun['url_menu'] = htmlspecialchars($_GET[GEN_URL_CLE_MENU]);
 
     // R�cup�ration des informations sur le menu demand�
     $requete = 'SELECT * '.
