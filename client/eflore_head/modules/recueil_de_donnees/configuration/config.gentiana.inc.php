@@ -50,7 +50,7 @@
 /** Constante stockant le nom du serveur smtp.*/
 define('RDD_SMTP_HOTE', 'localhost');
 /** Constante stockant l'adresse courriel du destinataire du message contenant les observations.*/
-define('RDD_MAIL_A', 'Pierre SALEN <p.salen@gentiana.org>, Mathias CHOUET <mathias@tela-botanica.org>');
+define('RDD_MAIL_A', Mathias CHOUET <mathias@tela-botanica.org>, Infloris <infloris@gentiana.org>');
 /** Constante stockant l'adresse courriel de l'entête FROM du courriel.*/
 define('RDD_MAIL_DE', 'recueil_de_donnees@tela-botanica.org');
 /** Constante stockant le sujet du courriel.*/

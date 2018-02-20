@@ -40,6 +40,10 @@ SetEnvIfNoCase User-Agent "^.*semrushbot.*$" bad_bot
 SetEnvIfNoCase User-Agent "^.*semrush.*$" bad_bot
 SetEnvIfNoCase User-Agent "^.*ahrefsbot.*$" bad_bot
 
+# Fermeture du wikini
+RewriteCond %{REQUEST_URI} ^/wikini
+RewriteRule ^ - [L,redirect=404]
+
 Order Allow,Deny
 Allow from All
 Deny from env=bad_bot
